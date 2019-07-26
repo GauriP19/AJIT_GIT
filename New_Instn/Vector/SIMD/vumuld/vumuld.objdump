@@ -2583,14 +2583,14 @@ Disassembly of section .text:
     2ffc:	01 00 00 00 	nop 
 
 00003000 <main>:
-    3000:	07 3c 00 00 	sethi  %hi(0xf0000000), %g3
-    3004:	86 10 e0 0f 	or  %g3, 0xf, %g3	! f000000f <end+0xefffcfe3>
-    3008:	05 3c 00 00 	sethi  %hi(0xf0000000), %g2
-    300c:	84 10 a0 0f 	or  %g2, 0xf, %g2	! f000000f <end+0xefffcfe3>
-    3010:	0b 3c 00 00 	sethi  %hi(0xf0000000), %g5
-    3014:	8a 11 60 0f 	or  %g5, 0xf, %g5	! f000000f <end+0xefffcfe3>
-    3018:	09 3c 00 00 	sethi  %hi(0xf0000000), %g4
-    301c:	88 11 20 0f 	or  %g4, 0xf, %g4	! f000000f <end+0xefffcfe3>
+    3000:	07 00 80 80 	sethi  %hi(0x2020000), %g3
+    3004:	86 10 e2 02 	or  %g3, 0x202, %g3	! 2020202 <end+0x201d1d6>
+    3008:	05 00 80 80 	sethi  %hi(0x2020000), %g2
+    300c:	84 10 a2 02 	or  %g2, 0x202, %g2	! 2020202 <end+0x201d1d6>
+    3010:	0b 00 40 40 	sethi  %hi(0x1010000), %g5
+    3014:	8a 11 61 01 	or  %g5, 0x101, %g5	! 1010101 <end+0x100d0d5>
+    3018:	09 00 40 40 	sethi  %hi(0x1010000), %g4
+    301c:	88 11 21 01 	or  %g4, 0x101, %g4	! 1010101 <end+0x100d0d5>
     3020:	8c 50 82 44 	vumuld8  %g2, %g4, %g6
     3024:	a0 50 84 44 	vumuld16  %g2, %g4, %l0
     3028:	a4 50 80 44 	vumuld32  %g2, %g4, %l2

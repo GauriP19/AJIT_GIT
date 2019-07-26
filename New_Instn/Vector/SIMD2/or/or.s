@@ -7,7 +7,7 @@ start:
 	mov 240,%g2
 	mov 255,%g3
 	mov 34,%g4
-	addbyter %g2,%g4,%g6
+	ordbyter %g2,%g4,%g6
 
 
 
