@@ -1,3 +1,0 @@
-1. correct :	f0,	id = 32, 	expected = 0x41b80000,  		actual = 0x41b80000 (mask=0xffffffff) (cpu-id=0)
-2. correct :	f2,	id = 34, 	expected = 0x41b80000,  		actual = 0x41b80000 (mask=0xffffffff) (cpu-id=0)
-3. correct :	f1,	id = 33, 	expected = 0x41280000,  		actual = 0x41280000 (mask=0xffffffff) (cpu-id=0)
