@@ -1,0 +1,30 @@
+\contentsline {chapter}{\numberline {1}The ISA Specification from IITB}{7}{chapter.1}
+\contentsline {section}{\numberline {1.1}Overview}{7}{section.1.1}
+\contentsline {section}{\numberline {1.2}ISA Extensions}{8}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Integer-Unit Extensions: Arithmetic-Logic Instructions}{8}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}Integer-Unit Extensions: SIMD Instructions}{8}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {1.2.3}Integer-Unit Extensions: SIMD Instructions II}{8}{subsection.1.2.3}
+\contentsline {subsection}{\numberline {1.2.4}Vector Floating Point Instructions}{8}{subsection.1.2.4}
+\contentsline {subsection}{\numberline {1.2.5}CSWAP instructions}{8}{subsection.1.2.5}
+\contentsline {chapter}{\numberline {2}AJIT Support for the GNU Binutils Toolchain}{17}{chapter.2}
+\contentsline {section}{\numberline {2.1}Towards a GNU Binutils Toolchain}{17}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Integer-Unit Extensions: Arithmetic-Logic Instructions}{17}{subsection.2.1.1}
+\contentsline {subsubsection}{\numberline {2.1.1.1}Addition and subtraction instructions:}{18}{subsubsection.2.1.1.1}
+\contentsline {subsubsection}{\numberline {2.1.1.2}Shift instructions:}{20}{subsubsection.2.1.1.2}
+\contentsline {subsubsection}{\numberline {2.1.1.3}Multiplication and division instructions:}{26}{subsubsection.2.1.1.3}
+\contentsline {subsubsection}{\numberline {2.1.1.4}64 Bit Logical Instructions:}{31}{subsubsection.2.1.1.4}
+\contentsline {subsubsection}{\numberline {2.1.1.5}Integer Unit Extensions Summary}{39}{subsubsection.2.1.1.5}
+\contentsline {subsection}{\numberline {2.1.2}Integer-Unit Extensions: SIMD Instructions}{45}{subsection.2.1.2}
+\contentsline {subsubsection}{\numberline {2.1.2.1}SIMD I instructions:}{45}{subsubsection.2.1.2.1}
+\contentsline {subsection}{\numberline {2.1.3}Integer-Unit Extensions: SIMD Instructions II}{46}{subsection.2.1.3}
+\contentsline {subsection}{\numberline {2.1.4}Vector Floating Point Instructions}{46}{subsection.2.1.4}
+\contentsline {subsection}{\numberline {2.1.5}CSWAP instructions}{46}{subsection.2.1.5}
+\contentsline {chapter}{\numberline {3}Towards Assembler Extraction}{47}{chapter.3}
+\contentsline {section}{\numberline {3.1}Succinct ISA Descriptions}{47}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Instruction Set Design Study}{47}{subsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.1.1}Basic Concepts of Instruction Set Design}{47}{subsubsection.3.1.1.1}
+\contentsline {subsubsection}{\numberline {3.1.1.2}Some Examples of Instruction Set Design Languages}{50}{subsubsection.3.1.1.2}
+\contentsline {subsection}{\numberline {3.1.2}Instruction Set Description and Generation}{50}{subsection.3.1.2}
+\contentsline {subsubsection}{\numberline {3.1.2.1}Basic Elements of the Structure of an Instruction Set Language}{50}{subsubsection.3.1.2.1}
+\contentsline {subsection}{\numberline {3.1.3}Instruction Set Generation}{51}{subsection.3.1.3}
+\contentsline {subsubsection}{\numberline {3.1.3.1}Basic Elements of the ``Language'' to Describe the Instruction}{51}{subsubsection.3.1.3.1}

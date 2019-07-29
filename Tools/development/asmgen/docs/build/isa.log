@@ -1,0 +1,640 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=latex 2018.10.16)  2 JAN 2019 15:28
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**/lindata/My-work/Professional/iitb/development/asmgen/docs/build/isa.tex
+(/lindata/My-work/Professional/iitb/development/asmgen/docs/build/isa.tex
+LaTeX2e <2017-04-15>
+Babel <3.18> and hyphenation patterns for 31 language(s) loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/bk10.clo
+File: bk10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) (/usr/share/texlive/texmf-dist/tex/latex/preprint/fullpage.sty
+Package: fullpage 1999/02/23 1.1 (PWD)
+\FP@margin=\skip43
+) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode is ignored in DVI mode.
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
+)
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+) (/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+)
+\@linkdim=\dimen103
+\Hy@linkcounter=\count88
+\Hy@pagecounter=\count89
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count90
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 4383.
+
+Package hyperref Warning: Unexpected value `true'
+(hyperref)                of option `backref' instead of
+(hyperref)                `section', `slide', `page', `none',
+(hyperref)                or `false' on input line 4383.
+
+Package hyperref Info: Option `hyperfigures' set `true' on input line 4383.
+Package hyperref Info: Option `hyperfootnotes' set `true' on input line 4383.
+Package hyperref Info: Option `hyperindex' set `true' on input line 4383.
+Package hyperref Info: Hyper figures ON on input line 4507.
+Package hyperref Info: Link nesting OFF on input line 4514.
+Package hyperref Info: Hyper index ON on input line 4517.
+Package hyperref Info: Plain pages OFF on input line 4524.
+Package hyperref Info: Backreferencing ON on input line 4527.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4762.
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/backref.sty
+Package: backref 2016/05/21 v1.39 Bibliographical back referencing
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+))
+\c@Hy@tempcnt=\count91
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5115.
+\XeTeXLinkMargin=\dimen104
+\Fld@menulength=\count92
+\Field@Width=\dimen105
+\Fld@charsize=\dimen106
+Package hyperref Info: Hyper figures ON on input line 6367.
+Package hyperref Info: Link nesting OFF on input line 6374.
+Package hyperref Info: Hyper index ON on input line 6377.
+Package hyperref Info: backreferencing ON on input line 6382.
+Package hyperref Info: Link coloring ON on input line 6387.
+Package hyperref Info: Link coloring with OCG OFF on input line 6394.
+Package hyperref Info: PDF/A mode OFF on input line 6399.
+LaTeX Info: Redefining \ref on input line 6439.
+LaTeX Info: Redefining \pageref on input line 6443.
+\Hy@abspage=\count93
+\c@Item=\count94
+\c@Hfootnote=\count95
+)
+Package hyperref Info: Driver (default): hdvips.
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hdvips.def
+File: hdvips.def 2018/02/06 v6.86b Hyperref driver for dvips
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pdfmark.def
+File: pdfmark.def 2018/02/06 v6.86b Hyperref definitions for pdfmark specials
+\pdf@docset=\toks15
+\pdf@box=\box26
+\pdf@toks=\toks16
+\pdf@defaulttoks=\toks17
+\HyField@AnnotCount=\count96
+\Fld@listcount=\count97
+\c@bookmark@seq@number=\count98
+\Hy@SectionHShift=\skip44
+)) (/lindata/My-work/Professional/iitb/development/asmgen/docs/build/isa.aux)
+\openout1 = `isa.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+\AtBeginShipoutBox=\box27
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: dvips.def on input line 147.
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/dvips.def
+File: dvips.def 2017/06/20 v3.1d Graphics/color driver for dvips
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+))
+Package hyperref Info: Link coloring ON on input line 15.
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count99
+)
+LaTeX Info: Redefining \ref on input line 15.
+LaTeX Info: Redefining \pageref on input line 15.
+LaTeX Info: Redefining \nameref on input line 15.
+(/lindata/My-work/Professional/iitb/development/asmgen/docs/build/isa.out) (/li
+ndata/My-work/Professional/iitb/development/asmgen/docs/build/isa.out)
+\@outlinefile=\write3
+\openout3 = `isa.out'.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 19.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 19.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 19.
+[1
+
+
+] [2
+
+] (/lindata/My-work/Professional/iitb/development/asmgen/docs/build/isa.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 2.
+)
+\tf@toc=\write4
+\openout4 = `isa.toc'.
+
+[3] [4
+
+] (/lindata/My-work/Professional/iitb/development/asmgen/docs/build/isa.lot)
+\tf@lot=\write5
+\openout5 = `isa.lot'.
+
+[5] [6
+
+]
+Chapter 1.
+[7]
+Overfull \hbox (4.02364pt too wide) in paragraph at lines 66--92
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 347--347
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 363--363
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 379--379
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 395--395
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 426--426
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 426--426
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 442--442
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 442--442
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 458--458
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 458--458
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 474--474
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 474--474
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 475--475
+[]\OT1/cmr/m/n/10 rd $\OMS/cmsy/m/n/10  $ \OT1/cmr/m/n/10 [b7[]zero b6[]zero b5
+[]zero b4[]zero
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 549--549
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 549--549
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 563--563
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 563--563
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 579--579
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 579--579
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 593--593
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 593--593
+
+ []
+
+[8] [9] [10] [11] [12] [13] (../src/binutils.tex [14] [15] [16
+
+]
+Chapter 2.
+[17] (../src/add-sub-insn-extns.tex
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--54
+
+ []
+
+[18]
+Underfull \hbox (badness 10000) in paragraph at lines 103--104
+
+ []
+
+[19]
+Underfull \hbox (badness 10000) in paragraph at lines 153--154
+
+ []
+
+) (../src/shift-insn-extns.tex [20]
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
+
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 40.
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 40.
+
+Overfull \hbox (24.53151pt too wide) in paragraph at lines 89--97
+[][] 
+ []
+
+[21]
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
+
+ []
+
+
+Underfull \hbox (badness 2042) in paragraph at lines 118--119
+[]\OT1/cmr/bx/n/10 Use bit 6 to dis-tin-guish
+ []
+
+
+Overfull \hbox (24.53151pt too wide) in paragraph at lines 160--168
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--174
+
+ []
+
+
+Underfull \hbox (badness 2042) in paragraph at lines 189--190
+[]\OT1/cmr/bx/n/10 Use bit 6 to dis-tin-guish
+ []
+
+[22]
+Overfull \hbox (24.53151pt too wide) in paragraph at lines 231--239
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 251--252
+
+ []
+
+
+Underfull \hbox (badness 2042) in paragraph at lines 266--267
+[]\OT1/cmr/bx/n/10 Use bit 6 to dis-tin-guish
+ []
+
+
+Underfull \vbox (badness 3838) has occurred while \output is active []
+
+[23]
+Overfull \hbox (24.53151pt too wide) in paragraph at lines 303--311
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 316--317
+
+ []
+
+
+Underfull \hbox (badness 2042) in paragraph at lines 331--332
+[]\OT1/cmr/bx/n/10 Use bit 6 to dis-tin-guish
+ []
+
+[24]
+Overfull \hbox (24.53151pt too wide) in paragraph at lines 368--376
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 381--382
+
+ []
+
+
+Underfull \hbox (badness 2042) in paragraph at lines 396--397
+[]\OT1/cmr/bx/n/10 Use bit 6 to dis-tin-guish
+ []
+
+
+Overfull \hbox (24.53151pt too wide) in paragraph at lines 433--441
+[][] 
+ []
+
+[25]) (../src/mul-div-insn-extns.tex
+Underfull \hbox (badness 10000) in paragraph at lines 57--58
+
+ []
+
+[26]
+Underfull \hbox (badness 10000) in paragraph at lines 107--109
+
+ []
+
+[27]
+Underfull \hbox (badness 10000) in paragraph at lines 158--159
+
+ []
+
+[28]
+Underfull \hbox (badness 10000) in paragraph at lines 209--210
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 259--260
+
+ []
+
+[29]
+Underfull \hbox (badness 10000) in paragraph at lines 309--310
+
+ []
+
+[30]
+Underfull \hbox (badness 10000) in paragraph at lines 360--361
+
+ []
+
+) (../src/64-bit-logical-insn-extns.tex
+Underfull \hbox (badness 10000) in paragraph at lines 7--8
+
+ []
+
+[31]
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
+
+ []
+
+[32]
+Underfull \hbox (badness 10000) in paragraph at lines 106--107
+
+ []
+
+[33]
+Underfull \hbox (badness 10000) in paragraph at lines 155--156
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 205--206
+
+ []
+
+[34]
+Underfull \hbox (badness 10000) in paragraph at lines 255--256
+
+ []
+
+[35]
+Underfull \hbox (badness 10000) in paragraph at lines 305--306
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 355--356
+
+ []
+
+[36]
+Underfull \hbox (badness 10000) in paragraph at lines 404--405
+
+ []
+
+[37]
+Underfull \hbox (badness 10000) in paragraph at lines 454--455
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 503--504
+
+ []
+
+[38]) (../src/int-unit-extns-summary.tex
+Underfull \hbox (badness 10000) in paragraph at lines 6--7
+
+ []
+
+[39]
+Underfull \hbox (badness 10000) in paragraph at lines 62--63
+
+ []
+
+[40]
+Underfull \hbox (badness 10000) in paragraph at lines 172--173
+
+ []
+
+[41] [42]
+Underfull \hbox (badness 10000) in paragraph at lines 322--323
+
+ []
+
+
+Overfull \hbox (9.4218pt too wide) in paragraph at lines 355--363
+[][] 
+ []
+
+[43]
+Overfull \hbox (9.4218pt too wide) in paragraph at lines 373--381
+[][] 
+ []
+
+
+Overfull \hbox (9.4218pt too wide) in paragraph at lines 391--399
+[][] 
+ []
+
+
+Overfull \hbox (9.4218pt too wide) in paragraph at lines 416--424
+[][] 
+ []
+
+
+Overfull \hbox (9.4218pt too wide) in paragraph at lines 434--442
+[][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[44]
+Overfull \hbox (9.4218pt too wide) in paragraph at lines 452--460
+[][] 
+ []
+
+) (../src/simd-1-insn-extns.tex
+Underfull \hbox (badness 10000) in paragraph at lines 28--29
+
+ []
+
+[45])) (../src/sisad.tex [46]
+Chapter 3.
+[47
+
+] [48]
+Overfull \hbox (9.78758pt too wide) in paragraph at lines 187--197
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 198--199
+
+ []
+
+[49] [50])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 605.
+[51]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 605.
+(/lindata/My-work/Professional/iitb/development/asmgen/docs/build/isa.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 605.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 605.
+Package rerunfilecheck Info: File `isa.out' has not changed.
+(rerunfilecheck)             Checksum: 1C45516D6BA71EA328707770577C9FD6;2682.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 605.
+ ) 
+Here is how much of TeX's memory you used:
+ 4901 strings out of 494302
+ 75674 string characters out of 6167665
+ 193163 words of memory out of 5000000
+ 8346 multiletter control sequences out of 15000+600000
+ 9621 words of font info for 34 fonts, out of 8000000 for 9000
+ 331 hyphenation exceptions out of 8191
+ 32i,18n,28p,400b,596s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on /lindata/My-work/Professional/iitb/development/asmgen/docs/bu
+ild/isa.dvi (51 pages, 248328 bytes).
