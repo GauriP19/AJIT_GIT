@@ -1,6 +1,0 @@
-1. ERROR :	o0,	id = 8, 	expected = 0x1,  		actual = 0x3f8ccccd (mask=0xffffffff) (cpu-id=0)
-2. correct :	i0,	id = 24, 	expected = 0x1,  		actual = 0x1 (mask=0xffffffff) (cpu-id=0)
-3. correct :	f0,	id = 32, 	expected = 0x6,  		actual = 0x40f66666 (mask=0x7) (cpu-id=0)
-4. ERROR :	f1,	id = 33, 	expected = 0x1,  		actual = 0x3f8ccccd (mask=0xffffffff) (cpu-id=0)
-5. ERROR :	f2,	id = 34, 	expected = 0x1,  		actual = 0x3f8ccccd (mask=0xffffffff) (cpu-id=0)
-6. ERROR :	f8,	id = 40, 	expected = 0x1,  		actual = 0x40f66666 (mask=0xffffffff) (cpu-id=0)
