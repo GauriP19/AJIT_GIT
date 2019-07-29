@@ -3,16 +3,17 @@
 
 main:
 start:
+   	mov 2,%g2 !shift count
 
-	mov 1,%g7
-	mov 0,%g6
-   	mov 3,%g2
-	mov 1,%g5
-	mov 0,%g4
-	mov 0,%g3
+	set 0x80000001,%g7
+	mov 0x80000001,%g6 !Value to be shifted, put in register pair
+
+	mov 1,%g5 
+	mov 1,%g4 !value to be shifted by immediate input
+	
  
-        slld %g7,1,%g6
-	slld %g5,%g2,%g5
+        slld %g7,1,%g6    !after this, output will be g6 =0xc0000000 and g7 =0xc0000000
+	slld %g5,%g2,%g5  !after this, output will be g4 =0 and g5 =0x80000000 
 
 	
 

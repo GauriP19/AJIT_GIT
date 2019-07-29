@@ -1,0 +1,18 @@
+This directory contains all vector instructions. They are arranged as follows-
+
+
+	1. SIMD - 
+		vaddd  - It has codes for vaddd8, vaddd16, vaddd32
+		vsubd  - It has codes for vsubd8, vsubd16, vsubd32
+		vumuld - It has codes for vumuld8, vumuld16, vumuld32
+		vsmuld - It has codes for vsmuld8, vsmuld16, vsmuld32
+
+	2. SIMD2- 
+		add  - It has test code for addbyter.
+        	and  - It has test code for anddbyter.
+        	or   - It has test code for ordbyter.
+        	xor  - It has test code for xordbyter.
+        	zero - It has test code for zbtypedpos.
+
+	3. Float-
+ 

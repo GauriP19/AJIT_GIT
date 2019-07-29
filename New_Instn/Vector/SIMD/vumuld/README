@@ -1,1 +1,6 @@
-What is this test about?
+Here we are testing the vector unsigned multiplication instructions. They work on 64 bit data (we take input and ouput as a register pair).
+
+vumuld8  - Both inputs are divided into 8 one byte values and then each multiplied, giving output as 8 one byte values.
+vumuld16 - Both inputs are divided into 4 parts of 2 bytes each Output is will 4 two byte numbers.
+vumuld32 - Both inputs are divide into two words, ouput will be two 32 bit numbers.
+
