@@ -1,0 +1,3 @@
+1. ERROR :	g2,	id = 2, 	expected = 0x5,  		actual = 0xfffffffa (mask=0xffffffff) (cpu-id=0)
+2. ERROR :	g4,	id = 4, 	expected = 0x6,  		actual = 0xfffffff9 (mask=0xffffffff) (cpu-id=0)
+3. correct :	g6,	id = 6, 	expected = 0x6,  		actual = 0x6 (mask=0xffffffff) (cpu-id=0)
