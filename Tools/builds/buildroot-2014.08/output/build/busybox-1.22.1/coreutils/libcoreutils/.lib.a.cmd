@@ -1,0 +1,1 @@
+cmd_coreutils/libcoreutils/lib.a := rm -f coreutils/libcoreutils/lib.a; /home/gaurip/builds/buildroot-2014.08/output/host/usr/bin/sparc-buildroot-linux-uclibc-ar  rcs coreutils/libcoreutils/lib.a coreutils/libcoreutils/cp_mv_stat.o coreutils/libcoreutils/getopt_mk_fifo_nod.o

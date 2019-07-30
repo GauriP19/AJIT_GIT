@@ -1,0 +1,1 @@
+cmd_findutils/lib.a := rm -f findutils/lib.a; /home/gaurip/builds/buildroot-2014.08/output/host/usr/bin/sparc-buildroot-linux-uclibc-ar  rcs findutils/lib.a findutils/find.o findutils/grep.o findutils/xargs.o
