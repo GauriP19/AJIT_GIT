@@ -1,5 +1,5 @@
 All test codes for the new shift instructions can be found here.
 
 	slld - has codes for a logical left shift, with input of shift count a register and immediate.
-	srad - has codes for a arithmetic right shift, with input of shift count through a register and 		immediate. 
-	srld - has codes for a logical right shift, with inputof shift count through through a register and 			immediate.
+	srad - has codes for a arithmetic right shift, with input of shift count through a register and immediate. 
+	srld - has codes for a logical right shift, with inputof shift count through through a register and immediate.
