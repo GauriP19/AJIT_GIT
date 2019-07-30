@@ -4,7 +4,7 @@
 .type add, #function
 
 add:
-        save  %sp, -96, %sp
+        save  %sp, -80, %sp
         ld [%fp+128], %f2
         ld [%fp+132], %f1
         fadds %f2,%f1,%f0
