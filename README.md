@@ -12,11 +12,14 @@ This repository is divided imto four parts -
                           and floating point vectoe instructions
  
     
-  2. ABI              - Here we are using the SPARC ABI to call aseembly functions from c programs.
+  2. abi_codes             - Here we are using the SPARC ABI to call aseembly functions from c programs.
       It has been divided as-
             
-            add - Code for addition of single precision floating point numbers.
- 3. DOCS
+            add           - Code for addition of two input argumnets.
+            add_more_args - Code for addition of more than 7 input arguments.
+            add_fp_num    - Code  for addition of two floating point input argument.
+            more_float    - Code for more than 6 floating point input arguments.
+ 3. Docs
  
  4. Tools
             
