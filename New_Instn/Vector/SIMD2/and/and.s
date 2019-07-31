@@ -3,13 +3,12 @@
 .global main
 
 main:
-start: 
-	!input to 64 bit register
-    	set 0x9451,%g2
-        mov 0X1,%g3
-        mov 0X1B,%g4    !mask
+start:
+    	set 0x09050401,%g3	 !input to 64 bit register
+        mov 0X1,%g2
+        mov 0X1d,%g4             !mask
 
-        anddbyter %g2,%g4,%g6 ! g6 = 1
+        anddbyter %g2,%g4,%g6    !g6 = 1
 
 
 

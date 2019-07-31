@@ -1,4 +1,4 @@
-.lobal
+.global
 start:
 	mov -256, %sp
 	mov -8, %fp

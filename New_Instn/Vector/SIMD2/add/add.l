@@ -1,5 +1,0 @@
-1. ERROR :	g2,	id = 2, 	expected = 0xf0,  		actual = 0x6f6dd9ac (mask=0xffffffff) (cpu-id=0)
-2. ERROR :	g3,	id = 3, 	expected = 0xff,  		actual = 0x94211f2 (mask=0xffffffff) (cpu-id=0)
-3. ERROR :	g4,	id = 4, 	expected = 0x22,  		actual = 0x885e1b (mask=0xffffffff) (cpu-id=0)
-4. ERROR :	g6,	id = 6, 	expected = 0x1,  		actual = 0x4c04a8af (mask=0xffffffff) (cpu-id=0)
-5. ERROR :	g7,	id = 7, 	expected = 0x1,  		actual = 0x1716703b (mask=0xffffffff) (cpu-id=0)

@@ -2591,8 +2591,8 @@ Disassembly of section .text:
     3014:	83 a0 00 20 	fmovs  %f0, %f1
     3018:	85 a0 00 20 	fmovs  %f0, %f2
     301c:	87 a0 00 20 	fmovs  %f0, %f3
-    3020:	81 e8 00 00 	restore 
-    3024:	89 a0 28 42 	vfadd  %f0, %f2, %f4
+    3020:	89 a0 28 42 	vfadd  %f0, %f2, %f4
+    3024:	81 e8 00 00 	restore 
 
 00003028 <end>:
     3028:	91 d0 20 00 	ta  0

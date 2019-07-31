@@ -1,5 +1,5 @@
-#.global _start;
-#_start:
+
+
 .global
 start:
 	mov -256, %sp

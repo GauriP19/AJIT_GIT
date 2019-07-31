@@ -4,10 +4,10 @@
 
 main:
 start: 
-	mov 240,%g2
-	mov 255,%g3
-	mov 34,%g4
-	ordbyter %g2,%g4,%g6
+	mov 0x1,%g2           !input to register pair
+	set 0x08050403,%g3
+	mov 0x1b ,%g4         !mask
+	ordbyter %g2,%g4,%g6  !g6 = d
 
 
 
