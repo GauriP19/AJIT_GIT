@@ -1,6 +1,7 @@
-g2=1
-g3=1
-g4=1
-g5=1
-g6=1
-g7=1
+f0=0x40000000
+f1=0x40000000
+f2=0x400ccccd
+f3=0x400ccccd
+f4=0x3f8ccccd
+f5=0x3f8ccccd
+
