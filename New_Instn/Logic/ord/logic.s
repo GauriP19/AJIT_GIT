@@ -5,7 +5,9 @@
 main:
 start: 
 	mov 1,%g2
+	mov 1,%g3
 	mov 5,%g4
+	mov 5,%g5
 
 	ordcc %g2,%g4,%g6
 	bne next
