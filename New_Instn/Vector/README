@@ -15,4 +15,10 @@ This directory contains all vector instructions. They are arranged as follows-
         	zero - It has test code for zbtypedpos.
 
 	3. Float-
+		vfadd  - It has test code for vfadd.
+		vfsub  - It has test code for vfsub.
+		vfmul  - It has test code for vfmul.
+		vfdiv  - It has test code for vfdiv.
+		vfsqrt - It has test code for vfsqrt.
+		
  
