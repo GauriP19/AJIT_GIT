@@ -14,7 +14,6 @@ start:
 	ba end
 	nop      
 next:	mov 2,%g2
-	mov 2,%g3
 	anddncc %g2,%g4,%g4
 	bne next1
 	nop
