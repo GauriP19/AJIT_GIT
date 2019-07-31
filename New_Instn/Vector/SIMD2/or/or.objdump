@@ -2585,7 +2585,7 @@ Disassembly of section .text:
 00003000 <main>:
     3000:	84 10 20 01 	mov  1, %g2	! 1 <start+0x1>
     3004:	07 02 01 41 	sethi  %hi(0x8050400), %g3
-    3008:	86 10 e0 03 	or  %g3, 3, %g3	! 8050403 <CVTBUF+0x80403fb>
+    3008:	86 10 e0 01 	or  %g3, 1, %g3	! 8050401 <CVTBUF+0x80403f9>
     300c:	88 10 20 1b 	mov  0x1b, %g4
     3010:	8d 70 80 04 	ordbyter  %g2, %g4, %g6
 
