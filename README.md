@@ -10,6 +10,8 @@ This repository is divided imto four parts -
              Shift      - Test codes for SLLD, SRLD, SRAD, in register and immediate format.
              Vector     - Test codes fro all vector instrucrions, VADDD, VSUBD, VUMUL VSMULD, byte-reduce instructions 
                           and floating point vectoe instructions
+                          
+   In each of the above folders, there is a README, giving all the all the instructions for which test code s are present in that specific folder. Also, in folders where test codes for a specific instructions are present, the explanation of the instruction is given in a README file.
  
     
   2. abi_codes             - Here we are using the SPARC ABI to call aseembly functions from c programs.
