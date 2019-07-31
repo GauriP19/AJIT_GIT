@@ -1,0 +1,2 @@
+Test code for vector floating point subtracton. Input is two 64 bit numbers divided into single preciison numbers and each subtracted.
+The output is of 2 single precison numbers
