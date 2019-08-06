@@ -1,1 +1,0 @@
-This is a test code for checking position of zero bytes in a doubleword. The input is one 64 bit number, divided into 8 numbers and a mask of 8 bits specifying which of the former 8 numbers to consider. Output will be of 8 bits.
