@@ -2,5 +2,5 @@
 2. correct :	f1,	id = 33, 	expected = 0x3f8ccccd,  		actual = 0x3f8ccccd (mask=0xffffffff) (cpu-id=0)
 3. correct :	f2,	id = 34, 	expected = 0x3f8ccccd,  		actual = 0x3f8ccccd (mask=0xffffffff) (cpu-id=0)
 4. correct :	f3,	id = 35, 	expected = 0x3f8ccccd,  		actual = 0x3f8ccccd (mask=0xffffffff) (cpu-id=0)
-5. ERROR :	f4,	id = 36, 	expected = 0x400ccccd,  		actual = 0x6eaa85fb (mask=0xffffffff) (cpu-id=0)
-6. ERROR :	f5,	id = 37, 	expected = 0x400ccccd,  		actual = 0x3f06ecb2 (mask=0xffffffff) (cpu-id=0)
+5. correct :	f4,	id = 36, 	expected = 0x400ccccd,  		actual = 0x400ccccd (mask=0xffffffff) (cpu-id=0)
+6. correct :	f5,	id = 37, 	expected = 0x400ccccd,  		actual = 0x400ccccd (mask=0xffffffff) (cpu-id=0)

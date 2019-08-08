@@ -8,7 +8,7 @@ start:
         set 0Xffffffff,%g2
         mov 0Xff,%g4             !mask
 
-        anddbyter %g2,%g4,%g6    !g6 = 1
+        anddbyter %g2,%g4,%g6    !g6 = ff
 
 
 
