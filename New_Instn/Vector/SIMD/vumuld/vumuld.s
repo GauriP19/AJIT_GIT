@@ -18,8 +18,8 @@ start:
         ! l0 and l1 = 04020402
         ! l2 and l3 = 08060402
 
-	vumuld8 %g2,%g4,%g6
-        vumuld16 %g2,%g4,%l0
+	vumuld8 %g2,%g4,%l0
+        vumuld16 %g2,%g4,%g6
         vumuld32 %g2,%g4,%l2
 
 

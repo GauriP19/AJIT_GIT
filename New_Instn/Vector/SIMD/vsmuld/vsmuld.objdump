@@ -2583,17 +2583,2840 @@ Disassembly of section .text:
     2ffc:	01 00 00 00 	nop 
 
 00003000 <main>:
-    3000:	07 3c 00 00 	sethi  %hi(0xf0000000), %g3
-    3004:	86 10 e0 0f 	or  %g3, 0xf, %g3	! f000000f <end+0xefffcfe3>
-    3008:	05 3c 00 00 	sethi  %hi(0xf0000000), %g2
-    300c:	84 10 a0 0f 	or  %g2, 0xf, %g2	! f000000f <end+0xefffcfe3>
-    3010:	0b 3c 00 00 	sethi  %hi(0xf0000000), %g5
-    3014:	8a 11 60 0f 	or  %g5, 0xf, %g5	! f000000f <end+0xefffcfe3>
-    3018:	09 3c 00 00 	sethi  %hi(0xf0000000), %g4
-    301c:	88 11 20 0f 	or  %g4, 0xf, %g4	! f000000f <end+0xefffcfe3>
-    3020:	8c d0 82 44 	vsmuld8  %g2, %g4, %g6
-    3024:	a0 d0 84 44 	vsmuld16  %g2, %g4, %l0
-    3028:	a4 d0 80 44 	vsmuld32  %g2, %g4, %l2
+    3000:	07 00 c0 c0 	sethi  %hi(0x3030000), %g3
+    3004:	86 10 e3 03 	or  %g3, 0x303, %g3	! 3030303 <CVTBUF+0x30202fb>
+    3008:	84 10 20 03 	mov  3, %g2
+    300c:	8a 10 3f fe 	mov  -2, %g5
+    3010:	88 10 3f fe 	mov  -2, %g4
+    3014:	8c d0 82 44 	vsmuld8  %g2, %g4, %g6
+    3018:	a0 d0 84 44 	vsmuld16  %g2, %g4, %l0
+    301c:	a4 d0 80 44 	vsmuld32  %g2, %g4, %l2
 
-0000302c <end>:
-    302c:	91 d0 20 00 	ta  0
+00003020 <end>:
+    3020:	91 d0 20 00 	ta  0
+    3024:	00 00 43 f0 	unimp  0x43f0
+    3028:	00 00 44 c4 	unimp  0x44c4
+    302c:	00 00 44 c4 	unimp  0x44c4
+    3030:	00 00 44 c4 	unimp  0x44c4
+    3034:	00 00 44 c4 	unimp  0x44c4
+    3038:	00 00 44 c4 	unimp  0x44c4
+    303c:	00 00 44 c4 	unimp  0x44c4
+    3040:	00 00 44 c4 	unimp  0x44c4
+    3044:	00 00 44 c4 	unimp  0x44c4
+    3048:	00 00 44 c4 	unimp  0x44c4
+    304c:	00 00 44 c4 	unimp  0x44c4
+    3050:	00 00 44 c4 	unimp  0x44c4
+    3054:	00 00 44 c4 	unimp  0x44c4
+    3058:	00 00 44 c4 	unimp  0x44c4
+    305c:	00 00 44 c4 	unimp  0x44c4
+    3060:	00 00 44 c4 	unimp  0x44c4
+    3064:	00 00 44 c4 	unimp  0x44c4
+    3068:	00 00 44 c4 	unimp  0x44c4
+    306c:	00 00 44 c4 	unimp  0x44c4
+    3070:	00 00 44 c4 	unimp  0x44c4
+    3074:	00 00 44 c4 	unimp  0x44c4
+    3078:	00 00 44 c4 	unimp  0x44c4
+    307c:	00 00 44 c4 	unimp  0x44c4
+    3080:	00 00 44 94 	unimp  0x4494
+    3084:	00 00 44 c4 	unimp  0x44c4
+    3088:	00 00 44 c4 	unimp  0x44c4
+    308c:	00 00 44 c4 	unimp  0x44c4
+    3090:	00 00 44 c4 	unimp  0x44c4
+    3094:	00 00 44 c4 	unimp  0x44c4
+    3098:	00 00 44 c4 	unimp  0x44c4
+    309c:	00 00 44 c4 	unimp  0x44c4
+    30a0:	00 00 44 c4 	unimp  0x44c4
+    30a4:	00 00 43 fc 	unimp  0x43fc
+    30a8:	00 00 44 c4 	unimp  0x44c4
+    30ac:	00 00 41 5c 	unimp  0x415c
+    30b0:	00 00 44 b0 	unimp  0x44b0
+    30b4:	00 00 44 c4 	unimp  0x44c4
+    30b8:	00 00 44 c4 	unimp  0x44c4
+    30bc:	00 00 44 c4 	unimp  0x44c4
+    30c0:	00 00 44 c4 	unimp  0x44c4
+    30c4:	00 00 44 b0 	unimp  0x44b0
+    30c8:	00 00 44 c4 	unimp  0x44c4
+    30cc:	00 00 44 c4 	unimp  0x44c4
+    30d0:	00 00 44 c4 	unimp  0x44c4
+    30d4:	00 00 44 c4 	unimp  0x44c4
+    30d8:	00 00 44 c4 	unimp  0x44c4
+    30dc:	00 00 44 84 	unimp  0x4484
+    30e0:	00 00 43 8c 	unimp  0x438c
+    30e4:	00 00 44 c4 	unimp  0x44c4
+    30e8:	00 00 44 c4 	unimp  0x44c4
+    30ec:	00 00 42 1c 	unimp  0x421c
+    30f0:	00 00 44 c4 	unimp  0x44c4
+    30f4:	00 00 45 4c 	unimp  0x454c
+    30f8:	00 00 44 c4 	unimp  0x44c4
+    30fc:	00 00 44 c4 	unimp  0x44c4
+    3100:	00 00 44 a0 	unimp  0x44a0
+    3104:	00 00 3e e4 	unimp  0x3ee4
+    3108:	00 00 3f 20 	unimp  0x3f20
+    310c:	00 00 3f 20 	unimp  0x3f20
+    3110:	00 00 3e f8 	unimp  0x3ef8
+    3114:	00 00 3f 20 	unimp  0x3f20
+    3118:	00 00 3f 20 	unimp  0x3f20
+    311c:	00 00 3f 20 	unimp  0x3f20
+    3120:	00 00 3f 20 	unimp  0x3f20
+    3124:	00 00 3f 20 	unimp  0x3f20
+    3128:	00 00 3f 20 	unimp  0x3f20
+    312c:	00 00 3f 20 	unimp  0x3f20
+    3130:	00 00 3e d0 	unimp  0x3ed0
+    3134:	00 00 3f 20 	unimp  0x3f20
+    3138:	00 00 3e bc 	unimp  0x3ebc
+    313c:	00 00 3f 20 	unimp  0x3f20
+    3140:	00 00 3f 20 	unimp  0x3f20
+    3144:	00 00 3f 0c 	unimp  0x3f0c
+
+00003148 <memcpy>:
+    3148:	9d e3 bf 98 	save  %sp, -104, %sp
+    314c:	f0 27 a0 44 	st  %i0, [ %fp + 0x44 ]
+    3150:	f2 27 a0 48 	st  %i1, [ %fp + 0x48 ]
+    3154:	f4 27 a0 4c 	st  %i2, [ %fp + 0x4c ]
+    3158:	c0 27 bf fc 	clr  [ %fp + -4 ]
+    315c:	10 80 00 0d 	b  3190 <memcpy+0x48>
+    3160:	01 00 00 00 	nop 
+    3164:	c2 07 bf fc 	ld  [ %fp + -4 ], %g1
+    3168:	c4 07 a0 44 	ld  [ %fp + 0x44 ], %g2
+    316c:	82 00 80 01 	add  %g2, %g1, %g1
+    3170:	c4 07 bf fc 	ld  [ %fp + -4 ], %g2
+    3174:	c6 07 a0 48 	ld  [ %fp + 0x48 ], %g3
+    3178:	84 00 c0 02 	add  %g3, %g2, %g2
+    317c:	c4 08 80 00 	ldub  [ %g2 ], %g2
+    3180:	c4 28 40 00 	stb  %g2, [ %g1 ]
+    3184:	c2 07 bf fc 	ld  [ %fp + -4 ], %g1
+    3188:	82 00 60 01 	inc  %g1
+    318c:	c2 27 bf fc 	st  %g1, [ %fp + -4 ]
+    3190:	c4 07 bf fc 	ld  [ %fp + -4 ], %g2
+    3194:	c2 07 a0 4c 	ld  [ %fp + 0x4c ], %g1
+    3198:	80 a0 80 01 	cmp  %g2, %g1
+    319c:	06 bf ff f2 	bl  3164 <memcpy+0x1c>
+    31a0:	01 00 00 00 	nop 
+    31a4:	c2 07 a0 44 	ld  [ %fp + 0x44 ], %g1
+    31a8:	b0 10 00 01 	mov  %g1, %i0
+    31ac:	81 e8 00 00 	restore 
+    31b0:	81 c3 e0 08 	retl 
+    31b4:	01 00 00 00 	nop 
+
+000031b8 <strnlen>:
+    31b8:	9d e3 bf 98 	save  %sp, -104, %sp
+    31bc:	f0 27 a0 44 	st  %i0, [ %fp + 0x44 ]
+    31c0:	f2 27 a0 48 	st  %i1, [ %fp + 0x48 ]
+    31c4:	c2 07 a0 44 	ld  [ %fp + 0x44 ], %g1
+    31c8:	c2 27 bf fc 	st  %g1, [ %fp + -4 ]
+    31cc:	10 80 00 05 	b  31e0 <strnlen+0x28>
+    31d0:	01 00 00 00 	nop 
+    31d4:	c2 07 bf fc 	ld  [ %fp + -4 ], %g1
+    31d8:	82 00 60 01 	inc  %g1
+    31dc:	c2 27 bf fc 	st  %g1, [ %fp + -4 ]
+    31e0:	c2 07 bf fc 	ld  [ %fp + -4 ], %g1
+    31e4:	c2 08 40 00 	ldub  [ %g1 ], %g1
+    31e8:	83 28 60 18 	sll  %g1, 0x18, %g1
+    31ec:	83 38 60 18 	sra  %g1, 0x18, %g1
+    31f0:	80 a0 60 00 	cmp  %g1, 0
+    31f4:	02 80 00 0d 	be  3228 <strnlen+0x70>
+    31f8:	01 00 00 00 	nop 
+    31fc:	c2 07 a0 48 	ld  [ %fp + 0x48 ], %g1
+    3200:	82 18 60 00 	xor  %g1, 0, %g1
+    3204:	80 a0 00 01 	cmp  %g0, %g1
+    3208:	82 40 20 00 	addx  %g0, 0, %g1
+    320c:	c4 07 a0 48 	ld  [ %fp + 0x48 ], %g2
+    3210:	84 00 bf ff 	add  %g2, -1, %g2
+    3214:	c4 27 a0 48 	st  %g2, [ %fp + 0x48 ]
+    3218:	82 08 60 ff 	and  %g1, 0xff, %g1
+    321c:	80 a0 60 00 	cmp  %g1, 0
+    3220:	12 bf ff ed 	bne  31d4 <strnlen+0x1c>
+    3224:	01 00 00 00 	nop 
+    3228:	c4 07 bf fc 	ld  [ %fp + -4 ], %g2
+    322c:	c2 07 a0 44 	ld  [ %fp + 0x44 ], %g1
+    3230:	82 20 80 01 	sub  %g2, %g1, %g1
+    3234:	b0 10 00 01 	mov  %g1, %i0
+    3238:	81 e8 00 00 	restore 
+    323c:	81 c3 e0 08 	retl 
+    3240:	01 00 00 00 	nop 
+
+00003244 <skip_atoi>:
+    3244:	9d e3 bf 98 	save  %sp, -104, %sp
+    3248:	f0 27 a0 44 	st  %i0, [ %fp + 0x44 ]
+    324c:	c0 27 bf fc 	clr  [ %fp + -4 ]
+    3250:	10 80 00 11 	b  3294 <skip_atoi+0x50>
+    3254:	01 00 00 00 	nop 
+    3258:	c2 07 bf fc 	ld  [ %fp + -4 ], %g1
+    325c:	82 00 40 01 	add  %g1, %g1, %g1
+    3260:	85 28 60 02 	sll  %g1, 2, %g2
+    3264:	86 00 40 02 	add  %g1, %g2, %g3
+    3268:	c2 07 a0 44 	ld  [ %fp + 0x44 ], %g1
+    326c:	c2 00 40 00 	ld  [ %g1 ], %g1
+    3270:	c4 08 40 00 	ldub  [ %g1 ], %g2
+    3274:	85 28 a0 18 	sll  %g2, 0x18, %g2
+    3278:	85 38 a0 18 	sra  %g2, 0x18, %g2
+    327c:	84 00 c0 02 	add  %g3, %g2, %g2
+    3280:	84 00 bf d0 	add  %g2, -48, %g2
+    3284:	c4 27 bf fc 	st  %g2, [ %fp + -4 ]
+    3288:	84 00 60 01 	add  %g1, 1, %g2
+    328c:	c2 07 a0 44 	ld  [ %fp + 0x44 ], %g1
+    3290:	c4 20 40 00 	st  %g2, [ %g1 ]
+    3294:	c2 07 a0 44 	ld  [ %fp + 0x44 ], %g1
+    3298:	c2 00 40 00 	ld  [ %g1 ], %g1
+    329c:	c2 08 40 00 	ldub  [ %g1 ], %g1
+    32a0:	83 28 60 18 	sll  %g1, 0x18, %g1
+    32a4:	83 38 60 18 	sra  %g1, 0x18, %g1
+    32a8:	80 a0 60 2f 	cmp  %g1, 0x2f
+    32ac:	04 80 00 0a 	ble  32d4 <skip_atoi+0x90>
+    32b0:	01 00 00 00 	nop 
+    32b4:	c2 07 a0 44 	ld  [ %fp + 0x44 ], %g1
+    32b8:	c2 00 40 00 	ld  [ %g1 ], %g1
+    32bc:	c2 08 40 00 	ldub  [ %g1 ], %g1
+    32c0:	83 28 60 18 	sll  %g1, 0x18, %g1
+    32c4:	83 38 60 18 	sra  %g1, 0x18, %g1
+    32c8:	80 a0 60 39 	cmp  %g1, 0x39
+    32cc:	04 bf ff e3 	ble  3258 <skip_atoi+0x14>
+    32d0:	01 00 00 00 	nop 
+    32d4:	c2 07 bf fc 	ld  [ %fp + -4 ], %g1
+    32d8:	b0 10 00 01 	mov  %g1, %i0
+    32dc:	81 e8 00 00 	restore 
+    32e0:	81 c3 e0 08 	retl 
+    32e4:	01 00 00 00 	nop 
+
+000032e8 <number>:
+    32e8:	9d e3 bf 50 	save  %sp, -176, %sp
+    32ec:	f0 27 a0 44 	st  %i0, [ %fp + 0x44 ]
+    32f0:	f2 27 a0 48 	st  %i1, [ %fp + 0x48 ]
+    32f4:	f4 27 a0 4c 	st  %i2, [ %fp + 0x4c ]
+    32f8:	f6 27 a0 50 	st  %i3, [ %fp + 0x50 ]
+    32fc:	f8 27 a0 54 	st  %i4, [ %fp + 0x54 ]
+    3300:	fa 27 a0 58 	st  %i5, [ %fp + 0x58 ]
+    3304:	03 00 00 40 	sethi  %hi(0x10000), %g1
+    3308:	82 10 60 00 	mov  %g1, %g1	! 10000 <digits>
+    330c:	c2 00 40 00 	ld  [ %g1 ], %g1
+    3310:	c2 27 bf f8 	st  %g1, [ %fp + -8 ]
+    3314:	c2 07 a0 58 	ld  [ %fp + 0x58 ], %g1
+    3318:	82 08 60 40 	and  %g1, 0x40, %g1
+    331c:	80 a0 60 00 	cmp  %g1, 0
+    3320:	02 80 00 06 	be  3338 <number+0x50>
+    3324:	01 00 00 00 	nop 
+    3328:	03 00 00 40 	sethi  %hi(0x10000), %g1
+    332c:	82 10 60 04 	or  %g1, 4, %g1	! 10004 <upper_digits>
+    3330:	c2 00 40 00 	ld  [ %g1 ], %g1
+    3334:	c2 27 bf f8 	st  %g1, [ %fp + -8 ]
+    3338:	c2 07 a0 58 	ld  [ %fp + 0x58 ], %g1
+    333c:	82 08 60 10 	and  %g1, 0x10, %g1
+    3340:	80 a0 60 00 	cmp  %g1, 0
+    3344:	02 80 00 05 	be  3358 <number+0x70>
+    3348:	01 00 00 00 	nop 
+    334c:	c2 07 a0 58 	ld  [ %fp + 0x58 ], %g1
+    3350:	82 08 7f fe 	and  %g1, -2, %g1
+    3354:	c2 27 a0 58 	st  %g1, [ %fp + 0x58 ]
+    3358:	c2 07 a0 4c 	ld  [ %fp + 0x4c ], %g1
+    335c:	80 a0 60 01 	cmp  %g1, 1
+    3360:	04 80 00 06 	ble  3378 <number+0x90>
+    3364:	01 00 00 00 	nop 
+    3368:	c2 07 a0 4c 	ld  [ %fp + 0x4c ], %g1
+    336c:	80 a0 60 24 	cmp  %g1, 0x24
+    3370:	04 80 00 05 	ble  3384 <number+0x9c>
+    3374:	01 00 00 00 	nop 
+    3378:	82 10 20 00 	clr  %g1	! 0 <start>
+    337c:	10 80 01 28 	b  381c <number+0x534>
+    3380:	01 00 00 00 	nop 
+    3384:	c2 07 a0 58 	ld  [ %fp + 0x58 ], %g1
+    3388:	82 08 60 01 	and  %g1, 1, %g1
+    338c:	80 a0 60 00 	cmp  %g1, 0
+    3390:	02 80 00 05 	be  33a4 <number+0xbc>
+    3394:	01 00 00 00 	nop 
+    3398:	82 10 20 30 	mov  0x30, %g1	! 30 <start+0x30>
+    339c:	10 80 00 03 	b  33a8 <number+0xc0>
+    33a0:	01 00 00 00 	nop 
+    33a4:	82 10 20 20 	mov  0x20, %g1	! 20 <start+0x20>
+    33a8:	c2 2f bf f3 	stb  %g1, [ %fp + -13 ]
+    33ac:	c0 2f bf ff 	clrb  [ %fp + -1 ]
+    33b0:	c2 07 a0 58 	ld  [ %fp + 0x58 ], %g1
+    33b4:	82 08 60 02 	and  %g1, 2, %g1
+    33b8:	80 a0 60 00 	cmp  %g1, 0
+    33bc:	02 80 00 26 	be  3454 <number+0x16c>
+    33c0:	01 00 00 00 	nop 
+    33c4:	c2 07 a0 48 	ld  [ %fp + 0x48 ], %g1
+    33c8:	80 a0 60 00 	cmp  %g1, 0
+    33cc:	16 80 00 0c 	bge  33fc <number+0x114>
+    33d0:	01 00 00 00 	nop 
+    33d4:	82 10 20 2d 	mov  0x2d, %g1	! 2d <start+0x2d>
+    33d8:	c2 2f bf ff 	stb  %g1, [ %fp + -1 ]
+    33dc:	c2 07 a0 48 	ld  [ %fp + 0x48 ], %g1
+    33e0:	82 20 00 01 	neg  %g1
+    33e4:	c2 27 a0 48 	st  %g1, [ %fp + 0x48 ]
+    33e8:	c2 07 a0 50 	ld  [ %fp + 0x50 ], %g1
+    33ec:	82 00 7f ff 	add  %g1, -1, %g1
+    33f0:	c2 27 a0 50 	st  %g1, [ %fp + 0x50 ]
+    33f4:	10 80 00 18 	b  3454 <number+0x16c>
+    33f8:	01 00 00 00 	nop 
+    33fc:	c2 07 a0 58 	ld  [ %fp + 0x58 ], %g1
+    3400:	82 08 60 04 	and  %g1, 4, %g1
+    3404:	80 a0 60 00 	cmp  %g1, 0
+    3408:	02 80 00 09 	be  342c <number+0x144>
+    340c:	01 00 00 00 	nop 
+    3410:	82 10 20 2b 	mov  0x2b, %g1	! 2b <start+0x2b>
+    3414:	c2 2f bf ff 	stb  %g1, [ %fp + -1 ]
+    3418:	c2 07 a0 50 	ld  [ %fp + 0x50 ], %g1
+    341c:	82 00 7f ff 	add  %g1, -1, %g1
+    3420:	c2 27 a0 50 	st  %g1, [ %fp + 0x50 ]
+    3424:	10 80 00 0c 	b  3454 <number+0x16c>
+    3428:	01 00 00 00 	nop 
+    342c:	c2 07 a0 58 	ld  [ %fp + 0x58 ], %g1
+    3430:	82 08 60 08 	and  %g1, 8, %g1
+    3434:	80 a0 60 00 	cmp  %g1, 0
+    3438:	02 80 00 07 	be  3454 <number+0x16c>
+    343c:	01 00 00 00 	nop 
+    3440:	82 10 20 20 	mov  0x20, %g1	! 20 <start+0x20>
+    3444:	c2 2f bf ff 	stb  %g1, [ %fp + -1 ]
+    3448:	c2 07 a0 50 	ld  [ %fp + 0x50 ], %g1
+    344c:	82 00 7f ff 	add  %g1, -1, %g1
+    3450:	c2 27 a0 50 	st  %g1, [ %fp + 0x50 ]
+    3454:	c2 07 a0 58 	ld  [ %fp + 0x58 ], %g1
+    3458:	82 08 60 20 	and  %g1, 0x20, %g1
+    345c:	80 a0 60 00 	cmp  %g1, 0
+    3460:	02 80 00 12 	be  34a8 <number+0x1c0>
+    3464:	01 00 00 00 	nop 
+    3468:	c2 07 a0 4c 	ld  [ %fp + 0x4c ], %g1
+    346c:	80 a0 60 10 	cmp  %g1, 0x10
+    3470:	12 80 00 07 	bne  348c <number+0x1a4>
+    3474:	01 00 00 00 	nop 
+    3478:	c2 07 a0 50 	ld  [ %fp + 0x50 ], %g1
+    347c:	82 00 7f fe 	add  %g1, -2, %g1
+    3480:	c2 27 a0 50 	st  %g1, [ %fp + 0x50 ]
+    3484:	10 80 00 09 	b  34a8 <number+0x1c0>
+    3488:	01 00 00 00 	nop 
+    348c:	c2 07 a0 4c 	ld  [ %fp + 0x4c ], %g1
+    3490:	80 a0 60 08 	cmp  %g1, 8
+    3494:	12 80 00 05 	bne  34a8 <number+0x1c0>
+    3498:	01 00 00 00 	nop 
+    349c:	c2 07 a0 50 	ld  [ %fp + 0x50 ], %g1
+    34a0:	82 00 7f ff 	add  %g1, -1, %g1
+    34a4:	c2 27 a0 50 	st  %g1, [ %fp + 0x50 ]
+    34a8:	c0 27 bf f4 	clr  [ %fp + -12 ]
+    34ac:	c2 07 a0 48 	ld  [ %fp + 0x48 ], %g1
+    34b0:	80 a0 60 00 	cmp  %g1, 0
+    34b4:	12 80 00 25 	bne  3548 <number+0x260>
+    34b8:	01 00 00 00 	nop 
+    34bc:	c2 07 bf f4 	ld  [ %fp + -12 ], %g1
+    34c0:	82 07 80 01 	add  %fp, %g1, %g1
+    34c4:	84 10 20 30 	mov  0x30, %g2
+    34c8:	c4 28 7f b0 	stb  %g2, [ %g1 + -80 ]
+    34cc:	c2 07 bf f4 	ld  [ %fp + -12 ], %g1
+    34d0:	82 00 60 01 	inc  %g1
+    34d4:	c2 27 bf f4 	st  %g1, [ %fp + -12 ]
+    34d8:	10 80 00 20 	b  3558 <number+0x270>
+    34dc:	01 00 00 00 	nop 
+    34e0:	c2 07 a0 48 	ld  [ %fp + 0x48 ], %g1
+    34e4:	c4 07 a0 4c 	ld  [ %fp + 0x4c ], %g2
+    34e8:	81 80 20 00 	mov  %g0, %y
+    34ec:	01 00 00 00 	nop 
+    34f0:	01 00 00 00 	nop 
+    34f4:	01 00 00 00 	nop 
+    34f8:	86 70 40 02 	udiv  %g1, %g2, %g3
+    34fc:	84 58 c0 02 	smul  %g3, %g2, %g2
+    3500:	82 20 40 02 	sub  %g1, %g2, %g1
+    3504:	c4 07 bf f8 	ld  [ %fp + -8 ], %g2
+    3508:	82 00 80 01 	add  %g2, %g1, %g1
+    350c:	c4 08 40 00 	ldub  [ %g1 ], %g2
+    3510:	c2 07 bf f4 	ld  [ %fp + -12 ], %g1
+    3514:	82 07 80 01 	add  %fp, %g1, %g1
+    3518:	c4 28 7f b0 	stb  %g2, [ %g1 + -80 ]
+    351c:	c2 07 bf f4 	ld  [ %fp + -12 ], %g1
+    3520:	82 00 60 01 	inc  %g1
+    3524:	c2 27 bf f4 	st  %g1, [ %fp + -12 ]
+    3528:	c6 07 a0 48 	ld  [ %fp + 0x48 ], %g3
+    352c:	c4 07 a0 4c 	ld  [ %fp + 0x4c ], %g2
+    3530:	81 80 20 00 	mov  %g0, %y
+    3534:	01 00 00 00 	nop 
+    3538:	01 00 00 00 	nop 
+    353c:	01 00 00 00 	nop 
+    3540:	82 70 c0 02 	udiv  %g3, %g2, %g1
+    3544:	c2 27 a0 48 	st  %g1, [ %fp + 0x48 ]
+    3548:	c2 07 a0 48 	ld  [ %fp + 0x48 ], %g1
+    354c:	80 a0 60 00 	cmp  %g1, 0
+    3550:	12 bf ff e4 	bne  34e0 <number+0x1f8>
+    3554:	01 00 00 00 	nop 
+    3558:	c4 07 bf f4 	ld  [ %fp + -12 ], %g2
+    355c:	c2 07 a0 54 	ld  [ %fp + 0x54 ], %g1
+    3560:	80 a0 80 01 	cmp  %g2, %g1
+    3564:	04 80 00 04 	ble  3574 <number+0x28c>
+    3568:	01 00 00 00 	nop 
+    356c:	c2 07 bf f4 	ld  [ %fp + -12 ], %g1
+    3570:	c2 27 a0 54 	st  %g1, [ %fp + 0x54 ]
+    3574:	c4 07 a0 50 	ld  [ %fp + 0x50 ], %g2
+    3578:	c2 07 a0 54 	ld  [ %fp + 0x54 ], %g1
+    357c:	82 20 80 01 	sub  %g2, %g1, %g1
+    3580:	c2 27 a0 50 	st  %g1, [ %fp + 0x50 ]
+    3584:	c2 07 a0 58 	ld  [ %fp + 0x58 ], %g1
+    3588:	82 08 60 11 	and  %g1, 0x11, %g1
+    358c:	80 a0 60 00 	cmp  %g1, 0
+    3590:	12 80 00 16 	bne  35e8 <number+0x300>
+    3594:	01 00 00 00 	nop 
+    3598:	10 80 00 08 	b  35b8 <number+0x2d0>
+    359c:	01 00 00 00 	nop 
+    35a0:	c2 07 a0 44 	ld  [ %fp + 0x44 ], %g1
+    35a4:	84 10 20 20 	mov  0x20, %g2
+    35a8:	c4 28 40 00 	stb  %g2, [ %g1 ]
+    35ac:	c2 07 a0 44 	ld  [ %fp + 0x44 ], %g1
+    35b0:	82 00 60 01 	inc  %g1
+    35b4:	c2 27 a0 44 	st  %g1, [ %fp + 0x44 ]
+    35b8:	c2 07 a0 50 	ld  [ %fp + 0x50 ], %g1
+    35bc:	85 38 60 1f 	sra  %g1, 0x1f, %g2
+    35c0:	c2 07 a0 50 	ld  [ %fp + 0x50 ], %g1
+    35c4:	82 20 80 01 	sub  %g2, %g1, %g1
+    35c8:	83 30 60 1f 	srl  %g1, 0x1f, %g1
+    35cc:	c4 07 a0 50 	ld  [ %fp + 0x50 ], %g2
+    35d0:	84 00 bf ff 	add  %g2, -1, %g2
+    35d4:	c4 27 a0 50 	st  %g2, [ %fp + 0x50 ]
+    35d8:	82 08 60 ff 	and  %g1, 0xff, %g1
+    35dc:	80 a0 60 00 	cmp  %g1, 0
+    35e0:	12 bf ff f0 	bne  35a0 <number+0x2b8>
+    35e4:	01 00 00 00 	nop 
+    35e8:	c2 0f bf ff 	ldub  [ %fp + -1 ], %g1
+    35ec:	83 28 60 18 	sll  %g1, 0x18, %g1
+    35f0:	83 38 60 18 	sra  %g1, 0x18, %g1
+    35f4:	80 a0 60 00 	cmp  %g1, 0
+    35f8:	02 80 00 08 	be  3618 <number+0x330>
+    35fc:	01 00 00 00 	nop 
+    3600:	c2 07 a0 44 	ld  [ %fp + 0x44 ], %g1
+    3604:	c4 0f bf ff 	ldub  [ %fp + -1 ], %g2
+    3608:	c4 28 40 00 	stb  %g2, [ %g1 ]
+    360c:	c2 07 a0 44 	ld  [ %fp + 0x44 ], %g1
+    3610:	82 00 60 01 	inc  %g1
+    3614:	c2 27 a0 44 	st  %g1, [ %fp + 0x44 ]
+    3618:	c2 07 a0 58 	ld  [ %fp + 0x58 ], %g1
+    361c:	82 08 60 20 	and  %g1, 0x20, %g1
+    3620:	80 a0 60 00 	cmp  %g1, 0
+    3624:	02 80 00 21 	be  36a8 <number+0x3c0>
+    3628:	01 00 00 00 	nop 
+    362c:	c2 07 a0 4c 	ld  [ %fp + 0x4c ], %g1
+    3630:	80 a0 60 08 	cmp  %g1, 8
+    3634:	12 80 00 0a 	bne  365c <number+0x374>
+    3638:	01 00 00 00 	nop 
+    363c:	c2 07 a0 44 	ld  [ %fp + 0x44 ], %g1
+    3640:	84 10 20 30 	mov  0x30, %g2
+    3644:	c4 28 40 00 	stb  %g2, [ %g1 ]
+    3648:	c2 07 a0 44 	ld  [ %fp + 0x44 ], %g1
+    364c:	82 00 60 01 	inc  %g1
+    3650:	c2 27 a0 44 	st  %g1, [ %fp + 0x44 ]
+    3654:	10 80 00 15 	b  36a8 <number+0x3c0>
+    3658:	01 00 00 00 	nop 
+    365c:	c2 07 a0 4c 	ld  [ %fp + 0x4c ], %g1
+    3660:	80 a0 60 10 	cmp  %g1, 0x10
+    3664:	12 80 00 11 	bne  36a8 <number+0x3c0>
+    3668:	01 00 00 00 	nop 
+    366c:	c2 07 a0 44 	ld  [ %fp + 0x44 ], %g1
+    3670:	84 10 20 30 	mov  0x30, %g2
+    3674:	c4 28 40 00 	stb  %g2, [ %g1 ]
+    3678:	c2 07 a0 44 	ld  [ %fp + 0x44 ], %g1
+    367c:	82 00 60 01 	inc  %g1
+    3680:	c2 27 a0 44 	st  %g1, [ %fp + 0x44 ]
+    3684:	03 00 00 40 	sethi  %hi(0x10000), %g1
+    3688:	82 10 60 00 	mov  %g1, %g1	! 10000 <digits>
+    368c:	c2 00 40 00 	ld  [ %g1 ], %g1
+    3690:	c4 08 60 21 	ldub  [ %g1 + 0x21 ], %g2
+    3694:	c2 07 a0 44 	ld  [ %fp + 0x44 ], %g1
+    3698:	c4 28 40 00 	stb  %g2, [ %g1 ]
+    369c:	c2 07 a0 44 	ld  [ %fp + 0x44 ], %g1
+    36a0:	82 00 60 01 	inc  %g1
+    36a4:	c2 27 a0 44 	st  %g1, [ %fp + 0x44 ]
+    36a8:	c2 07 a0 58 	ld  [ %fp + 0x58 ], %g1
+    36ac:	82 08 60 10 	and  %g1, 0x10, %g1
+    36b0:	80 a0 60 00 	cmp  %g1, 0
+    36b4:	12 80 00 20 	bne  3734 <number+0x44c>
+    36b8:	01 00 00 00 	nop 
+    36bc:	10 80 00 08 	b  36dc <number+0x3f4>
+    36c0:	01 00 00 00 	nop 
+    36c4:	c2 07 a0 44 	ld  [ %fp + 0x44 ], %g1
+    36c8:	c4 0f bf f3 	ldub  [ %fp + -13 ], %g2
+    36cc:	c4 28 40 00 	stb  %g2, [ %g1 ]
+    36d0:	c2 07 a0 44 	ld  [ %fp + 0x44 ], %g1
+    36d4:	82 00 60 01 	inc  %g1
+    36d8:	c2 27 a0 44 	st  %g1, [ %fp + 0x44 ]
+    36dc:	c2 07 a0 50 	ld  [ %fp + 0x50 ], %g1
+    36e0:	85 38 60 1f 	sra  %g1, 0x1f, %g2
+    36e4:	c2 07 a0 50 	ld  [ %fp + 0x50 ], %g1
+    36e8:	82 20 80 01 	sub  %g2, %g1, %g1
+    36ec:	83 30 60 1f 	srl  %g1, 0x1f, %g1
+    36f0:	c4 07 a0 50 	ld  [ %fp + 0x50 ], %g2
+    36f4:	84 00 bf ff 	add  %g2, -1, %g2
+    36f8:	c4 27 a0 50 	st  %g2, [ %fp + 0x50 ]
+    36fc:	82 08 60 ff 	and  %g1, 0xff, %g1
+    3700:	80 a0 60 00 	cmp  %g1, 0
+    3704:	12 bf ff f0 	bne  36c4 <number+0x3dc>
+    3708:	01 00 00 00 	nop 
+    370c:	10 80 00 0a 	b  3734 <number+0x44c>
+    3710:	01 00 00 00 	nop 
+    3714:	c2 07 a0 44 	ld  [ %fp + 0x44 ], %g1
+    3718:	84 10 20 30 	mov  0x30, %g2
+    371c:	c4 28 40 00 	stb  %g2, [ %g1 ]
+    3720:	c2 07 a0 44 	ld  [ %fp + 0x44 ], %g1
+    3724:	82 00 60 01 	inc  %g1
+    3728:	c2 27 a0 44 	st  %g1, [ %fp + 0x44 ]
+    372c:	10 80 00 03 	b  3738 <number+0x450>
+    3730:	01 00 00 00 	nop 
+    3734:	01 00 00 00 	nop 
+    3738:	82 10 20 01 	mov  1, %g1	! 1 <start+0x1>
+    373c:	c6 07 a0 54 	ld  [ %fp + 0x54 ], %g3
+    3740:	c4 07 bf f4 	ld  [ %fp + -12 ], %g2
+    3744:	80 a0 c0 02 	cmp  %g3, %g2
+    3748:	14 80 00 03 	bg  3754 <number+0x46c>
+    374c:	01 00 00 00 	nop 
+    3750:	82 10 20 00 	clr  %g1	! 0 <start>
+    3754:	c4 07 a0 54 	ld  [ %fp + 0x54 ], %g2
+    3758:	84 00 bf ff 	add  %g2, -1, %g2
+    375c:	c4 27 a0 54 	st  %g2, [ %fp + 0x54 ]
+    3760:	82 08 60 ff 	and  %g1, 0xff, %g1
+    3764:	80 a0 60 00 	cmp  %g1, 0
+    3768:	12 bf ff eb 	bne  3714 <number+0x42c>
+    376c:	01 00 00 00 	nop 
+    3770:	10 80 00 0a 	b  3798 <number+0x4b0>
+    3774:	01 00 00 00 	nop 
+    3778:	c2 07 bf f4 	ld  [ %fp + -12 ], %g1
+    377c:	82 07 80 01 	add  %fp, %g1, %g1
+    3780:	c4 08 7f b0 	ldub  [ %g1 + -80 ], %g2
+    3784:	c2 07 a0 44 	ld  [ %fp + 0x44 ], %g1
+    3788:	c4 28 40 00 	stb  %g2, [ %g1 ]
+    378c:	c2 07 a0 44 	ld  [ %fp + 0x44 ], %g1
+    3790:	82 00 60 01 	inc  %g1
+    3794:	c2 27 a0 44 	st  %g1, [ %fp + 0x44 ]
+    3798:	c2 07 bf f4 	ld  [ %fp + -12 ], %g1
+    379c:	85 38 60 1f 	sra  %g1, 0x1f, %g2
+    37a0:	c2 07 bf f4 	ld  [ %fp + -12 ], %g1
+    37a4:	82 20 80 01 	sub  %g2, %g1, %g1
+    37a8:	83 30 60 1f 	srl  %g1, 0x1f, %g1
+    37ac:	c4 07 bf f4 	ld  [ %fp + -12 ], %g2
+    37b0:	84 00 bf ff 	add  %g2, -1, %g2
+    37b4:	c4 27 bf f4 	st  %g2, [ %fp + -12 ]
+    37b8:	82 08 60 ff 	and  %g1, 0xff, %g1
+    37bc:	80 a0 60 00 	cmp  %g1, 0
+    37c0:	12 bf ff ee 	bne  3778 <number+0x490>
+    37c4:	01 00 00 00 	nop 
+    37c8:	10 80 00 08 	b  37e8 <number+0x500>
+    37cc:	01 00 00 00 	nop 
+    37d0:	c2 07 a0 44 	ld  [ %fp + 0x44 ], %g1
+    37d4:	84 10 20 20 	mov  0x20, %g2
+    37d8:	c4 28 40 00 	stb  %g2, [ %g1 ]
+    37dc:	c2 07 a0 44 	ld  [ %fp + 0x44 ], %g1
+    37e0:	82 00 60 01 	inc  %g1
+    37e4:	c2 27 a0 44 	st  %g1, [ %fp + 0x44 ]
+    37e8:	c2 07 a0 50 	ld  [ %fp + 0x50 ], %g1
+    37ec:	85 38 60 1f 	sra  %g1, 0x1f, %g2
+    37f0:	c2 07 a0 50 	ld  [ %fp + 0x50 ], %g1
+    37f4:	82 20 80 01 	sub  %g2, %g1, %g1
+    37f8:	83 30 60 1f 	srl  %g1, 0x1f, %g1
+    37fc:	c4 07 a0 50 	ld  [ %fp + 0x50 ], %g2
+    3800:	84 00 bf ff 	add  %g2, -1, %g2
+    3804:	c4 27 a0 50 	st  %g2, [ %fp + 0x50 ]
+    3808:	82 08 60 ff 	and  %g1, 0xff, %g1
+    380c:	80 a0 60 00 	cmp  %g1, 0
+    3810:	12 bf ff f0 	bne  37d0 <number+0x4e8>
+    3814:	01 00 00 00 	nop 
+    3818:	c2 07 a0 44 	ld  [ %fp + 0x44 ], %g1
+    381c:	b0 10 00 01 	mov  %g1, %i0
+    3820:	81 e8 00 00 	restore 
+    3824:	81 c3 e0 08 	retl 
+    3828:	01 00 00 00 	nop 
+
+0000382c <eaddr>:
+    382c:	9d e3 bf 78 	save  %sp, -136, %sp
+    3830:	f0 27 a0 44 	st  %i0, [ %fp + 0x44 ]
+    3834:	f2 27 a0 48 	st  %i1, [ %fp + 0x48 ]
+    3838:	f4 27 a0 4c 	st  %i2, [ %fp + 0x4c ]
+    383c:	f6 27 a0 50 	st  %i3, [ %fp + 0x50 ]
+    3840:	f8 27 a0 54 	st  %i4, [ %fp + 0x54 ]
+    3844:	03 00 00 40 	sethi  %hi(0x10000), %g1
+    3848:	82 10 60 00 	mov  %g1, %g1	! 10000 <digits>
+    384c:	c2 00 40 00 	ld  [ %g1 ], %g1
+    3850:	c2 27 bf fc 	st  %g1, [ %fp + -4 ]
+    3854:	c2 07 a0 54 	ld  [ %fp + 0x54 ], %g1
+    3858:	82 08 60 40 	and  %g1, 0x40, %g1
+    385c:	80 a0 60 00 	cmp  %g1, 0
+    3860:	02 80 00 06 	be  3878 <eaddr+0x4c>
+    3864:	01 00 00 00 	nop 
+    3868:	03 00 00 40 	sethi  %hi(0x10000), %g1
+    386c:	82 10 60 04 	or  %g1, 4, %g1	! 10004 <upper_digits>
+    3870:	c2 00 40 00 	ld  [ %g1 ], %g1
+    3874:	c2 27 bf fc 	st  %g1, [ %fp + -4 ]
+    3878:	c0 27 bf f4 	clr  [ %fp + -12 ]
+    387c:	c0 27 bf f8 	clr  [ %fp + -8 ]
+    3880:	10 80 00 2f 	b  393c <eaddr+0x110>
+    3884:	01 00 00 00 	nop 
+    3888:	c2 07 bf f8 	ld  [ %fp + -8 ], %g1
+    388c:	80 a0 60 00 	cmp  %g1, 0
+    3890:	02 80 00 09 	be  38b4 <eaddr+0x88>
+    3894:	01 00 00 00 	nop 
+    3898:	c2 07 bf f4 	ld  [ %fp + -12 ], %g1
+    389c:	82 07 80 01 	add  %fp, %g1, %g1
+    38a0:	84 10 20 3a 	mov  0x3a, %g2
+    38a4:	c4 28 7f d8 	stb  %g2, [ %g1 + -40 ]
+    38a8:	c2 07 bf f4 	ld  [ %fp + -12 ], %g1
+    38ac:	82 00 60 01 	inc  %g1
+    38b0:	c2 27 bf f4 	st  %g1, [ %fp + -12 ]
+    38b4:	c2 07 bf f8 	ld  [ %fp + -8 ], %g1
+    38b8:	c4 07 a0 48 	ld  [ %fp + 0x48 ], %g2
+    38bc:	82 00 80 01 	add  %g2, %g1, %g1
+    38c0:	c2 08 40 00 	ldub  [ %g1 ], %g1
+    38c4:	82 08 60 ff 	and  %g1, 0xff, %g1
+    38c8:	83 30 60 04 	srl  %g1, 4, %g1
+    38cc:	82 08 60 ff 	and  %g1, 0xff, %g1
+    38d0:	c4 07 bf fc 	ld  [ %fp + -4 ], %g2
+    38d4:	82 00 80 01 	add  %g2, %g1, %g1
+    38d8:	c4 08 40 00 	ldub  [ %g1 ], %g2
+    38dc:	c2 07 bf f4 	ld  [ %fp + -12 ], %g1
+    38e0:	82 07 80 01 	add  %fp, %g1, %g1
+    38e4:	c4 28 7f d8 	stb  %g2, [ %g1 + -40 ]
+    38e8:	c2 07 bf f4 	ld  [ %fp + -12 ], %g1
+    38ec:	82 00 60 01 	inc  %g1
+    38f0:	c2 27 bf f4 	st  %g1, [ %fp + -12 ]
+    38f4:	c2 07 bf f8 	ld  [ %fp + -8 ], %g1
+    38f8:	c4 07 a0 48 	ld  [ %fp + 0x48 ], %g2
+    38fc:	82 00 80 01 	add  %g2, %g1, %g1
+    3900:	c2 08 40 00 	ldub  [ %g1 ], %g1
+    3904:	82 08 60 ff 	and  %g1, 0xff, %g1
+    3908:	82 08 60 0f 	and  %g1, 0xf, %g1
+    390c:	c4 07 bf fc 	ld  [ %fp + -4 ], %g2
+    3910:	82 00 80 01 	add  %g2, %g1, %g1
+    3914:	c4 08 40 00 	ldub  [ %g1 ], %g2
+    3918:	c2 07 bf f4 	ld  [ %fp + -12 ], %g1
+    391c:	82 07 80 01 	add  %fp, %g1, %g1
+    3920:	c4 28 7f d8 	stb  %g2, [ %g1 + -40 ]
+    3924:	c2 07 bf f4 	ld  [ %fp + -12 ], %g1
+    3928:	82 00 60 01 	inc  %g1
+    392c:	c2 27 bf f4 	st  %g1, [ %fp + -12 ]
+    3930:	c2 07 bf f8 	ld  [ %fp + -8 ], %g1
+    3934:	82 00 60 01 	inc  %g1
+    3938:	c2 27 bf f8 	st  %g1, [ %fp + -8 ]
+    393c:	c2 07 bf f8 	ld  [ %fp + -8 ], %g1
+    3940:	80 a0 60 05 	cmp  %g1, 5
+    3944:	04 bf ff d1 	ble  3888 <eaddr+0x5c>
+    3948:	01 00 00 00 	nop 
+    394c:	c2 07 a0 54 	ld  [ %fp + 0x54 ], %g1
+    3950:	82 08 60 10 	and  %g1, 0x10, %g1
+    3954:	80 a0 60 00 	cmp  %g1, 0
+    3958:	12 80 00 18 	bne  39b8 <eaddr+0x18c>
+    395c:	01 00 00 00 	nop 
+    3960:	10 80 00 08 	b  3980 <eaddr+0x154>
+    3964:	01 00 00 00 	nop 
+    3968:	c2 07 a0 44 	ld  [ %fp + 0x44 ], %g1
+    396c:	84 10 20 20 	mov  0x20, %g2
+    3970:	c4 28 40 00 	stb  %g2, [ %g1 ]
+    3974:	c2 07 a0 44 	ld  [ %fp + 0x44 ], %g1
+    3978:	82 00 60 01 	inc  %g1
+    397c:	c2 27 a0 44 	st  %g1, [ %fp + 0x44 ]
+    3980:	82 10 20 01 	mov  1, %g1
+    3984:	c6 07 a0 4c 	ld  [ %fp + 0x4c ], %g3
+    3988:	c4 07 bf f4 	ld  [ %fp + -12 ], %g2
+    398c:	80 a0 c0 02 	cmp  %g3, %g2
+    3990:	14 80 00 03 	bg  399c <eaddr+0x170>
+    3994:	01 00 00 00 	nop 
+    3998:	82 10 20 00 	clr  %g1	! 0 <start>
+    399c:	c4 07 a0 4c 	ld  [ %fp + 0x4c ], %g2
+    39a0:	84 00 bf ff 	add  %g2, -1, %g2
+    39a4:	c4 27 a0 4c 	st  %g2, [ %fp + 0x4c ]
+    39a8:	82 08 60 ff 	and  %g1, 0xff, %g1
+    39ac:	80 a0 60 00 	cmp  %g1, 0
+    39b0:	12 bf ff ee 	bne  3968 <eaddr+0x13c>
+    39b4:	01 00 00 00 	nop 
+    39b8:	c0 27 bf f8 	clr  [ %fp + -8 ]
+    39bc:	10 80 00 0d 	b  39f0 <eaddr+0x1c4>
+    39c0:	01 00 00 00 	nop 
+    39c4:	c2 07 bf f8 	ld  [ %fp + -8 ], %g1
+    39c8:	82 07 80 01 	add  %fp, %g1, %g1
+    39cc:	c4 08 7f d8 	ldub  [ %g1 + -40 ], %g2
+    39d0:	c2 07 a0 44 	ld  [ %fp + 0x44 ], %g1
+    39d4:	c4 28 40 00 	stb  %g2, [ %g1 ]
+    39d8:	c2 07 a0 44 	ld  [ %fp + 0x44 ], %g1
+    39dc:	82 00 60 01 	inc  %g1
+    39e0:	c2 27 a0 44 	st  %g1, [ %fp + 0x44 ]
+    39e4:	c2 07 bf f8 	ld  [ %fp + -8 ], %g1
+    39e8:	82 00 60 01 	inc  %g1
+    39ec:	c2 27 bf f8 	st  %g1, [ %fp + -8 ]
+    39f0:	c4 07 bf f8 	ld  [ %fp + -8 ], %g2
+    39f4:	c2 07 bf f4 	ld  [ %fp + -12 ], %g1
+    39f8:	80 a0 80 01 	cmp  %g2, %g1
+    39fc:	06 bf ff f2 	bl  39c4 <eaddr+0x198>
+    3a00:	01 00 00 00 	nop 
+    3a04:	10 80 00 08 	b  3a24 <eaddr+0x1f8>
+    3a08:	01 00 00 00 	nop 
+    3a0c:	c2 07 a0 44 	ld  [ %fp + 0x44 ], %g1
+    3a10:	84 10 20 20 	mov  0x20, %g2
+    3a14:	c4 28 40 00 	stb  %g2, [ %g1 ]
+    3a18:	c2 07 a0 44 	ld  [ %fp + 0x44 ], %g1
+    3a1c:	82 00 60 01 	inc  %g1
+    3a20:	c2 27 a0 44 	st  %g1, [ %fp + 0x44 ]
+    3a24:	82 10 20 01 	mov  1, %g1
+    3a28:	c6 07 a0 4c 	ld  [ %fp + 0x4c ], %g3
+    3a2c:	c4 07 bf f4 	ld  [ %fp + -12 ], %g2
+    3a30:	80 a0 c0 02 	cmp  %g3, %g2
+    3a34:	14 80 00 03 	bg  3a40 <eaddr+0x214>
+    3a38:	01 00 00 00 	nop 
+    3a3c:	82 10 20 00 	clr  %g1	! 0 <start>
+    3a40:	c4 07 a0 4c 	ld  [ %fp + 0x4c ], %g2
+    3a44:	84 00 bf ff 	add  %g2, -1, %g2
+    3a48:	c4 27 a0 4c 	st  %g2, [ %fp + 0x4c ]
+    3a4c:	82 08 60 ff 	and  %g1, 0xff, %g1
+    3a50:	80 a0 60 00 	cmp  %g1, 0
+    3a54:	12 bf ff ee 	bne  3a0c <eaddr+0x1e0>
+    3a58:	01 00 00 00 	nop 
+    3a5c:	c2 07 a0 44 	ld  [ %fp + 0x44 ], %g1
+    3a60:	b0 10 00 01 	mov  %g1, %i0
+    3a64:	81 e8 00 00 	restore 
+    3a68:	81 c3 e0 08 	retl 
+    3a6c:	01 00 00 00 	nop 
+
+00003a70 <iaddr>:
+    3a70:	9d e3 bf 78 	save  %sp, -136, %sp
+    3a74:	f0 27 a0 44 	st  %i0, [ %fp + 0x44 ]
+    3a78:	f2 27 a0 48 	st  %i1, [ %fp + 0x48 ]
+    3a7c:	f4 27 a0 4c 	st  %i2, [ %fp + 0x4c ]
+    3a80:	f6 27 a0 50 	st  %i3, [ %fp + 0x50 ]
+    3a84:	f8 27 a0 54 	st  %i4, [ %fp + 0x54 ]
+    3a88:	c0 27 bf f4 	clr  [ %fp + -12 ]
+    3a8c:	c0 27 bf fc 	clr  [ %fp + -4 ]
+    3a90:	10 80 00 94 	b  3ce0 <iaddr+0x270>
+    3a94:	01 00 00 00 	nop 
+    3a98:	c2 07 bf fc 	ld  [ %fp + -4 ], %g1
+    3a9c:	80 a0 60 00 	cmp  %g1, 0
+    3aa0:	02 80 00 09 	be  3ac4 <iaddr+0x54>
+    3aa4:	01 00 00 00 	nop 
+    3aa8:	c2 07 bf f4 	ld  [ %fp + -12 ], %g1
+    3aac:	82 07 80 01 	add  %fp, %g1, %g1
+    3ab0:	84 10 20 2e 	mov  0x2e, %g2
+    3ab4:	c4 28 7f d8 	stb  %g2, [ %g1 + -40 ]
+    3ab8:	c2 07 bf f4 	ld  [ %fp + -12 ], %g1
+    3abc:	82 00 60 01 	inc  %g1
+    3ac0:	c2 27 bf f4 	st  %g1, [ %fp + -12 ]
+    3ac4:	c2 07 bf fc 	ld  [ %fp + -4 ], %g1
+    3ac8:	c4 07 a0 48 	ld  [ %fp + 0x48 ], %g2
+    3acc:	82 00 80 01 	add  %g2, %g1, %g1
+    3ad0:	c2 08 40 00 	ldub  [ %g1 ], %g1
+    3ad4:	82 08 60 ff 	and  %g1, 0xff, %g1
+    3ad8:	c2 27 bf f8 	st  %g1, [ %fp + -8 ]
+    3adc:	c2 07 bf f8 	ld  [ %fp + -8 ], %g1
+    3ae0:	80 a0 60 00 	cmp  %g1, 0
+    3ae4:	12 80 00 0e 	bne  3b1c <iaddr+0xac>
+    3ae8:	01 00 00 00 	nop 
+    3aec:	03 00 00 40 	sethi  %hi(0x10000), %g1
+    3af0:	82 10 60 00 	mov  %g1, %g1	! 10000 <digits>
+    3af4:	c2 00 40 00 	ld  [ %g1 ], %g1
+    3af8:	c4 08 40 00 	ldub  [ %g1 ], %g2
+    3afc:	c2 07 bf f4 	ld  [ %fp + -12 ], %g1
+    3b00:	82 07 80 01 	add  %fp, %g1, %g1
+    3b04:	c4 28 7f d8 	stb  %g2, [ %g1 + -40 ]
+    3b08:	c2 07 bf f4 	ld  [ %fp + -12 ], %g1
+    3b0c:	82 00 60 01 	inc  %g1
+    3b10:	c2 27 bf f4 	st  %g1, [ %fp + -12 ]
+    3b14:	10 80 00 70 	b  3cd4 <iaddr+0x264>
+    3b18:	01 00 00 00 	nop 
+    3b1c:	c2 07 bf f8 	ld  [ %fp + -8 ], %g1
+    3b20:	80 a0 60 63 	cmp  %g1, 0x63
+    3b24:	04 80 00 3e 	ble  3c1c <iaddr+0x1ac>
+    3b28:	01 00 00 00 	nop 
+    3b2c:	03 00 00 40 	sethi  %hi(0x10000), %g1
+    3b30:	82 10 60 00 	mov  %g1, %g1	! 10000 <digits>
+    3b34:	c4 00 40 00 	ld  [ %g1 ], %g2
+    3b38:	c2 07 bf f8 	ld  [ %fp + -8 ], %g1
+    3b3c:	87 38 60 1f 	sra  %g1, 0x1f, %g3
+    3b40:	81 80 e0 00 	mov  %g3, %y
+    3b44:	01 00 00 00 	nop 
+    3b48:	01 00 00 00 	nop 
+    3b4c:	01 00 00 00 	nop 
+    3b50:	82 78 60 64 	sdiv  %g1, 0x64, %g1
+    3b54:	82 00 80 01 	add  %g2, %g1, %g1
+    3b58:	c4 08 40 00 	ldub  [ %g1 ], %g2
+    3b5c:	c2 07 bf f4 	ld  [ %fp + -12 ], %g1
+    3b60:	82 07 80 01 	add  %fp, %g1, %g1
+    3b64:	c4 28 7f d8 	stb  %g2, [ %g1 + -40 ]
+    3b68:	c2 07 bf f4 	ld  [ %fp + -12 ], %g1
+    3b6c:	82 00 60 01 	inc  %g1
+    3b70:	c2 27 bf f4 	st  %g1, [ %fp + -12 ]
+    3b74:	c2 07 bf f8 	ld  [ %fp + -8 ], %g1
+    3b78:	87 38 60 1f 	sra  %g1, 0x1f, %g3
+    3b7c:	81 80 e0 00 	mov  %g3, %y
+    3b80:	01 00 00 00 	nop 
+    3b84:	01 00 00 00 	nop 
+    3b88:	01 00 00 00 	nop 
+    3b8c:	84 78 60 64 	sdiv  %g1, 0x64, %g2
+    3b90:	84 58 a0 64 	smul  %g2, 0x64, %g2
+    3b94:	82 20 40 02 	sub  %g1, %g2, %g1
+    3b98:	c2 27 bf f8 	st  %g1, [ %fp + -8 ]
+    3b9c:	03 00 00 40 	sethi  %hi(0x10000), %g1
+    3ba0:	82 10 60 00 	mov  %g1, %g1	! 10000 <digits>
+    3ba4:	c4 00 40 00 	ld  [ %g1 ], %g2
+    3ba8:	c2 07 bf f8 	ld  [ %fp + -8 ], %g1
+    3bac:	87 38 60 1f 	sra  %g1, 0x1f, %g3
+    3bb0:	81 80 e0 00 	mov  %g3, %y
+    3bb4:	01 00 00 00 	nop 
+    3bb8:	01 00 00 00 	nop 
+    3bbc:	01 00 00 00 	nop 
+    3bc0:	82 78 60 0a 	sdiv  %g1, 0xa, %g1
+    3bc4:	82 00 80 01 	add  %g2, %g1, %g1
+    3bc8:	c4 08 40 00 	ldub  [ %g1 ], %g2
+    3bcc:	c2 07 bf f4 	ld  [ %fp + -12 ], %g1
+    3bd0:	82 07 80 01 	add  %fp, %g1, %g1
+    3bd4:	c4 28 7f d8 	stb  %g2, [ %g1 + -40 ]
+    3bd8:	c2 07 bf f4 	ld  [ %fp + -12 ], %g1
+    3bdc:	82 00 60 01 	inc  %g1
+    3be0:	c2 27 bf f4 	st  %g1, [ %fp + -12 ]
+    3be4:	c4 07 bf f8 	ld  [ %fp + -8 ], %g2
+    3be8:	87 38 a0 1f 	sra  %g2, 0x1f, %g3
+    3bec:	81 80 e0 00 	mov  %g3, %y
+    3bf0:	01 00 00 00 	nop 
+    3bf4:	01 00 00 00 	nop 
+    3bf8:	01 00 00 00 	nop 
+    3bfc:	82 78 a0 0a 	sdiv  %g2, 0xa, %g1
+    3c00:	82 00 40 01 	add  %g1, %g1, %g1
+    3c04:	87 28 60 02 	sll  %g1, 2, %g3
+    3c08:	82 00 40 03 	add  %g1, %g3, %g1
+    3c0c:	82 20 80 01 	sub  %g2, %g1, %g1
+    3c10:	c2 27 bf f8 	st  %g1, [ %fp + -8 ]
+    3c14:	10 80 00 24 	b  3ca4 <iaddr+0x234>
+    3c18:	01 00 00 00 	nop 
+    3c1c:	c2 07 bf f8 	ld  [ %fp + -8 ], %g1
+    3c20:	80 a0 60 09 	cmp  %g1, 9
+    3c24:	04 80 00 20 	ble  3ca4 <iaddr+0x234>
+    3c28:	01 00 00 00 	nop 
+    3c2c:	03 00 00 40 	sethi  %hi(0x10000), %g1
+    3c30:	82 10 60 00 	mov  %g1, %g1	! 10000 <digits>
+    3c34:	c4 00 40 00 	ld  [ %g1 ], %g2
+    3c38:	c2 07 bf f8 	ld  [ %fp + -8 ], %g1
+    3c3c:	87 38 60 1f 	sra  %g1, 0x1f, %g3
+    3c40:	81 80 e0 00 	mov  %g3, %y
+    3c44:	01 00 00 00 	nop 
+    3c48:	01 00 00 00 	nop 
+    3c4c:	01 00 00 00 	nop 
+    3c50:	82 78 60 0a 	sdiv  %g1, 0xa, %g1
+    3c54:	82 00 80 01 	add  %g2, %g1, %g1
+    3c58:	c4 08 40 00 	ldub  [ %g1 ], %g2
+    3c5c:	c2 07 bf f4 	ld  [ %fp + -12 ], %g1
+    3c60:	82 07 80 01 	add  %fp, %g1, %g1
+    3c64:	c4 28 7f d8 	stb  %g2, [ %g1 + -40 ]
+    3c68:	c2 07 bf f4 	ld  [ %fp + -12 ], %g1
+    3c6c:	82 00 60 01 	inc  %g1
+    3c70:	c2 27 bf f4 	st  %g1, [ %fp + -12 ]
+    3c74:	c4 07 bf f8 	ld  [ %fp + -8 ], %g2
+    3c78:	87 38 a0 1f 	sra  %g2, 0x1f, %g3
+    3c7c:	81 80 e0 00 	mov  %g3, %y
+    3c80:	01 00 00 00 	nop 
+    3c84:	01 00 00 00 	nop 
+    3c88:	01 00 00 00 	nop 
+    3c8c:	82 78 a0 0a 	sdiv  %g2, 0xa, %g1
+    3c90:	82 00 40 01 	add  %g1, %g1, %g1
+    3c94:	87 28 60 02 	sll  %g1, 2, %g3
+    3c98:	82 00 40 03 	add  %g1, %g3, %g1
+    3c9c:	82 20 80 01 	sub  %g2, %g1, %g1
+    3ca0:	c2 27 bf f8 	st  %g1, [ %fp + -8 ]
+    3ca4:	03 00 00 40 	sethi  %hi(0x10000), %g1
+    3ca8:	82 10 60 00 	mov  %g1, %g1	! 10000 <digits>
+    3cac:	c4 00 40 00 	ld  [ %g1 ], %g2
+    3cb0:	c2 07 bf f8 	ld  [ %fp + -8 ], %g1
+    3cb4:	82 00 80 01 	add  %g2, %g1, %g1
+    3cb8:	c4 08 40 00 	ldub  [ %g1 ], %g2
+    3cbc:	c2 07 bf f4 	ld  [ %fp + -12 ], %g1
+    3cc0:	82 07 80 01 	add  %fp, %g1, %g1
+    3cc4:	c4 28 7f d8 	stb  %g2, [ %g1 + -40 ]
+    3cc8:	c2 07 bf f4 	ld  [ %fp + -12 ], %g1
+    3ccc:	82 00 60 01 	inc  %g1
+    3cd0:	c2 27 bf f4 	st  %g1, [ %fp + -12 ]
+    3cd4:	c2 07 bf fc 	ld  [ %fp + -4 ], %g1
+    3cd8:	82 00 60 01 	inc  %g1
+    3cdc:	c2 27 bf fc 	st  %g1, [ %fp + -4 ]
+    3ce0:	c2 07 bf fc 	ld  [ %fp + -4 ], %g1
+    3ce4:	80 a0 60 03 	cmp  %g1, 3
+    3ce8:	04 bf ff 6c 	ble  3a98 <iaddr+0x28>
+    3cec:	01 00 00 00 	nop 
+    3cf0:	c2 07 a0 54 	ld  [ %fp + 0x54 ], %g1
+    3cf4:	82 08 60 10 	and  %g1, 0x10, %g1
+    3cf8:	80 a0 60 00 	cmp  %g1, 0
+    3cfc:	12 80 00 18 	bne  3d5c <iaddr+0x2ec>
+    3d00:	01 00 00 00 	nop 
+    3d04:	10 80 00 08 	b  3d24 <iaddr+0x2b4>
+    3d08:	01 00 00 00 	nop 
+    3d0c:	c2 07 a0 44 	ld  [ %fp + 0x44 ], %g1
+    3d10:	84 10 20 20 	mov  0x20, %g2
+    3d14:	c4 28 40 00 	stb  %g2, [ %g1 ]
+    3d18:	c2 07 a0 44 	ld  [ %fp + 0x44 ], %g1
+    3d1c:	82 00 60 01 	inc  %g1
+    3d20:	c2 27 a0 44 	st  %g1, [ %fp + 0x44 ]
+    3d24:	82 10 20 01 	mov  1, %g1
+    3d28:	c6 07 a0 4c 	ld  [ %fp + 0x4c ], %g3
+    3d2c:	c4 07 bf f4 	ld  [ %fp + -12 ], %g2
+    3d30:	80 a0 c0 02 	cmp  %g3, %g2
+    3d34:	14 80 00 03 	bg  3d40 <iaddr+0x2d0>
+    3d38:	01 00 00 00 	nop 
+    3d3c:	82 10 20 00 	clr  %g1	! 0 <start>
+    3d40:	c4 07 a0 4c 	ld  [ %fp + 0x4c ], %g2
+    3d44:	84 00 bf ff 	add  %g2, -1, %g2
+    3d48:	c4 27 a0 4c 	st  %g2, [ %fp + 0x4c ]
+    3d4c:	82 08 60 ff 	and  %g1, 0xff, %g1
+    3d50:	80 a0 60 00 	cmp  %g1, 0
+    3d54:	12 bf ff ee 	bne  3d0c <iaddr+0x29c>
+    3d58:	01 00 00 00 	nop 
+    3d5c:	c0 27 bf fc 	clr  [ %fp + -4 ]
+    3d60:	10 80 00 0d 	b  3d94 <iaddr+0x324>
+    3d64:	01 00 00 00 	nop 
+    3d68:	c2 07 bf fc 	ld  [ %fp + -4 ], %g1
+    3d6c:	82 07 80 01 	add  %fp, %g1, %g1
+    3d70:	c4 08 7f d8 	ldub  [ %g1 + -40 ], %g2
+    3d74:	c2 07 a0 44 	ld  [ %fp + 0x44 ], %g1
+    3d78:	c4 28 40 00 	stb  %g2, [ %g1 ]
+    3d7c:	c2 07 a0 44 	ld  [ %fp + 0x44 ], %g1
+    3d80:	82 00 60 01 	inc  %g1
+    3d84:	c2 27 a0 44 	st  %g1, [ %fp + 0x44 ]
+    3d88:	c2 07 bf fc 	ld  [ %fp + -4 ], %g1
+    3d8c:	82 00 60 01 	inc  %g1
+    3d90:	c2 27 bf fc 	st  %g1, [ %fp + -4 ]
+    3d94:	c4 07 bf fc 	ld  [ %fp + -4 ], %g2
+    3d98:	c2 07 bf f4 	ld  [ %fp + -12 ], %g1
+    3d9c:	80 a0 80 01 	cmp  %g2, %g1
+    3da0:	06 bf ff f2 	bl  3d68 <iaddr+0x2f8>
+    3da4:	01 00 00 00 	nop 
+    3da8:	10 80 00 08 	b  3dc8 <iaddr+0x358>
+    3dac:	01 00 00 00 	nop 
+    3db0:	c2 07 a0 44 	ld  [ %fp + 0x44 ], %g1
+    3db4:	84 10 20 20 	mov  0x20, %g2
+    3db8:	c4 28 40 00 	stb  %g2, [ %g1 ]
+    3dbc:	c2 07 a0 44 	ld  [ %fp + 0x44 ], %g1
+    3dc0:	82 00 60 01 	inc  %g1
+    3dc4:	c2 27 a0 44 	st  %g1, [ %fp + 0x44 ]
+    3dc8:	82 10 20 01 	mov  1, %g1
+    3dcc:	c6 07 a0 4c 	ld  [ %fp + 0x4c ], %g3
+    3dd0:	c4 07 bf f4 	ld  [ %fp + -12 ], %g2
+    3dd4:	80 a0 c0 02 	cmp  %g3, %g2
+    3dd8:	14 80 00 03 	bg  3de4 <iaddr+0x374>
+    3ddc:	01 00 00 00 	nop 
+    3de0:	82 10 20 00 	clr  %g1	! 0 <start>
+    3de4:	c4 07 a0 4c 	ld  [ %fp + 0x4c ], %g2
+    3de8:	84 00 bf ff 	add  %g2, -1, %g2
+    3dec:	c4 27 a0 4c 	st  %g2, [ %fp + 0x4c ]
+    3df0:	82 08 60 ff 	and  %g1, 0xff, %g1
+    3df4:	80 a0 60 00 	cmp  %g1, 0
+    3df8:	12 bf ff ee 	bne  3db0 <iaddr+0x340>
+    3dfc:	01 00 00 00 	nop 
+    3e00:	c2 07 a0 44 	ld  [ %fp + 0x44 ], %g1
+    3e04:	b0 10 00 01 	mov  %g1, %i0
+    3e08:	81 e8 00 00 	restore 
+    3e0c:	81 c3 e0 08 	retl 
+    3e10:	01 00 00 00 	nop 
+
+00003e14 <ee_vsprintf>:
+    3e14:	9d e3 bf 78 	save  %sp, -136, %sp
+    3e18:	f0 27 a0 44 	st  %i0, [ %fp + 0x44 ]
+    3e1c:	f2 27 a0 48 	st  %i1, [ %fp + 0x48 ]
+    3e20:	f4 27 a0 4c 	st  %i2, [ %fp + 0x4c ]
+    3e24:	c2 07 a0 44 	ld  [ %fp + 0x44 ], %g1
+    3e28:	c2 27 bf f0 	st  %g1, [ %fp + -16 ]
+    3e2c:	10 80 01 f5 	b  4600 <ee_vsprintf+0x7ec>
+    3e30:	01 00 00 00 	nop 
+    3e34:	c2 07 a0 48 	ld  [ %fp + 0x48 ], %g1
+    3e38:	c2 08 40 00 	ldub  [ %g1 ], %g1
+    3e3c:	83 28 60 18 	sll  %g1, 0x18, %g1
+    3e40:	83 38 60 18 	sra  %g1, 0x18, %g1
+    3e44:	80 a0 60 25 	cmp  %g1, 0x25
+    3e48:	02 80 00 0b 	be  3e74 <ee_vsprintf+0x60>
+    3e4c:	01 00 00 00 	nop 
+    3e50:	c2 07 a0 48 	ld  [ %fp + 0x48 ], %g1
+    3e54:	c4 08 40 00 	ldub  [ %g1 ], %g2
+    3e58:	c2 07 bf f0 	ld  [ %fp + -16 ], %g1
+    3e5c:	c4 28 40 00 	stb  %g2, [ %g1 ]
+    3e60:	c2 07 bf f0 	ld  [ %fp + -16 ], %g1
+    3e64:	82 00 60 01 	inc  %g1
+    3e68:	c2 27 bf f0 	st  %g1, [ %fp + -16 ]
+    3e6c:	10 80 01 e2 	b  45f4 <ee_vsprintf+0x7e0>
+    3e70:	01 00 00 00 	nop 
+    3e74:	c0 27 bf e8 	clr  [ %fp + -24 ]
+    3e78:	c2 07 a0 48 	ld  [ %fp + 0x48 ], %g1
+    3e7c:	82 00 60 01 	inc  %g1
+    3e80:	c2 27 a0 48 	st  %g1, [ %fp + 0x48 ]
+    3e84:	c2 07 a0 48 	ld  [ %fp + 0x48 ], %g1
+    3e88:	c2 08 40 00 	ldub  [ %g1 ], %g1
+    3e8c:	83 28 60 18 	sll  %g1, 0x18, %g1
+    3e90:	83 38 60 18 	sra  %g1, 0x18, %g1
+    3e94:	82 00 7f e0 	add  %g1, -32, %g1
+    3e98:	80 a0 60 10 	cmp  %g1, 0x10
+    3e9c:	18 80 00 21 	bgu  3f20 <ee_vsprintf+0x10c>
+    3ea0:	01 00 00 00 	nop 
+    3ea4:	85 28 60 02 	sll  %g1, 2, %g2
+    3ea8:	03 00 00 0c 	sethi  %hi(0x3000), %g1
+    3eac:	82 10 61 04 	or  %g1, 0x104, %g1	! 3104 <end+0xe4>
+    3eb0:	c2 00 80 01 	ld  [ %g2 + %g1 ], %g1
+    3eb4:	81 c0 40 00 	jmp  %g1
+    3eb8:	01 00 00 00 	nop 
+    3ebc:	c2 07 bf e8 	ld  [ %fp + -24 ], %g1
+    3ec0:	82 10 60 10 	or  %g1, 0x10, %g1
+    3ec4:	c2 27 bf e8 	st  %g1, [ %fp + -24 ]
+    3ec8:	10 bf ff ec 	b  3e78 <ee_vsprintf+0x64>
+    3ecc:	01 00 00 00 	nop 
+    3ed0:	c2 07 bf e8 	ld  [ %fp + -24 ], %g1
+    3ed4:	82 10 60 04 	or  %g1, 4, %g1
+    3ed8:	c2 27 bf e8 	st  %g1, [ %fp + -24 ]
+    3edc:	10 bf ff e7 	b  3e78 <ee_vsprintf+0x64>
+    3ee0:	01 00 00 00 	nop 
+    3ee4:	c2 07 bf e8 	ld  [ %fp + -24 ], %g1
+    3ee8:	82 10 60 08 	or  %g1, 8, %g1
+    3eec:	c2 27 bf e8 	st  %g1, [ %fp + -24 ]
+    3ef0:	10 bf ff e2 	b  3e78 <ee_vsprintf+0x64>
+    3ef4:	01 00 00 00 	nop 
+    3ef8:	c2 07 bf e8 	ld  [ %fp + -24 ], %g1
+    3efc:	82 10 60 20 	or  %g1, 0x20, %g1
+    3f00:	c2 27 bf e8 	st  %g1, [ %fp + -24 ]
+    3f04:	10 bf ff dd 	b  3e78 <ee_vsprintf+0x64>
+    3f08:	01 00 00 00 	nop 
+    3f0c:	c2 07 bf e8 	ld  [ %fp + -24 ], %g1
+    3f10:	82 10 60 01 	or  %g1, 1, %g1
+    3f14:	c2 27 bf e8 	st  %g1, [ %fp + -24 ]
+    3f18:	10 bf ff d8 	b  3e78 <ee_vsprintf+0x64>
+    3f1c:	01 00 00 00 	nop 
+    3f20:	82 10 3f ff 	mov  -1, %g1	! ffffffff <CVTBUF+0xfffefff7>
+    3f24:	c2 27 bf e4 	st  %g1, [ %fp + -28 ]
+    3f28:	c2 07 a0 48 	ld  [ %fp + 0x48 ], %g1
+    3f2c:	c2 08 40 00 	ldub  [ %g1 ], %g1
+    3f30:	83 28 60 18 	sll  %g1, 0x18, %g1
+    3f34:	83 38 60 18 	sra  %g1, 0x18, %g1
+    3f38:	80 a0 60 2f 	cmp  %g1, 0x2f
+    3f3c:	04 80 00 10 	ble  3f7c <ee_vsprintf+0x168>
+    3f40:	01 00 00 00 	nop 
+    3f44:	c2 07 a0 48 	ld  [ %fp + 0x48 ], %g1
+    3f48:	c2 08 40 00 	ldub  [ %g1 ], %g1
+    3f4c:	83 28 60 18 	sll  %g1, 0x18, %g1
+    3f50:	83 38 60 18 	sra  %g1, 0x18, %g1
+    3f54:	80 a0 60 39 	cmp  %g1, 0x39
+    3f58:	14 80 00 09 	bg  3f7c <ee_vsprintf+0x168>
+    3f5c:	01 00 00 00 	nop 
+    3f60:	82 07 a0 48 	add  %fp, 0x48, %g1
+    3f64:	90 10 00 01 	mov  %g1, %o0
+    3f68:	7f ff fc b7 	call  3244 <skip_atoi>
+    3f6c:	01 00 00 00 	nop 
+    3f70:	d0 27 bf e4 	st  %o0, [ %fp + -28 ]
+    3f74:	10 80 00 1c 	b  3fe4 <ee_vsprintf+0x1d0>
+    3f78:	01 00 00 00 	nop 
+    3f7c:	c2 07 a0 48 	ld  [ %fp + 0x48 ], %g1
+    3f80:	c2 08 40 00 	ldub  [ %g1 ], %g1
+    3f84:	83 28 60 18 	sll  %g1, 0x18, %g1
+    3f88:	83 38 60 18 	sra  %g1, 0x18, %g1
+    3f8c:	80 a0 60 2a 	cmp  %g1, 0x2a
+    3f90:	12 80 00 15 	bne  3fe4 <ee_vsprintf+0x1d0>
+    3f94:	01 00 00 00 	nop 
+    3f98:	c2 07 a0 48 	ld  [ %fp + 0x48 ], %g1
+    3f9c:	82 00 60 01 	inc  %g1
+    3fa0:	c2 27 a0 48 	st  %g1, [ %fp + 0x48 ]
+    3fa4:	c2 07 a0 4c 	ld  [ %fp + 0x4c ], %g1
+    3fa8:	c2 00 40 00 	ld  [ %g1 ], %g1
+    3fac:	c2 27 bf e4 	st  %g1, [ %fp + -28 ]
+    3fb0:	c2 07 a0 4c 	ld  [ %fp + 0x4c ], %g1
+    3fb4:	82 00 60 04 	add  %g1, 4, %g1
+    3fb8:	c2 27 a0 4c 	st  %g1, [ %fp + 0x4c ]
+    3fbc:	c2 07 bf e4 	ld  [ %fp + -28 ], %g1
+    3fc0:	80 a0 60 00 	cmp  %g1, 0
+    3fc4:	16 80 00 08 	bge  3fe4 <ee_vsprintf+0x1d0>
+    3fc8:	01 00 00 00 	nop 
+    3fcc:	c2 07 bf e4 	ld  [ %fp + -28 ], %g1
+    3fd0:	82 20 00 01 	neg  %g1
+    3fd4:	c2 27 bf e4 	st  %g1, [ %fp + -28 ]
+    3fd8:	c2 07 bf e8 	ld  [ %fp + -24 ], %g1
+    3fdc:	82 10 60 10 	or  %g1, 0x10, %g1
+    3fe0:	c2 27 bf e8 	st  %g1, [ %fp + -24 ]
+    3fe4:	82 10 3f ff 	mov  -1, %g1
+    3fe8:	c2 27 bf e0 	st  %g1, [ %fp + -32 ]
+    3fec:	c2 07 a0 48 	ld  [ %fp + 0x48 ], %g1
+    3ff0:	c2 08 40 00 	ldub  [ %g1 ], %g1
+    3ff4:	83 28 60 18 	sll  %g1, 0x18, %g1
+    3ff8:	83 38 60 18 	sra  %g1, 0x18, %g1
+    3ffc:	80 a0 60 2e 	cmp  %g1, 0x2e
+    4000:	12 80 00 2f 	bne  40bc <ee_vsprintf+0x2a8>
+    4004:	01 00 00 00 	nop 
+    4008:	c2 07 a0 48 	ld  [ %fp + 0x48 ], %g1
+    400c:	82 00 60 01 	inc  %g1
+    4010:	c2 27 a0 48 	st  %g1, [ %fp + 0x48 ]
+    4014:	c2 07 a0 48 	ld  [ %fp + 0x48 ], %g1
+    4018:	c2 08 40 00 	ldub  [ %g1 ], %g1
+    401c:	83 28 60 18 	sll  %g1, 0x18, %g1
+    4020:	83 38 60 18 	sra  %g1, 0x18, %g1
+    4024:	80 a0 60 2f 	cmp  %g1, 0x2f
+    4028:	04 80 00 10 	ble  4068 <ee_vsprintf+0x254>
+    402c:	01 00 00 00 	nop 
+    4030:	c2 07 a0 48 	ld  [ %fp + 0x48 ], %g1
+    4034:	c2 08 40 00 	ldub  [ %g1 ], %g1
+    4038:	83 28 60 18 	sll  %g1, 0x18, %g1
+    403c:	83 38 60 18 	sra  %g1, 0x18, %g1
+    4040:	80 a0 60 39 	cmp  %g1, 0x39
+    4044:	14 80 00 09 	bg  4068 <ee_vsprintf+0x254>
+    4048:	01 00 00 00 	nop 
+    404c:	82 07 a0 48 	add  %fp, 0x48, %g1
+    4050:	90 10 00 01 	mov  %g1, %o0
+    4054:	7f ff fc 7c 	call  3244 <skip_atoi>
+    4058:	01 00 00 00 	nop 
+    405c:	d0 27 bf e0 	st  %o0, [ %fp + -32 ]
+    4060:	10 80 00 12 	b  40a8 <ee_vsprintf+0x294>
+    4064:	01 00 00 00 	nop 
+    4068:	c2 07 a0 48 	ld  [ %fp + 0x48 ], %g1
+    406c:	c2 08 40 00 	ldub  [ %g1 ], %g1
+    4070:	83 28 60 18 	sll  %g1, 0x18, %g1
+    4074:	83 38 60 18 	sra  %g1, 0x18, %g1
+    4078:	80 a0 60 2a 	cmp  %g1, 0x2a
+    407c:	12 80 00 0b 	bne  40a8 <ee_vsprintf+0x294>
+    4080:	01 00 00 00 	nop 
+    4084:	c2 07 a0 48 	ld  [ %fp + 0x48 ], %g1
+    4088:	82 00 60 01 	inc  %g1
+    408c:	c2 27 a0 48 	st  %g1, [ %fp + 0x48 ]
+    4090:	c2 07 a0 4c 	ld  [ %fp + 0x4c ], %g1
+    4094:	c2 00 40 00 	ld  [ %g1 ], %g1
+    4098:	c2 27 bf e0 	st  %g1, [ %fp + -32 ]
+    409c:	c2 07 a0 4c 	ld  [ %fp + 0x4c ], %g1
+    40a0:	82 00 60 04 	add  %g1, 4, %g1
+    40a4:	c2 27 a0 4c 	st  %g1, [ %fp + 0x4c ]
+    40a8:	c2 07 bf e0 	ld  [ %fp + -32 ], %g1
+    40ac:	80 a0 60 00 	cmp  %g1, 0
+    40b0:	16 80 00 03 	bge  40bc <ee_vsprintf+0x2a8>
+    40b4:	01 00 00 00 	nop 
+    40b8:	c0 27 bf e0 	clr  [ %fp + -32 ]
+    40bc:	82 10 3f ff 	mov  -1, %g1
+    40c0:	c2 27 bf dc 	st  %g1, [ %fp + -36 ]
+    40c4:	c2 07 a0 48 	ld  [ %fp + 0x48 ], %g1
+    40c8:	c2 08 40 00 	ldub  [ %g1 ], %g1
+    40cc:	83 28 60 18 	sll  %g1, 0x18, %g1
+    40d0:	83 38 60 18 	sra  %g1, 0x18, %g1
+    40d4:	80 a0 60 6c 	cmp  %g1, 0x6c
+    40d8:	02 80 00 09 	be  40fc <ee_vsprintf+0x2e8>
+    40dc:	01 00 00 00 	nop 
+    40e0:	c2 07 a0 48 	ld  [ %fp + 0x48 ], %g1
+    40e4:	c2 08 40 00 	ldub  [ %g1 ], %g1
+    40e8:	83 28 60 18 	sll  %g1, 0x18, %g1
+    40ec:	83 38 60 18 	sra  %g1, 0x18, %g1
+    40f0:	80 a0 60 4c 	cmp  %g1, 0x4c
+    40f4:	12 80 00 0a 	bne  411c <ee_vsprintf+0x308>
+    40f8:	01 00 00 00 	nop 
+    40fc:	c2 07 a0 48 	ld  [ %fp + 0x48 ], %g1
+    4100:	c2 08 40 00 	ldub  [ %g1 ], %g1
+    4104:	83 28 60 18 	sll  %g1, 0x18, %g1
+    4108:	83 38 60 18 	sra  %g1, 0x18, %g1
+    410c:	c2 27 bf dc 	st  %g1, [ %fp + -36 ]
+    4110:	c2 07 a0 48 	ld  [ %fp + 0x48 ], %g1
+    4114:	82 00 60 01 	inc  %g1
+    4118:	c2 27 a0 48 	st  %g1, [ %fp + 0x48 ]
+    411c:	82 10 20 0a 	mov  0xa, %g1
+    4120:	c2 27 bf f4 	st  %g1, [ %fp + -12 ]
+    4124:	c2 07 a0 48 	ld  [ %fp + 0x48 ], %g1
+    4128:	c2 08 40 00 	ldub  [ %g1 ], %g1
+    412c:	83 28 60 18 	sll  %g1, 0x18, %g1
+    4130:	83 38 60 18 	sra  %g1, 0x18, %g1
+    4134:	82 00 7f bf 	add  %g1, -65, %g1
+    4138:	80 a0 60 37 	cmp  %g1, 0x37
+    413c:	18 80 00 e2 	bgu  44c4 <ee_vsprintf+0x6b0>
+    4140:	01 00 00 00 	nop 
+    4144:	85 28 60 02 	sll  %g1, 2, %g2
+    4148:	03 00 00 0c 	sethi  %hi(0x3000), %g1
+    414c:	82 10 60 24 	or  %g1, 0x24, %g1	! 3024 <end+0x4>
+    4150:	c2 00 80 01 	ld  [ %g2 + %g1 ], %g1
+    4154:	81 c0 40 00 	jmp  %g1
+    4158:	01 00 00 00 	nop 
+    415c:	c2 07 bf e8 	ld  [ %fp + -24 ], %g1
+    4160:	82 08 60 10 	and  %g1, 0x10, %g1
+    4164:	80 a0 60 00 	cmp  %g1, 0
+    4168:	12 80 00 11 	bne  41ac <ee_vsprintf+0x398>
+    416c:	01 00 00 00 	nop 
+    4170:	10 80 00 08 	b  4190 <ee_vsprintf+0x37c>
+    4174:	01 00 00 00 	nop 
+    4178:	c2 07 bf f0 	ld  [ %fp + -16 ], %g1
+    417c:	84 10 20 20 	mov  0x20, %g2
+    4180:	c4 28 40 00 	stb  %g2, [ %g1 ]
+    4184:	c2 07 bf f0 	ld  [ %fp + -16 ], %g1
+    4188:	82 00 60 01 	inc  %g1
+    418c:	c2 27 bf f0 	st  %g1, [ %fp + -16 ]
+    4190:	c2 07 bf e4 	ld  [ %fp + -28 ], %g1
+    4194:	82 00 7f ff 	add  %g1, -1, %g1
+    4198:	c2 27 bf e4 	st  %g1, [ %fp + -28 ]
+    419c:	c2 07 bf e4 	ld  [ %fp + -28 ], %g1
+    41a0:	80 a0 60 00 	cmp  %g1, 0
+    41a4:	14 bf ff f5 	bg  4178 <ee_vsprintf+0x364>
+    41a8:	01 00 00 00 	nop 
+    41ac:	c2 07 a0 4c 	ld  [ %fp + 0x4c ], %g1
+    41b0:	c2 00 40 00 	ld  [ %g1 ], %g1
+    41b4:	84 10 00 01 	mov  %g1, %g2
+    41b8:	c2 07 bf f0 	ld  [ %fp + -16 ], %g1
+    41bc:	c4 28 40 00 	stb  %g2, [ %g1 ]
+    41c0:	c2 07 bf f0 	ld  [ %fp + -16 ], %g1
+    41c4:	82 00 60 01 	inc  %g1
+    41c8:	c2 27 bf f0 	st  %g1, [ %fp + -16 ]
+    41cc:	c2 07 a0 4c 	ld  [ %fp + 0x4c ], %g1
+    41d0:	82 00 60 04 	add  %g1, 4, %g1
+    41d4:	c2 27 a0 4c 	st  %g1, [ %fp + 0x4c ]
+    41d8:	10 80 00 08 	b  41f8 <ee_vsprintf+0x3e4>
+    41dc:	01 00 00 00 	nop 
+    41e0:	c2 07 bf f0 	ld  [ %fp + -16 ], %g1
+    41e4:	84 10 20 20 	mov  0x20, %g2
+    41e8:	c4 28 40 00 	stb  %g2, [ %g1 ]
+    41ec:	c2 07 bf f0 	ld  [ %fp + -16 ], %g1
+    41f0:	82 00 60 01 	inc  %g1
+    41f4:	c2 27 bf f0 	st  %g1, [ %fp + -16 ]
+    41f8:	c2 07 bf e4 	ld  [ %fp + -28 ], %g1
+    41fc:	82 00 7f ff 	add  %g1, -1, %g1
+    4200:	c2 27 bf e4 	st  %g1, [ %fp + -28 ]
+    4204:	c2 07 bf e4 	ld  [ %fp + -28 ], %g1
+    4208:	80 a0 60 00 	cmp  %g1, 0
+    420c:	14 bf ff f5 	bg  41e0 <ee_vsprintf+0x3cc>
+    4210:	01 00 00 00 	nop 
+    4214:	10 80 00 f8 	b  45f4 <ee_vsprintf+0x7e0>
+    4218:	01 00 00 00 	nop 
+    421c:	c2 07 a0 4c 	ld  [ %fp + 0x4c ], %g1
+    4220:	c2 00 40 00 	ld  [ %g1 ], %g1
+    4224:	c2 27 bf ec 	st  %g1, [ %fp + -20 ]
+    4228:	c2 07 a0 4c 	ld  [ %fp + 0x4c ], %g1
+    422c:	82 00 60 04 	add  %g1, 4, %g1
+    4230:	c2 27 a0 4c 	st  %g1, [ %fp + 0x4c ]
+    4234:	c2 07 bf ec 	ld  [ %fp + -20 ], %g1
+    4238:	80 a0 60 00 	cmp  %g1, 0
+    423c:	12 80 00 05 	bne  4250 <ee_vsprintf+0x43c>
+    4240:	01 00 00 00 	nop 
+    4244:	03 00 00 40 	sethi  %hi(0x10000), %g1
+    4248:	82 10 60 a8 	or  %g1, 0xa8, %g1	! 100a8 <CVTBUF+0xa0>
+    424c:	c2 27 bf ec 	st  %g1, [ %fp + -20 ]
+    4250:	c2 07 bf e0 	ld  [ %fp + -32 ], %g1
+    4254:	d0 07 bf ec 	ld  [ %fp + -20 ], %o0
+    4258:	92 10 00 01 	mov  %g1, %o1
+    425c:	7f ff fb d7 	call  31b8 <strnlen>
+    4260:	01 00 00 00 	nop 
+    4264:	82 10 00 08 	mov  %o0, %g1
+    4268:	c2 27 bf d8 	st  %g1, [ %fp + -40 ]
+    426c:	c2 07 bf e8 	ld  [ %fp + -24 ], %g1
+    4270:	82 08 60 10 	and  %g1, 0x10, %g1
+    4274:	80 a0 60 00 	cmp  %g1, 0
+    4278:	12 80 00 18 	bne  42d8 <ee_vsprintf+0x4c4>
+    427c:	01 00 00 00 	nop 
+    4280:	10 80 00 08 	b  42a0 <ee_vsprintf+0x48c>
+    4284:	01 00 00 00 	nop 
+    4288:	c2 07 bf f0 	ld  [ %fp + -16 ], %g1
+    428c:	84 10 20 20 	mov  0x20, %g2
+    4290:	c4 28 40 00 	stb  %g2, [ %g1 ]
+    4294:	c2 07 bf f0 	ld  [ %fp + -16 ], %g1
+    4298:	82 00 60 01 	inc  %g1
+    429c:	c2 27 bf f0 	st  %g1, [ %fp + -16 ]
+    42a0:	82 10 20 01 	mov  1, %g1
+    42a4:	c6 07 bf e4 	ld  [ %fp + -28 ], %g3
+    42a8:	c4 07 bf d8 	ld  [ %fp + -40 ], %g2
+    42ac:	80 a0 c0 02 	cmp  %g3, %g2
+    42b0:	14 80 00 03 	bg  42bc <ee_vsprintf+0x4a8>
+    42b4:	01 00 00 00 	nop 
+    42b8:	82 10 20 00 	clr  %g1	! 0 <start>
+    42bc:	c4 07 bf e4 	ld  [ %fp + -28 ], %g2
+    42c0:	84 00 bf ff 	add  %g2, -1, %g2
+    42c4:	c4 27 bf e4 	st  %g2, [ %fp + -28 ]
+    42c8:	82 08 60 ff 	and  %g1, 0xff, %g1
+    42cc:	80 a0 60 00 	cmp  %g1, 0
+    42d0:	12 bf ff ee 	bne  4288 <ee_vsprintf+0x474>
+    42d4:	01 00 00 00 	nop 
+    42d8:	c0 27 bf f8 	clr  [ %fp + -8 ]
+    42dc:	10 80 00 0f 	b  4318 <ee_vsprintf+0x504>
+    42e0:	01 00 00 00 	nop 
+    42e4:	c2 07 bf ec 	ld  [ %fp + -20 ], %g1
+    42e8:	c4 08 40 00 	ldub  [ %g1 ], %g2
+    42ec:	c2 07 bf f0 	ld  [ %fp + -16 ], %g1
+    42f0:	c4 28 40 00 	stb  %g2, [ %g1 ]
+    42f4:	c2 07 bf f0 	ld  [ %fp + -16 ], %g1
+    42f8:	82 00 60 01 	inc  %g1
+    42fc:	c2 27 bf f0 	st  %g1, [ %fp + -16 ]
+    4300:	c2 07 bf ec 	ld  [ %fp + -20 ], %g1
+    4304:	82 00 60 01 	inc  %g1
+    4308:	c2 27 bf ec 	st  %g1, [ %fp + -20 ]
+    430c:	c2 07 bf f8 	ld  [ %fp + -8 ], %g1
+    4310:	82 00 60 01 	inc  %g1
+    4314:	c2 27 bf f8 	st  %g1, [ %fp + -8 ]
+    4318:	c4 07 bf f8 	ld  [ %fp + -8 ], %g2
+    431c:	c2 07 bf d8 	ld  [ %fp + -40 ], %g1
+    4320:	80 a0 80 01 	cmp  %g2, %g1
+    4324:	06 bf ff f0 	bl  42e4 <ee_vsprintf+0x4d0>
+    4328:	01 00 00 00 	nop 
+    432c:	10 80 00 08 	b  434c <ee_vsprintf+0x538>
+    4330:	01 00 00 00 	nop 
+    4334:	c2 07 bf f0 	ld  [ %fp + -16 ], %g1
+    4338:	84 10 20 20 	mov  0x20, %g2
+    433c:	c4 28 40 00 	stb  %g2, [ %g1 ]
+    4340:	c2 07 bf f0 	ld  [ %fp + -16 ], %g1
+    4344:	82 00 60 01 	inc  %g1
+    4348:	c2 27 bf f0 	st  %g1, [ %fp + -16 ]
+    434c:	82 10 20 01 	mov  1, %g1
+    4350:	c6 07 bf e4 	ld  [ %fp + -28 ], %g3
+    4354:	c4 07 bf d8 	ld  [ %fp + -40 ], %g2
+    4358:	80 a0 c0 02 	cmp  %g3, %g2
+    435c:	14 80 00 03 	bg  4368 <ee_vsprintf+0x554>
+    4360:	01 00 00 00 	nop 
+    4364:	82 10 20 00 	clr  %g1	! 0 <start>
+    4368:	c4 07 bf e4 	ld  [ %fp + -28 ], %g2
+    436c:	84 00 bf ff 	add  %g2, -1, %g2
+    4370:	c4 27 bf e4 	st  %g2, [ %fp + -28 ]
+    4374:	82 08 60 ff 	and  %g1, 0xff, %g1
+    4378:	80 a0 60 00 	cmp  %g1, 0
+    437c:	12 bf ff ee 	bne  4334 <ee_vsprintf+0x520>
+    4380:	01 00 00 00 	nop 
+    4384:	10 80 00 9c 	b  45f4 <ee_vsprintf+0x7e0>
+    4388:	01 00 00 00 	nop 
+    438c:	c2 07 bf e4 	ld  [ %fp + -28 ], %g1
+    4390:	80 a0 7f ff 	cmp  %g1, -1
+    4394:	12 80 00 07 	bne  43b0 <ee_vsprintf+0x59c>
+    4398:	01 00 00 00 	nop 
+    439c:	82 10 20 08 	mov  8, %g1	! 8 <start+0x8>
+    43a0:	c2 27 bf e4 	st  %g1, [ %fp + -28 ]
+    43a4:	c2 07 bf e8 	ld  [ %fp + -24 ], %g1
+    43a8:	82 10 60 01 	or  %g1, 1, %g1
+    43ac:	c2 27 bf e8 	st  %g1, [ %fp + -24 ]
+    43b0:	c2 07 a0 4c 	ld  [ %fp + 0x4c ], %g1
+    43b4:	c2 00 40 00 	ld  [ %g1 ], %g1
+    43b8:	c4 07 a0 4c 	ld  [ %fp + 0x4c ], %g2
+    43bc:	84 00 a0 04 	add  %g2, 4, %g2
+    43c0:	c4 27 a0 4c 	st  %g2, [ %fp + 0x4c ]
+    43c4:	d0 07 bf f0 	ld  [ %fp + -16 ], %o0
+    43c8:	92 10 00 01 	mov  %g1, %o1
+    43cc:	94 10 20 10 	mov  0x10, %o2
+    43d0:	d6 07 bf e4 	ld  [ %fp + -28 ], %o3
+    43d4:	d8 07 bf e0 	ld  [ %fp + -32 ], %o4
+    43d8:	da 07 bf e8 	ld  [ %fp + -24 ], %o5
+    43dc:	7f ff fb c3 	call  32e8 <number>
+    43e0:	01 00 00 00 	nop 
+    43e4:	d0 27 bf f0 	st  %o0, [ %fp + -16 ]
+    43e8:	10 80 00 83 	b  45f4 <ee_vsprintf+0x7e0>
+    43ec:	01 00 00 00 	nop 
+    43f0:	c2 07 bf e8 	ld  [ %fp + -24 ], %g1
+    43f4:	82 10 60 40 	or  %g1, 0x40, %g1
+    43f8:	c2 27 bf e8 	st  %g1, [ %fp + -24 ]
+    43fc:	c2 07 bf dc 	ld  [ %fp + -36 ], %g1
+    4400:	80 a0 60 6c 	cmp  %g1, 0x6c
+    4404:	12 80 00 11 	bne  4448 <ee_vsprintf+0x634>
+    4408:	01 00 00 00 	nop 
+    440c:	c2 07 a0 4c 	ld  [ %fp + 0x4c ], %g1
+    4410:	c2 00 40 00 	ld  [ %g1 ], %g1
+    4414:	c4 07 a0 4c 	ld  [ %fp + 0x4c ], %g2
+    4418:	84 00 a0 04 	add  %g2, 4, %g2
+    441c:	c4 27 a0 4c 	st  %g2, [ %fp + 0x4c ]
+    4420:	d0 07 bf f0 	ld  [ %fp + -16 ], %o0
+    4424:	92 10 00 01 	mov  %g1, %o1
+    4428:	d4 07 bf e4 	ld  [ %fp + -28 ], %o2
+    442c:	d6 07 bf e0 	ld  [ %fp + -32 ], %o3
+    4430:	d8 07 bf e8 	ld  [ %fp + -24 ], %o4
+    4434:	7f ff fc fe 	call  382c <eaddr>
+    4438:	01 00 00 00 	nop 
+    443c:	d0 27 bf f0 	st  %o0, [ %fp + -16 ]
+    4440:	10 80 00 6d 	b  45f4 <ee_vsprintf+0x7e0>
+    4444:	01 00 00 00 	nop 
+    4448:	c2 07 a0 4c 	ld  [ %fp + 0x4c ], %g1
+    444c:	c2 00 40 00 	ld  [ %g1 ], %g1
+    4450:	c4 07 a0 4c 	ld  [ %fp + 0x4c ], %g2
+    4454:	84 00 a0 04 	add  %g2, 4, %g2
+    4458:	c4 27 a0 4c 	st  %g2, [ %fp + 0x4c ]
+    445c:	d0 07 bf f0 	ld  [ %fp + -16 ], %o0
+    4460:	92 10 00 01 	mov  %g1, %o1
+    4464:	d4 07 bf e4 	ld  [ %fp + -28 ], %o2
+    4468:	d6 07 bf e0 	ld  [ %fp + -32 ], %o3
+    446c:	d8 07 bf e8 	ld  [ %fp + -24 ], %o4
+    4470:	7f ff fd 80 	call  3a70 <iaddr>
+    4474:	01 00 00 00 	nop 
+    4478:	d0 27 bf f0 	st  %o0, [ %fp + -16 ]
+    447c:	10 80 00 5e 	b  45f4 <ee_vsprintf+0x7e0>
+    4480:	01 00 00 00 	nop 
+    4484:	82 10 20 08 	mov  8, %g1	! 8 <start+0x8>
+    4488:	c2 27 bf f4 	st  %g1, [ %fp + -12 ]
+    448c:	10 80 00 31 	b  4550 <ee_vsprintf+0x73c>
+    4490:	01 00 00 00 	nop 
+    4494:	c2 07 bf e8 	ld  [ %fp + -24 ], %g1
+    4498:	82 10 60 40 	or  %g1, 0x40, %g1
+    449c:	c2 27 bf e8 	st  %g1, [ %fp + -24 ]
+    44a0:	82 10 20 10 	mov  0x10, %g1
+    44a4:	c2 27 bf f4 	st  %g1, [ %fp + -12 ]
+    44a8:	10 80 00 2a 	b  4550 <ee_vsprintf+0x73c>
+    44ac:	01 00 00 00 	nop 
+    44b0:	c2 07 bf e8 	ld  [ %fp + -24 ], %g1
+    44b4:	82 10 60 02 	or  %g1, 2, %g1
+    44b8:	c2 27 bf e8 	st  %g1, [ %fp + -24 ]
+    44bc:	10 80 00 24 	b  454c <ee_vsprintf+0x738>
+    44c0:	01 00 00 00 	nop 
+    44c4:	c2 07 a0 48 	ld  [ %fp + 0x48 ], %g1
+    44c8:	c2 08 40 00 	ldub  [ %g1 ], %g1
+    44cc:	83 28 60 18 	sll  %g1, 0x18, %g1
+    44d0:	83 38 60 18 	sra  %g1, 0x18, %g1
+    44d4:	80 a0 60 25 	cmp  %g1, 0x25
+    44d8:	02 80 00 08 	be  44f8 <ee_vsprintf+0x6e4>
+    44dc:	01 00 00 00 	nop 
+    44e0:	c2 07 bf f0 	ld  [ %fp + -16 ], %g1
+    44e4:	84 10 20 25 	mov  0x25, %g2
+    44e8:	c4 28 40 00 	stb  %g2, [ %g1 ]
+    44ec:	c2 07 bf f0 	ld  [ %fp + -16 ], %g1
+    44f0:	82 00 60 01 	inc  %g1
+    44f4:	c2 27 bf f0 	st  %g1, [ %fp + -16 ]
+    44f8:	c2 07 a0 48 	ld  [ %fp + 0x48 ], %g1
+    44fc:	c2 08 40 00 	ldub  [ %g1 ], %g1
+    4500:	83 28 60 18 	sll  %g1, 0x18, %g1
+    4504:	83 38 60 18 	sra  %g1, 0x18, %g1
+    4508:	80 a0 60 00 	cmp  %g1, 0
+    450c:	02 80 00 0b 	be  4538 <ee_vsprintf+0x724>
+    4510:	01 00 00 00 	nop 
+    4514:	c2 07 a0 48 	ld  [ %fp + 0x48 ], %g1
+    4518:	c4 08 40 00 	ldub  [ %g1 ], %g2
+    451c:	c2 07 bf f0 	ld  [ %fp + -16 ], %g1
+    4520:	c4 28 40 00 	stb  %g2, [ %g1 ]
+    4524:	c2 07 bf f0 	ld  [ %fp + -16 ], %g1
+    4528:	82 00 60 01 	inc  %g1
+    452c:	c2 27 bf f0 	st  %g1, [ %fp + -16 ]
+    4530:	10 80 00 31 	b  45f4 <ee_vsprintf+0x7e0>
+    4534:	01 00 00 00 	nop 
+    4538:	c2 07 a0 48 	ld  [ %fp + 0x48 ], %g1
+    453c:	82 00 7f ff 	add  %g1, -1, %g1
+    4540:	c2 27 a0 48 	st  %g1, [ %fp + 0x48 ]
+    4544:	10 80 00 2c 	b  45f4 <ee_vsprintf+0x7e0>
+    4548:	01 00 00 00 	nop 
+    454c:	01 00 00 00 	nop 
+    4550:	c2 07 bf dc 	ld  [ %fp + -36 ], %g1
+    4554:	80 a0 60 6c 	cmp  %g1, 0x6c
+    4558:	12 80 00 0a 	bne  4580 <ee_vsprintf+0x76c>
+    455c:	01 00 00 00 	nop 
+    4560:	c2 07 a0 4c 	ld  [ %fp + 0x4c ], %g1
+    4564:	c2 00 40 00 	ld  [ %g1 ], %g1
+    4568:	c2 27 bf fc 	st  %g1, [ %fp + -4 ]
+    456c:	c2 07 a0 4c 	ld  [ %fp + 0x4c ], %g1
+    4570:	82 00 60 04 	add  %g1, 4, %g1
+    4574:	c2 27 a0 4c 	st  %g1, [ %fp + 0x4c ]
+    4578:	10 80 00 15 	b  45cc <ee_vsprintf+0x7b8>
+    457c:	01 00 00 00 	nop 
+    4580:	c2 07 bf e8 	ld  [ %fp + -24 ], %g1
+    4584:	82 08 60 02 	and  %g1, 2, %g1
+    4588:	80 a0 60 00 	cmp  %g1, 0
+    458c:	02 80 00 0a 	be  45b4 <ee_vsprintf+0x7a0>
+    4590:	01 00 00 00 	nop 
+    4594:	c2 07 a0 4c 	ld  [ %fp + 0x4c ], %g1
+    4598:	c2 00 40 00 	ld  [ %g1 ], %g1
+    459c:	c2 27 bf fc 	st  %g1, [ %fp + -4 ]
+    45a0:	c2 07 a0 4c 	ld  [ %fp + 0x4c ], %g1
+    45a4:	82 00 60 04 	add  %g1, 4, %g1
+    45a8:	c2 27 a0 4c 	st  %g1, [ %fp + 0x4c ]
+    45ac:	10 80 00 08 	b  45cc <ee_vsprintf+0x7b8>
+    45b0:	01 00 00 00 	nop 
+    45b4:	c2 07 a0 4c 	ld  [ %fp + 0x4c ], %g1
+    45b8:	c2 00 40 00 	ld  [ %g1 ], %g1
+    45bc:	c2 27 bf fc 	st  %g1, [ %fp + -4 ]
+    45c0:	c2 07 a0 4c 	ld  [ %fp + 0x4c ], %g1
+    45c4:	82 00 60 04 	add  %g1, 4, %g1
+    45c8:	c2 27 a0 4c 	st  %g1, [ %fp + 0x4c ]
+    45cc:	c2 07 bf fc 	ld  [ %fp + -4 ], %g1
+    45d0:	d0 07 bf f0 	ld  [ %fp + -16 ], %o0
+    45d4:	92 10 00 01 	mov  %g1, %o1
+    45d8:	d4 07 bf f4 	ld  [ %fp + -12 ], %o2
+    45dc:	d6 07 bf e4 	ld  [ %fp + -28 ], %o3
+    45e0:	d8 07 bf e0 	ld  [ %fp + -32 ], %o4
+    45e4:	da 07 bf e8 	ld  [ %fp + -24 ], %o5
+    45e8:	7f ff fb 40 	call  32e8 <number>
+    45ec:	01 00 00 00 	nop 
+    45f0:	d0 27 bf f0 	st  %o0, [ %fp + -16 ]
+    45f4:	c2 07 a0 48 	ld  [ %fp + 0x48 ], %g1
+    45f8:	82 00 60 01 	inc  %g1
+    45fc:	c2 27 a0 48 	st  %g1, [ %fp + 0x48 ]
+    4600:	c2 07 a0 48 	ld  [ %fp + 0x48 ], %g1
+    4604:	c2 08 40 00 	ldub  [ %g1 ], %g1
+    4608:	83 28 60 18 	sll  %g1, 0x18, %g1
+    460c:	83 38 60 18 	sra  %g1, 0x18, %g1
+    4610:	80 a0 60 00 	cmp  %g1, 0
+    4614:	12 bf fe 08 	bne  3e34 <ee_vsprintf+0x20>
+    4618:	01 00 00 00 	nop 
+    461c:	c2 07 bf f0 	ld  [ %fp + -16 ], %g1
+    4620:	c0 28 40 00 	clrb  [ %g1 ]
+    4624:	c4 07 bf f0 	ld  [ %fp + -16 ], %g2
+    4628:	c2 07 a0 44 	ld  [ %fp + 0x44 ], %g1
+    462c:	82 20 80 01 	sub  %g2, %g1, %g1
+    4630:	b0 10 00 01 	mov  %g1, %i0
+    4634:	81 e8 00 00 	restore 
+    4638:	81 c3 e0 08 	retl 
+    463c:	01 00 00 00 	nop 
+
+00004640 <uart_send_char>:
+    4640:	9d e3 bf 98 	save  %sp, -104, %sp
+    4644:	82 10 00 18 	mov  %i0, %g1
+    4648:	c2 2f a0 44 	stb  %g1, [ %fp + 0x44 ]
+    464c:	10 80 00 03 	b  4658 <uart_send_char+0x18>
+    4650:	01 00 00 00 	nop 
+    4654:	01 00 00 00 	nop 
+    4658:	c2 0f a0 44 	ldub  [ %fp + 0x44 ], %g1
+    465c:	83 28 60 18 	sll  %g1, 0x18, %g1
+    4660:	83 38 60 18 	sra  %g1, 0x18, %g1
+    4664:	90 10 00 01 	mov  %g1, %o0
+    4668:	40 00 03 a8 	call  5508 <__ajit_serial_putchar__>
+    466c:	01 00 00 00 	nop 
+    4670:	d0 27 bf fc 	st  %o0, [ %fp + -4 ]
+    4674:	c2 07 bf fc 	ld  [ %fp + -4 ], %g1
+    4678:	80 a0 60 00 	cmp  %g1, 0
+    467c:	02 bf ff f6 	be  4654 <uart_send_char+0x14>
+    4680:	01 00 00 00 	nop 
+    4684:	01 00 00 00 	nop 
+    4688:	10 80 00 03 	b  4694 <uart_send_char+0x54>
+    468c:	01 00 00 00 	nop 
+    4690:	01 00 00 00 	nop 
+    4694:	c0 27 bf f8 	clr  [ %fp + -8 ]
+    4698:	03 3f ff cc 	sethi  %hi(0xffff3000), %g1
+    469c:	82 10 62 00 	or  %g1, 0x200, %g1	! ffff3200 <CVTBUF+0xfffe31f8>
+    46a0:	fa 80 44 00 	lda  [ %g1 ] #ASI_SCRATCHPAD, %i5
+    46a4:	fa 27 bf f8 	st  %i5, [ %fp + -8 ]
+    46a8:	c2 07 bf f8 	ld  [ %fp + -8 ], %g1
+    46ac:	82 08 60 08 	and  %g1, 8, %g1
+    46b0:	80 a0 60 00 	cmp  %g1, 0
+    46b4:	02 80 00 07 	be  46d0 <uart_send_char+0x90>
+    46b8:	01 00 00 00 	nop 
+    46bc:	c2 07 bf f8 	ld  [ %fp + -8 ], %g1
+    46c0:	82 08 60 01 	and  %g1, 1, %g1
+    46c4:	80 a0 60 00 	cmp  %g1, 0
+    46c8:	12 bf ff f2 	bne  4690 <uart_send_char+0x50>
+    46cc:	01 00 00 00 	nop 
+    46d0:	81 e8 00 00 	restore 
+    46d4:	81 c3 e0 08 	retl 
+    46d8:	01 00 00 00 	nop 
+
+000046dc <ee_printf>:
+    46dc:	9d e3 bb 90 	save  %sp, -1136, %sp
+    46e0:	f2 27 a0 48 	st  %i1, [ %fp + 0x48 ]
+    46e4:	f4 27 a0 4c 	st  %i2, [ %fp + 0x4c ]
+    46e8:	f6 27 a0 50 	st  %i3, [ %fp + 0x50 ]
+    46ec:	f8 27 a0 54 	st  %i4, [ %fp + 0x54 ]
+    46f0:	fa 27 a0 58 	st  %i5, [ %fp + 0x58 ]
+    46f4:	f0 27 a0 44 	st  %i0, [ %fp + 0x44 ]
+    46f8:	c0 27 bf f8 	clr  [ %fp + -8 ]
+    46fc:	82 07 a0 48 	add  %fp, 0x48, %g1
+    4700:	c2 27 bb f4 	st  %g1, [ %fp + -1036 ]
+    4704:	c2 07 bb f4 	ld  [ %fp + -1036 ], %g1
+    4708:	84 07 bb f8 	add  %fp, -1032, %g2
+    470c:	90 10 00 02 	mov  %g2, %o0
+    4710:	d2 07 a0 44 	ld  [ %fp + 0x44 ], %o1
+    4714:	94 10 00 01 	mov  %g1, %o2
+    4718:	7f ff fd bf 	call  3e14 <ee_vsprintf>
+    471c:	01 00 00 00 	nop 
+    4720:	82 07 bb f8 	add  %fp, -1032, %g1
+    4724:	c2 27 bf fc 	st  %g1, [ %fp + -4 ]
+    4728:	10 80 00 0f 	b  4764 <ee_printf+0x88>
+    472c:	01 00 00 00 	nop 
+    4730:	c2 07 bf fc 	ld  [ %fp + -4 ], %g1
+    4734:	c2 08 40 00 	ldub  [ %g1 ], %g1
+    4738:	83 28 60 18 	sll  %g1, 0x18, %g1
+    473c:	83 38 60 18 	sra  %g1, 0x18, %g1
+    4740:	90 10 00 01 	mov  %g1, %o0
+    4744:	7f ff ff bf 	call  4640 <uart_send_char>
+    4748:	01 00 00 00 	nop 
+    474c:	c2 07 bf f8 	ld  [ %fp + -8 ], %g1
+    4750:	82 00 60 01 	inc  %g1
+    4754:	c2 27 bf f8 	st  %g1, [ %fp + -8 ]
+    4758:	c2 07 bf fc 	ld  [ %fp + -4 ], %g1
+    475c:	82 00 60 01 	inc  %g1
+    4760:	c2 27 bf fc 	st  %g1, [ %fp + -4 ]
+    4764:	c2 07 bf fc 	ld  [ %fp + -4 ], %g1
+    4768:	c2 08 40 00 	ldub  [ %g1 ], %g1
+    476c:	83 28 60 18 	sll  %g1, 0x18, %g1
+    4770:	83 38 60 18 	sra  %g1, 0x18, %g1
+    4774:	80 a0 60 00 	cmp  %g1, 0
+    4778:	12 bf ff ee 	bne  4730 <ee_printf+0x54>
+    477c:	01 00 00 00 	nop 
+    4780:	c2 07 bf f8 	ld  [ %fp + -8 ], %g1
+    4784:	b0 10 00 01 	mov  %g1, %i0
+    4788:	81 e8 00 00 	restore 
+    478c:	81 c3 e0 08 	retl 
+    4790:	01 00 00 00 	nop 
+
+00004794 <__modf>:
+    4794:	9d e3 bf 80 	save  %sp, -128, %sp
+    4798:	f0 3f bf e8 	std  %i0, [ %fp + -24 ]
+    479c:	f4 27 a0 4c 	st  %i2, [ %fp + 0x4c ]
+    47a0:	d1 1f bf e8 	ldd  [ %fp + -24 ], %f8
+    47a4:	95 a0 1a 48 	fdtoi  %f8, %f10
+    47a8:	d5 27 bf e4 	st  %f10, [ %fp + -28 ]
+    47ac:	c2 07 bf e4 	ld  [ %fp + -28 ], %g1
+    47b0:	c2 27 bf fc 	st  %g1, [ %fp + -4 ]
+    47b4:	c2 07 bf fc 	ld  [ %fp + -4 ], %g1
+    47b8:	c2 27 bf e4 	st  %g1, [ %fp + -28 ]
+    47bc:	d5 07 bf e4 	ld  [ %fp + -28 ], %f10
+    47c0:	91 a0 19 0a 	fitod  %f10, %f8
+    47c4:	c2 07 a0 4c 	ld  [ %fp + 0x4c ], %g1
+    47c8:	d1 38 40 00 	std  %f8, [ %g1 ]
+    47cc:	c2 07 a0 4c 	ld  [ %fp + 0x4c ], %g1
+    47d0:	d1 18 40 00 	ldd  [ %g1 ], %f8
+    47d4:	d5 1f bf e8 	ldd  [ %fp + -24 ], %f10
+    47d8:	91 a2 88 c8 	fsubd  %f10, %f8, %f8
+    47dc:	d1 3f bf f0 	std  %f8, [ %fp + -16 ]
+    47e0:	d1 1f bf f0 	ldd  [ %fp + -16 ], %f8
+    47e4:	81 a0 00 28 	fmovs  %f8, %f0
+    47e8:	83 a0 00 29 	fmovs  %f9, %f1
+    47ec:	81 e8 00 00 	restore 
+    47f0:	81 c3 e0 08 	retl 
+    47f4:	01 00 00 00 	nop 
+
+000047f8 <cvt>:
+    47f8:	9d e3 bf 68 	save  %sp, -152, %sp
+    47fc:	f0 3f bf d8 	std  %i0, [ %fp + -40 ]
+    4800:	f4 27 a0 4c 	st  %i2, [ %fp + 0x4c ]
+    4804:	f6 27 a0 50 	st  %i3, [ %fp + 0x50 ]
+    4808:	f8 27 a0 54 	st  %i4, [ %fp + 0x54 ]
+    480c:	fa 27 a0 58 	st  %i5, [ %fp + 0x58 ]
+    4810:	c2 07 a0 4c 	ld  [ %fp + 0x4c ], %g1
+    4814:	80 a0 60 00 	cmp  %g1, 0
+    4818:	16 80 00 03 	bge  4824 <cvt+0x2c>
+    481c:	01 00 00 00 	nop 
+    4820:	c0 27 a0 4c 	clr  [ %fp + 0x4c ]
+    4824:	c2 07 a0 4c 	ld  [ %fp + 0x4c ], %g1
+    4828:	80 a0 60 4e 	cmp  %g1, 0x4e
+    482c:	04 80 00 04 	ble  483c <cvt+0x44>
+    4830:	01 00 00 00 	nop 
+    4834:	82 10 20 4e 	mov  0x4e, %g1	! 4e <start+0x4e>
+    4838:	c2 27 a0 4c 	st  %g1, [ %fp + 0x4c ]
+    483c:	c0 27 bf fc 	clr  [ %fp + -4 ]
+    4840:	c2 07 a0 54 	ld  [ %fp + 0x54 ], %g1
+    4844:	c0 20 40 00 	clr  [ %g1 ]
+    4848:	c2 07 a0 58 	ld  [ %fp + 0x58 ], %g1
+    484c:	c2 27 bf f8 	st  %g1, [ %fp + -8 ]
+    4850:	d5 1f bf d8 	ldd  [ %fp + -40 ], %f10
+    4854:	03 00 00 40 	sethi  %hi(0x10000), %g1
+    4858:	82 10 60 b0 	or  %g1, 0xb0, %g1	! 100b0 <CVTBUF+0xa8>
+    485c:	d1 18 40 00 	ldd  [ %g1 ], %f8
+    4860:	81 aa 8a c8 	fcmped  %f10, %f8
+    4864:	01 00 00 00 	nop 
+    4868:	19 80 00 08 	fbuge  4888 <cvt+0x90>
+    486c:	01 00 00 00 	nop 
+    4870:	c2 07 a0 54 	ld  [ %fp + 0x54 ], %g1
+    4874:	84 10 20 01 	mov  1, %g2
+    4878:	c4 20 40 00 	st  %g2, [ %g1 ]
+    487c:	d1 1f bf d8 	ldd  [ %fp + -40 ], %f8
+    4880:	91 a0 00 a8 	fnegs  %f8, %f8
+    4884:	d1 3f bf d8 	std  %f8, [ %fp + -40 ]
+    4888:	82 07 bf e8 	add  %fp, -24, %g1
+    488c:	d0 1f bf d8 	ldd  [ %fp + -40 ], %o0
+    4890:	94 10 00 01 	mov  %g1, %o2
+    4894:	7f ff ff c0 	call  4794 <__modf>
+    4898:	01 00 00 00 	nop 
+    489c:	c1 3f bf d8 	std  %f0, [ %fp + -40 ]
+    48a0:	c2 07 a0 58 	ld  [ %fp + 0x58 ], %g1
+    48a4:	82 00 60 50 	add  %g1, 0x50, %g1
+    48a8:	c2 27 bf f4 	st  %g1, [ %fp + -12 ]
+    48ac:	d5 1f bf e8 	ldd  [ %fp + -24 ], %f10
+    48b0:	03 00 00 40 	sethi  %hi(0x10000), %g1
+    48b4:	82 10 60 b0 	or  %g1, 0xb0, %g1	! 100b0 <CVTBUF+0xa8>
+    48b8:	d1 18 40 00 	ldd  [ %g1 ], %f8
+    48bc:	81 aa 8a 48 	fcmpd  %f10, %f8
+    48c0:	01 00 00 00 	nop 
+    48c4:	13 80 00 47 	fbe  49e0 <cvt+0x1e8>
+    48c8:	01 00 00 00 	nop 
+    48cc:	c2 07 a0 58 	ld  [ %fp + 0x58 ], %g1
+    48d0:	82 00 60 50 	add  %g1, 0x50, %g1
+    48d4:	c2 27 bf f4 	st  %g1, [ %fp + -12 ]
+    48d8:	10 80 00 26 	b  4970 <cvt+0x178>
+    48dc:	01 00 00 00 	nop 
+    48e0:	d5 1f bf e8 	ldd  [ %fp + -24 ], %f10
+    48e4:	03 00 00 40 	sethi  %hi(0x10000), %g1
+    48e8:	82 10 60 b8 	or  %g1, 0xb8, %g1	! 100b8 <CVTBUF+0xb0>
+    48ec:	d1 18 40 00 	ldd  [ %g1 ], %f8
+    48f0:	91 a2 89 c8 	fdivd  %f10, %f8, %f8
+    48f4:	82 07 bf e8 	add  %fp, -24, %g1
+    48f8:	d1 3f bf d0 	std  %f8, [ %fp + -48 ]
+    48fc:	d0 1f bf d0 	ldd  [ %fp + -48 ], %o0
+    4900:	94 10 00 01 	mov  %g1, %o2
+    4904:	7f ff ff a4 	call  4794 <__modf>
+    4908:	01 00 00 00 	nop 
+    490c:	91 a0 00 20 	fmovs  %f0, %f8
+    4910:	93 a0 00 21 	fmovs  %f1, %f9
+    4914:	d1 3f bf e0 	std  %f8, [ %fp + -32 ]
+    4918:	c2 07 bf f4 	ld  [ %fp + -12 ], %g1
+    491c:	82 00 7f ff 	add  %g1, -1, %g1
+    4920:	c2 27 bf f4 	st  %g1, [ %fp + -12 ]
+    4924:	d5 1f bf e0 	ldd  [ %fp + -32 ], %f10
+    4928:	03 00 00 40 	sethi  %hi(0x10000), %g1
+    492c:	82 10 60 c0 	or  %g1, 0xc0, %g1	! 100c0 <CVTBUF+0xb8>
+    4930:	d1 18 40 00 	ldd  [ %g1 ], %f8
+    4934:	95 a2 88 48 	faddd  %f10, %f8, %f10
+    4938:	03 00 00 40 	sethi  %hi(0x10000), %g1
+    493c:	82 10 60 b8 	or  %g1, 0xb8, %g1	! 100b8 <CVTBUF+0xb0>
+    4940:	d1 18 40 00 	ldd  [ %g1 ], %f8
+    4944:	91 a2 89 48 	fmuld  %f10, %f8, %f8
+    4948:	95 a0 1a 48 	fdtoi  %f8, %f10
+    494c:	d5 27 bf cc 	st  %f10, [ %fp + -52 ]
+    4950:	c2 07 bf cc 	ld  [ %fp + -52 ], %g1
+    4954:	82 00 60 30 	add  %g1, 0x30, %g1
+    4958:	84 10 00 01 	mov  %g1, %g2
+    495c:	c2 07 bf f4 	ld  [ %fp + -12 ], %g1
+    4960:	c4 28 40 00 	stb  %g2, [ %g1 ]
+    4964:	c2 07 bf fc 	ld  [ %fp + -4 ], %g1
+    4968:	82 00 60 01 	inc  %g1
+    496c:	c2 27 bf fc 	st  %g1, [ %fp + -4 ]
+    4970:	d5 1f bf e8 	ldd  [ %fp + -24 ], %f10
+    4974:	03 00 00 40 	sethi  %hi(0x10000), %g1
+    4978:	82 10 60 b0 	or  %g1, 0xb0, %g1	! 100b0 <CVTBUF+0xa8>
+    497c:	d1 18 40 00 	ldd  [ %g1 ], %f8
+    4980:	81 aa 8a 48 	fcmpd  %f10, %f8
+    4984:	01 00 00 00 	nop 
+    4988:	03 bf ff d6 	fbne  48e0 <cvt+0xe8>
+    498c:	01 00 00 00 	nop 
+    4990:	10 80 00 0c 	b  49c0 <cvt+0x1c8>
+    4994:	01 00 00 00 	nop 
+    4998:	c2 07 bf f4 	ld  [ %fp + -12 ], %g1
+    499c:	c4 08 40 00 	ldub  [ %g1 ], %g2
+    49a0:	c2 07 bf f8 	ld  [ %fp + -8 ], %g1
+    49a4:	c4 28 40 00 	stb  %g2, [ %g1 ]
+    49a8:	c2 07 bf f8 	ld  [ %fp + -8 ], %g1
+    49ac:	82 00 60 01 	inc  %g1
+    49b0:	c2 27 bf f8 	st  %g1, [ %fp + -8 ]
+    49b4:	c2 07 bf f4 	ld  [ %fp + -12 ], %g1
+    49b8:	82 00 60 01 	inc  %g1
+    49bc:	c2 27 bf f4 	st  %g1, [ %fp + -12 ]
+    49c0:	c2 07 a0 58 	ld  [ %fp + 0x58 ], %g1
+    49c4:	84 00 60 50 	add  %g1, 0x50, %g2
+    49c8:	c2 07 bf f4 	ld  [ %fp + -12 ], %g1
+    49cc:	80 a0 80 01 	cmp  %g2, %g1
+    49d0:	18 bf ff f2 	bgu  4998 <cvt+0x1a0>
+    49d4:	01 00 00 00 	nop 
+    49d8:	10 80 00 22 	b  4a60 <cvt+0x268>
+    49dc:	01 00 00 00 	nop 
+    49e0:	d5 1f bf d8 	ldd  [ %fp + -40 ], %f10
+    49e4:	03 00 00 40 	sethi  %hi(0x10000), %g1
+    49e8:	82 10 60 b0 	or  %g1, 0xb0, %g1	! 100b0 <CVTBUF+0xa8>
+    49ec:	d1 18 40 00 	ldd  [ %g1 ], %f8
+    49f0:	81 aa 8a c8 	fcmped  %f10, %f8
+    49f4:	01 00 00 00 	nop 
+    49f8:	0d 80 00 0b 	fbg  4a24 <cvt+0x22c>
+    49fc:	01 00 00 00 	nop 
+    4a00:	10 80 00 18 	b  4a60 <cvt+0x268>
+    4a04:	01 00 00 00 	nop 
+    4a08:	d1 1f bf e0 	ldd  [ %fp + -32 ], %f8
+    4a0c:	d1 3f bf d8 	std  %f8, [ %fp + -40 ]
+    4a10:	c2 07 bf fc 	ld  [ %fp + -4 ], %g1
+    4a14:	82 00 7f ff 	add  %g1, -1, %g1
+    4a18:	c2 27 bf fc 	st  %g1, [ %fp + -4 ]
+    4a1c:	10 80 00 03 	b  4a28 <cvt+0x230>
+    4a20:	01 00 00 00 	nop 
+    4a24:	01 00 00 00 	nop 
+    4a28:	d5 1f bf d8 	ldd  [ %fp + -40 ], %f10
+    4a2c:	03 00 00 40 	sethi  %hi(0x10000), %g1
+    4a30:	82 10 60 b8 	or  %g1, 0xb8, %g1	! 100b8 <CVTBUF+0xb0>
+    4a34:	d1 18 40 00 	ldd  [ %g1 ], %f8
+    4a38:	91 a2 89 48 	fmuld  %f10, %f8, %f8
+    4a3c:	d1 3f bf e0 	std  %f8, [ %fp + -32 ]
+    4a40:	d5 1f bf e0 	ldd  [ %fp + -32 ], %f10
+    4a44:	03 00 00 40 	sethi  %hi(0x10000), %g1
+    4a48:	82 10 60 c8 	or  %g1, 0xc8, %g1	! 100c8 <CVTBUF+0xc0>
+    4a4c:	d1 18 40 00 	ldd  [ %g1 ], %f8
+    4a50:	81 aa 8a c8 	fcmped  %f10, %f8
+    4a54:	01 00 00 00 	nop 
+    4a58:	09 bf ff ec 	fbl  4a08 <cvt+0x210>
+    4a5c:	01 00 00 00 	nop 
+    4a60:	c2 07 a0 4c 	ld  [ %fp + 0x4c ], %g1
+    4a64:	c4 07 a0 58 	ld  [ %fp + 0x58 ], %g2
+    4a68:	82 00 80 01 	add  %g2, %g1, %g1
+    4a6c:	c2 27 bf f4 	st  %g1, [ %fp + -12 ]
+    4a70:	c2 07 a0 5c 	ld  [ %fp + 0x5c ], %g1
+    4a74:	80 a0 60 00 	cmp  %g1, 0
+    4a78:	12 80 00 06 	bne  4a90 <cvt+0x298>
+    4a7c:	01 00 00 00 	nop 
+    4a80:	c2 07 bf fc 	ld  [ %fp + -4 ], %g1
+    4a84:	c4 07 bf f4 	ld  [ %fp + -12 ], %g2
+    4a88:	82 00 80 01 	add  %g2, %g1, %g1
+    4a8c:	c2 27 bf f4 	st  %g1, [ %fp + -12 ]
+    4a90:	c2 07 a0 50 	ld  [ %fp + 0x50 ], %g1
+    4a94:	c4 07 bf fc 	ld  [ %fp + -4 ], %g2
+    4a98:	c4 20 40 00 	st  %g2, [ %g1 ]
+    4a9c:	c4 07 bf f4 	ld  [ %fp + -12 ], %g2
+    4aa0:	c2 07 a0 58 	ld  [ %fp + 0x58 ], %g1
+    4aa4:	80 a0 80 01 	cmp  %g2, %g1
+    4aa8:	1a 80 00 1e 	bcc  4b20 <cvt+0x328>
+    4aac:	01 00 00 00 	nop 
+    4ab0:	c2 07 a0 58 	ld  [ %fp + 0x58 ], %g1
+    4ab4:	c0 28 40 00 	clrb  [ %g1 ]
+    4ab8:	c2 07 a0 58 	ld  [ %fp + 0x58 ], %g1
+    4abc:	10 80 00 6e 	b  4c74 <cvt+0x47c>
+    4ac0:	01 00 00 00 	nop 
+    4ac4:	d5 1f bf d8 	ldd  [ %fp + -40 ], %f10
+    4ac8:	03 00 00 40 	sethi  %hi(0x10000), %g1
+    4acc:	82 10 60 b8 	or  %g1, 0xb8, %g1	! 100b8 <CVTBUF+0xb0>
+    4ad0:	d1 18 40 00 	ldd  [ %g1 ], %f8
+    4ad4:	91 a2 89 48 	fmuld  %f10, %f8, %f8
+    4ad8:	d1 3f bf d8 	std  %f8, [ %fp + -40 ]
+    4adc:	82 07 bf e0 	add  %fp, -32, %g1
+    4ae0:	d0 1f bf d8 	ldd  [ %fp + -40 ], %o0
+    4ae4:	94 10 00 01 	mov  %g1, %o2
+    4ae8:	7f ff ff 2b 	call  4794 <__modf>
+    4aec:	01 00 00 00 	nop 
+    4af0:	c1 3f bf d8 	std  %f0, [ %fp + -40 ]
+    4af4:	d1 1f bf e0 	ldd  [ %fp + -32 ], %f8
+    4af8:	95 a0 1a 48 	fdtoi  %f8, %f10
+    4afc:	d5 27 bf cc 	st  %f10, [ %fp + -52 ]
+    4b00:	c2 07 bf cc 	ld  [ %fp + -52 ], %g1
+    4b04:	82 00 60 30 	add  %g1, 0x30, %g1
+    4b08:	84 10 00 01 	mov  %g1, %g2
+    4b0c:	c2 07 bf f8 	ld  [ %fp + -8 ], %g1
+    4b10:	c4 28 40 00 	stb  %g2, [ %g1 ]
+    4b14:	c2 07 bf f8 	ld  [ %fp + -8 ], %g1
+    4b18:	82 00 60 01 	inc  %g1
+    4b1c:	c2 27 bf f8 	st  %g1, [ %fp + -8 ]
+    4b20:	c4 07 bf f8 	ld  [ %fp + -8 ], %g2
+    4b24:	c2 07 bf f4 	ld  [ %fp + -12 ], %g1
+    4b28:	80 a0 80 01 	cmp  %g2, %g1
+    4b2c:	18 80 00 08 	bgu  4b4c <cvt+0x354>
+    4b30:	01 00 00 00 	nop 
+    4b34:	c2 07 a0 58 	ld  [ %fp + 0x58 ], %g1
+    4b38:	84 00 60 50 	add  %g1, 0x50, %g2
+    4b3c:	c2 07 bf f8 	ld  [ %fp + -8 ], %g1
+    4b40:	80 a0 80 01 	cmp  %g2, %g1
+    4b44:	18 bf ff e0 	bgu  4ac4 <cvt+0x2cc>
+    4b48:	01 00 00 00 	nop 
+    4b4c:	c2 07 a0 58 	ld  [ %fp + 0x58 ], %g1
+    4b50:	84 00 60 50 	add  %g1, 0x50, %g2
+    4b54:	c2 07 bf f4 	ld  [ %fp + -12 ], %g1
+    4b58:	80 a0 80 01 	cmp  %g2, %g1
+    4b5c:	18 80 00 08 	bgu  4b7c <cvt+0x384>
+    4b60:	01 00 00 00 	nop 
+    4b64:	c2 07 a0 58 	ld  [ %fp + 0x58 ], %g1
+    4b68:	82 00 60 4f 	add  %g1, 0x4f, %g1
+    4b6c:	c0 28 40 00 	clrb  [ %g1 ]
+    4b70:	c2 07 a0 58 	ld  [ %fp + 0x58 ], %g1
+    4b74:	10 80 00 40 	b  4c74 <cvt+0x47c>
+    4b78:	01 00 00 00 	nop 
+    4b7c:	c2 07 bf f4 	ld  [ %fp + -12 ], %g1
+    4b80:	c2 27 bf f8 	st  %g1, [ %fp + -8 ]
+    4b84:	c2 07 bf f4 	ld  [ %fp + -12 ], %g1
+    4b88:	c2 08 40 00 	ldub  [ %g1 ], %g1
+    4b8c:	82 00 60 05 	add  %g1, 5, %g1
+    4b90:	84 10 00 01 	mov  %g1, %g2
+    4b94:	c2 07 bf f4 	ld  [ %fp + -12 ], %g1
+    4b98:	c4 28 40 00 	stb  %g2, [ %g1 ]
+    4b9c:	10 80 00 2c 	b  4c4c <cvt+0x454>
+    4ba0:	01 00 00 00 	nop 
+    4ba4:	c2 07 bf f4 	ld  [ %fp + -12 ], %g1
+    4ba8:	84 10 20 30 	mov  0x30, %g2
+    4bac:	c4 28 40 00 	stb  %g2, [ %g1 ]
+    4bb0:	c4 07 bf f4 	ld  [ %fp + -12 ], %g2
+    4bb4:	c2 07 a0 58 	ld  [ %fp + 0x58 ], %g1
+    4bb8:	80 a0 80 01 	cmp  %g2, %g1
+    4bbc:	08 80 00 0d 	bleu  4bf0 <cvt+0x3f8>
+    4bc0:	01 00 00 00 	nop 
+    4bc4:	c2 07 bf f4 	ld  [ %fp + -12 ], %g1
+    4bc8:	82 00 7f ff 	add  %g1, -1, %g1
+    4bcc:	c2 27 bf f4 	st  %g1, [ %fp + -12 ]
+    4bd0:	c2 07 bf f4 	ld  [ %fp + -12 ], %g1
+    4bd4:	c2 08 40 00 	ldub  [ %g1 ], %g1
+    4bd8:	82 00 60 01 	inc  %g1
+    4bdc:	84 10 00 01 	mov  %g1, %g2
+    4be0:	c2 07 bf f4 	ld  [ %fp + -12 ], %g1
+    4be4:	c4 28 40 00 	stb  %g2, [ %g1 ]
+    4be8:	10 80 00 19 	b  4c4c <cvt+0x454>
+    4bec:	01 00 00 00 	nop 
+    4bf0:	c2 07 bf f4 	ld  [ %fp + -12 ], %g1
+    4bf4:	84 10 20 31 	mov  0x31, %g2
+    4bf8:	c4 28 40 00 	stb  %g2, [ %g1 ]
+    4bfc:	c2 07 a0 50 	ld  [ %fp + 0x50 ], %g1
+    4c00:	c2 00 40 00 	ld  [ %g1 ], %g1
+    4c04:	84 00 60 01 	add  %g1, 1, %g2
+    4c08:	c2 07 a0 50 	ld  [ %fp + 0x50 ], %g1
+    4c0c:	c4 20 40 00 	st  %g2, [ %g1 ]
+    4c10:	c2 07 a0 5c 	ld  [ %fp + 0x5c ], %g1
+    4c14:	80 a0 60 00 	cmp  %g1, 0
+    4c18:	12 80 00 0d 	bne  4c4c <cvt+0x454>
+    4c1c:	01 00 00 00 	nop 
+    4c20:	c4 07 bf f8 	ld  [ %fp + -8 ], %g2
+    4c24:	c2 07 a0 58 	ld  [ %fp + 0x58 ], %g1
+    4c28:	80 a0 80 01 	cmp  %g2, %g1
+    4c2c:	08 80 00 05 	bleu  4c40 <cvt+0x448>
+    4c30:	01 00 00 00 	nop 
+    4c34:	c2 07 bf f8 	ld  [ %fp + -8 ], %g1
+    4c38:	84 10 20 30 	mov  0x30, %g2
+    4c3c:	c4 28 40 00 	stb  %g2, [ %g1 ]
+    4c40:	c2 07 bf f8 	ld  [ %fp + -8 ], %g1
+    4c44:	82 00 60 01 	inc  %g1
+    4c48:	c2 27 bf f8 	st  %g1, [ %fp + -8 ]
+    4c4c:	c2 07 bf f4 	ld  [ %fp + -12 ], %g1
+    4c50:	c2 08 40 00 	ldub  [ %g1 ], %g1
+    4c54:	83 28 60 18 	sll  %g1, 0x18, %g1
+    4c58:	83 38 60 18 	sra  %g1, 0x18, %g1
+    4c5c:	80 a0 60 39 	cmp  %g1, 0x39
+    4c60:	14 bf ff d1 	bg  4ba4 <cvt+0x3ac>
+    4c64:	01 00 00 00 	nop 
+    4c68:	c2 07 bf f8 	ld  [ %fp + -8 ], %g1
+    4c6c:	c0 28 40 00 	clrb  [ %g1 ]
+    4c70:	c2 07 a0 58 	ld  [ %fp + 0x58 ], %g1
+    4c74:	b0 10 00 01 	mov  %g1, %i0
+    4c78:	81 e8 00 00 	restore 
+    4c7c:	81 c3 e0 08 	retl 
+    4c80:	01 00 00 00 	nop 
+
+00004c84 <ecvt>:
+    4c84:	9d e3 bf 90 	save  %sp, -112, %sp
+    4c88:	f0 3f bf f8 	std  %i0, [ %fp + -8 ]
+    4c8c:	f4 27 a0 4c 	st  %i2, [ %fp + 0x4c ]
+    4c90:	f6 27 a0 50 	st  %i3, [ %fp + 0x50 ]
+    4c94:	f8 27 a0 54 	st  %i4, [ %fp + 0x54 ]
+    4c98:	82 10 20 01 	mov  1, %g1
+    4c9c:	c2 23 a0 5c 	st  %g1, [ %sp + 0x5c ]
+    4ca0:	d0 1f bf f8 	ldd  [ %fp + -8 ], %o0
+    4ca4:	d4 07 a0 4c 	ld  [ %fp + 0x4c ], %o2
+    4ca8:	d6 07 a0 50 	ld  [ %fp + 0x50 ], %o3
+    4cac:	d8 07 a0 54 	ld  [ %fp + 0x54 ], %o4
+    4cb0:	03 00 00 40 	sethi  %hi(0x10000), %g1
+    4cb4:	9a 10 60 08 	or  %g1, 8, %o5	! 10008 <CVTBUF>
+    4cb8:	7f ff fe d0 	call  47f8 <cvt>
+    4cbc:	01 00 00 00 	nop 
+    4cc0:	82 10 00 08 	mov  %o0, %g1
+    4cc4:	b0 10 00 01 	mov  %g1, %i0
+    4cc8:	81 e8 00 00 	restore 
+    4ccc:	81 c3 e0 08 	retl 
+    4cd0:	01 00 00 00 	nop 
+
+00004cd4 <ecvtbuf>:
+    4cd4:	9d e3 bf 90 	save  %sp, -112, %sp
+    4cd8:	f0 3f bf f8 	std  %i0, [ %fp + -8 ]
+    4cdc:	f4 27 a0 4c 	st  %i2, [ %fp + 0x4c ]
+    4ce0:	f6 27 a0 50 	st  %i3, [ %fp + 0x50 ]
+    4ce4:	f8 27 a0 54 	st  %i4, [ %fp + 0x54 ]
+    4ce8:	fa 27 a0 58 	st  %i5, [ %fp + 0x58 ]
+    4cec:	82 10 20 01 	mov  1, %g1
+    4cf0:	c2 23 a0 5c 	st  %g1, [ %sp + 0x5c ]
+    4cf4:	d0 1f bf f8 	ldd  [ %fp + -8 ], %o0
+    4cf8:	d4 07 a0 4c 	ld  [ %fp + 0x4c ], %o2
+    4cfc:	d6 07 a0 50 	ld  [ %fp + 0x50 ], %o3
+    4d00:	d8 07 a0 54 	ld  [ %fp + 0x54 ], %o4
+    4d04:	da 07 a0 58 	ld  [ %fp + 0x58 ], %o5
+    4d08:	7f ff fe bc 	call  47f8 <cvt>
+    4d0c:	01 00 00 00 	nop 
+    4d10:	82 10 00 08 	mov  %o0, %g1
+    4d14:	b0 10 00 01 	mov  %g1, %i0
+    4d18:	81 e8 00 00 	restore 
+    4d1c:	81 c3 e0 08 	retl 
+    4d20:	01 00 00 00 	nop 
+
+00004d24 <fcvt>:
+    4d24:	9d e3 bf 90 	save  %sp, -112, %sp
+    4d28:	f0 3f bf f8 	std  %i0, [ %fp + -8 ]
+    4d2c:	f4 27 a0 4c 	st  %i2, [ %fp + 0x4c ]
+    4d30:	f6 27 a0 50 	st  %i3, [ %fp + 0x50 ]
+    4d34:	f8 27 a0 54 	st  %i4, [ %fp + 0x54 ]
+    4d38:	c0 23 a0 5c 	clr  [ %sp + 0x5c ]
+    4d3c:	d0 1f bf f8 	ldd  [ %fp + -8 ], %o0
+    4d40:	d4 07 a0 4c 	ld  [ %fp + 0x4c ], %o2
+    4d44:	d6 07 a0 50 	ld  [ %fp + 0x50 ], %o3
+    4d48:	d8 07 a0 54 	ld  [ %fp + 0x54 ], %o4
+    4d4c:	03 00 00 40 	sethi  %hi(0x10000), %g1
+    4d50:	9a 10 60 08 	or  %g1, 8, %o5	! 10008 <CVTBUF>
+    4d54:	7f ff fe a9 	call  47f8 <cvt>
+    4d58:	01 00 00 00 	nop 
+    4d5c:	82 10 00 08 	mov  %o0, %g1
+    4d60:	b0 10 00 01 	mov  %g1, %i0
+    4d64:	81 e8 00 00 	restore 
+    4d68:	81 c3 e0 08 	retl 
+    4d6c:	01 00 00 00 	nop 
+
+00004d70 <fcvtbuf>:
+    4d70:	9d e3 bf 90 	save  %sp, -112, %sp
+    4d74:	f0 3f bf f8 	std  %i0, [ %fp + -8 ]
+    4d78:	f4 27 a0 4c 	st  %i2, [ %fp + 0x4c ]
+    4d7c:	f6 27 a0 50 	st  %i3, [ %fp + 0x50 ]
+    4d80:	f8 27 a0 54 	st  %i4, [ %fp + 0x54 ]
+    4d84:	fa 27 a0 58 	st  %i5, [ %fp + 0x58 ]
+    4d88:	c0 23 a0 5c 	clr  [ %sp + 0x5c ]
+    4d8c:	d0 1f bf f8 	ldd  [ %fp + -8 ], %o0
+    4d90:	d4 07 a0 4c 	ld  [ %fp + 0x4c ], %o2
+    4d94:	d6 07 a0 50 	ld  [ %fp + 0x50 ], %o3
+    4d98:	d8 07 a0 54 	ld  [ %fp + 0x54 ], %o4
+    4d9c:	da 07 a0 58 	ld  [ %fp + 0x58 ], %o5
+    4da0:	7f ff fe 96 	call  47f8 <cvt>
+    4da4:	01 00 00 00 	nop 
+    4da8:	82 10 00 08 	mov  %o0, %g1
+    4dac:	b0 10 00 01 	mov  %g1, %i0
+    4db0:	81 e8 00 00 	restore 
+    4db4:	81 c3 e0 08 	retl 
+    4db8:	01 00 00 00 	nop 
+
+00004dbc <__ajit_clear_all_gp_registers__>:
+    4dbc:	9d e3 bf 98 	save  %sp, -104, %sp
+    4dc0:	82 10 00 00 	mov  %g0, %g1
+    4dc4:	84 10 00 00 	mov  %g0, %g2
+    4dc8:	86 10 00 00 	mov  %g0, %g3
+    4dcc:	88 10 00 00 	mov  %g0, %g4
+    4dd0:	8a 10 00 00 	mov  %g0, %g5
+    4dd4:	8c 10 00 00 	mov  %g0, %g6
+    4dd8:	8e 10 00 00 	mov  %g0, %g7
+    4ddc:	b0 10 00 00 	mov  %g0, %i0
+    4de0:	b2 10 00 00 	mov  %g0, %i1
+    4de4:	b4 10 00 00 	mov  %g0, %i2
+    4de8:	b6 10 00 00 	mov  %g0, %i3
+    4dec:	b8 10 00 00 	mov  %g0, %i4
+    4df0:	ba 10 00 00 	mov  %g0, %i5
+    4df4:	bc 10 00 00 	mov  %g0, %fp
+    4df8:	be 10 00 00 	mov  %g0, %i7
+    4dfc:	a0 10 00 00 	mov  %g0, %l0
+    4e00:	a2 10 00 00 	mov  %g0, %l1
+    4e04:	a4 10 00 00 	mov  %g0, %l2
+    4e08:	a6 10 00 00 	mov  %g0, %l3
+    4e0c:	a8 10 00 00 	mov  %g0, %l4
+    4e10:	aa 10 00 00 	mov  %g0, %l5
+    4e14:	ac 10 00 00 	mov  %g0, %l6
+    4e18:	ae 10 00 00 	mov  %g0, %l7
+    4e1c:	90 10 00 00 	mov  %g0, %o0
+    4e20:	92 10 00 00 	mov  %g0, %o1
+    4e24:	94 10 00 00 	mov  %g0, %o2
+    4e28:	96 10 00 00 	mov  %g0, %o3
+    4e2c:	98 10 00 00 	mov  %g0, %o4
+    4e30:	9a 10 00 00 	mov  %g0, %o5
+    4e34:	9c 10 00 00 	mov  %g0, %sp
+    4e38:	9e 10 00 00 	mov  %g0, %o7
+    4e3c:	c0 27 bf fc 	clr  [ %fp + -4 ]
+    4e40:	c0 27 bf fc 	clr  [ %fp + -4 ]
+    4e44:	10 80 00 16 	b  4e9c <__ajit_clear_all_gp_registers__+0xe0>
+    4e48:	01 00 00 00 	nop 
+    4e4c:	81 e0 00 00 	save 
+    4e50:	a0 10 00 00 	mov  %g0, %l0
+    4e54:	a2 10 00 00 	mov  %g0, %l1
+    4e58:	a4 10 00 00 	mov  %g0, %l2
+    4e5c:	a6 10 00 00 	mov  %g0, %l3
+    4e60:	a8 10 00 00 	mov  %g0, %l4
+    4e64:	aa 10 00 00 	mov  %g0, %l5
+    4e68:	ac 10 00 00 	mov  %g0, %l6
+    4e6c:	ae 10 00 00 	mov  %g0, %l7
+    4e70:	90 10 00 00 	mov  %g0, %o0
+    4e74:	92 10 00 00 	mov  %g0, %o1
+    4e78:	94 10 00 00 	mov  %g0, %o2
+    4e7c:	96 10 00 00 	mov  %g0, %o3
+    4e80:	98 10 00 00 	mov  %g0, %o4
+    4e84:	9a 10 00 00 	mov  %g0, %o5
+    4e88:	9c 10 00 00 	mov  %g0, %sp
+    4e8c:	9e 10 00 00 	mov  %g0, %o7
+    4e90:	c2 07 bf fc 	ld  [ %fp + -4 ], %g1
+    4e94:	82 00 60 01 	inc  %g1
+    4e98:	c2 27 bf fc 	st  %g1, [ %fp + -4 ]
+    4e9c:	c2 07 bf fc 	ld  [ %fp + -4 ], %g1
+    4ea0:	80 a0 60 06 	cmp  %g1, 6
+    4ea4:	04 bf ff ea 	ble  4e4c <__ajit_clear_all_gp_registers__+0x90>
+    4ea8:	01 00 00 00 	nop 
+    4eac:	c0 27 bf fc 	clr  [ %fp + -4 ]
+    4eb0:	10 80 00 06 	b  4ec8 <__ajit_clear_all_gp_registers__+0x10c>
+    4eb4:	01 00 00 00 	nop 
+    4eb8:	81 e8 00 00 	restore 
+    4ebc:	c2 07 bf fc 	ld  [ %fp + -4 ], %g1
+    4ec0:	82 00 60 01 	inc  %g1
+    4ec4:	c2 27 bf fc 	st  %g1, [ %fp + -4 ]
+    4ec8:	c2 07 bf fc 	ld  [ %fp + -4 ], %g1
+    4ecc:	80 a0 60 06 	cmp  %g1, 6
+    4ed0:	04 bf ff fa 	ble  4eb8 <__ajit_clear_all_gp_registers__+0xfc>
+    4ed4:	01 00 00 00 	nop 
+    4ed8:	81 e8 00 00 	restore 
+    4edc:	81 c3 e0 08 	retl 
+    4ee0:	01 00 00 00 	nop 
+
+00004ee4 <__ajit_read_cycle_count_register_high__>:
+    4ee4:	9d e3 bf 98 	save  %sp, -104, %sp
+    4ee8:	bb 47 80 00 	rd  %asr30, %i5
+    4eec:	fa 27 bf fc 	st  %i5, [ %fp + -4 ]
+    4ef0:	c2 07 bf fc 	ld  [ %fp + -4 ], %g1
+    4ef4:	b0 10 00 01 	mov  %g1, %i0
+    4ef8:	81 e8 00 00 	restore 
+    4efc:	81 c3 e0 08 	retl 
+    4f00:	01 00 00 00 	nop 
+
+00004f04 <__ajit_read_cycle_count_register_low__>:
+    4f04:	9d e3 bf 98 	save  %sp, -104, %sp
+    4f08:	bb 47 c0 00 	rd  %asr31, %i5
+    4f0c:	fa 27 bf fc 	st  %i5, [ %fp + -4 ]
+    4f10:	c2 07 bf fc 	ld  [ %fp + -4 ], %g1
+    4f14:	b0 10 00 01 	mov  %g1, %i0
+    4f18:	81 e8 00 00 	restore 
+    4f1c:	81 c3 e0 08 	retl 
+    4f20:	01 00 00 00 	nop 
+
+00004f24 <__ajit_get_clock_time>:
+    4f24:	9d e3 bf 90 	save  %sp, -112, %sp
+    4f28:	7f ff ff f7 	call  4f04 <__ajit_read_cycle_count_register_low__>
+    4f2c:	01 00 00 00 	nop 
+    4f30:	d0 27 bf fc 	st  %o0, [ %fp + -4 ]
+    4f34:	7f ff ff ec 	call  4ee4 <__ajit_read_cycle_count_register_high__>
+    4f38:	01 00 00 00 	nop 
+    4f3c:	d0 27 bf f8 	st  %o0, [ %fp + -8 ]
+    4f40:	c2 07 bf f8 	ld  [ %fp + -8 ], %g1
+    4f44:	84 10 20 00 	clr  %g2
+    4f48:	86 10 00 01 	mov  %g1, %g3
+    4f4c:	c4 3f bf f0 	std  %g2, [ %fp + -16 ]
+    4f50:	c2 07 bf f4 	ld  [ %fp + -12 ], %g1
+    4f54:	83 28 60 00 	sll  %g1, 0, %g1
+    4f58:	c2 27 bf f0 	st  %g1, [ %fp + -16 ]
+    4f5c:	c0 27 bf f4 	clr  [ %fp + -12 ]
+    4f60:	c2 07 bf fc 	ld  [ %fp + -4 ], %g1
+    4f64:	84 10 20 00 	clr  %g2
+    4f68:	86 10 00 01 	mov  %g1, %g3
+    4f6c:	f8 1f bf f0 	ldd  [ %fp + -16 ], %i4
+    4f70:	84 17 00 02 	or  %i4, %g2, %g2
+    4f74:	86 17 40 03 	or  %i5, %g3, %g3
+    4f78:	c4 3f bf f0 	std  %g2, [ %fp + -16 ]
+    4f7c:	c4 1f bf f0 	ldd  [ %fp + -16 ], %g2
+    4f80:	b0 10 00 02 	mov  %g2, %i0
+    4f84:	b2 10 00 03 	mov  %g3, %i1
+    4f88:	81 e8 00 00 	restore 
+    4f8c:	81 c3 e0 08 	retl 
+    4f90:	01 00 00 00 	nop 
+
+00004f94 <__ajit_set_mmu_default_cacheable_bit__>:
+    4f94:	9d e3 bf 98 	save  %sp, -104, %sp
+    4f98:	82 10 00 18 	mov  %i0, %g1
+    4f9c:	c2 2f a0 44 	stb  %g1, [ %fp + 0x44 ]
+    4fa0:	c2 0f a0 44 	ldub  [ %fp + 0x44 ], %g1
+    4fa4:	82 08 60 ff 	and  %g1, 0xff, %g1
+    4fa8:	80 a0 60 00 	cmp  %g1, 0
+    4fac:	02 80 00 05 	be  4fc0 <__ajit_set_mmu_default_cacheable_bit__+0x2c>
+    4fb0:	01 00 00 00 	nop 
+    4fb4:	82 10 21 00 	mov  0x100, %g1	! 100 <start+0x100>
+    4fb8:	10 80 00 03 	b  4fc4 <__ajit_set_mmu_default_cacheable_bit__+0x30>
+    4fbc:	01 00 00 00 	nop 
+    4fc0:	82 10 20 00 	clr  %g1	! 0 <start>
+    4fc4:	c2 27 bf fc 	st  %g1, [ %fp + -4 ]
+    4fc8:	c0 27 bf f8 	clr  [ %fp + -8 ]
+    4fcc:	c2 07 bf fc 	ld  [ %fp + -4 ], %g1
+    4fd0:	c4 07 bf f8 	ld  [ %fp + -8 ], %g2
+    4fd4:	c2 a0 80 80 	sta  %g1, [ %g2 ] #ASI_N
+    4fd8:	81 e8 00 00 	restore 
+    4fdc:	81 c3 e0 08 	retl 
+    4fe0:	01 00 00 00 	nop 
+
+00004fe4 <__ajit_store_word_mmu_reg__>:
+    4fe4:	9d e3 bf a0 	save  %sp, -96, %sp
+    4fe8:	f0 27 a0 44 	st  %i0, [ %fp + 0x44 ]
+    4fec:	f2 27 a0 48 	st  %i1, [ %fp + 0x48 ]
+    4ff0:	c2 07 a0 44 	ld  [ %fp + 0x44 ], %g1
+    4ff4:	c4 07 a0 48 	ld  [ %fp + 0x48 ], %g2
+    4ff8:	c2 a0 80 80 	sta  %g1, [ %g2 ] #ASI_N
+    4ffc:	81 e8 00 00 	restore 
+    5000:	81 c3 e0 08 	retl 
+    5004:	01 00 00 00 	nop 
+
+00005008 <__ajit_store_word_mmu_bypass__>:
+    5008:	9d e3 bf a0 	save  %sp, -96, %sp
+    500c:	f0 27 a0 44 	st  %i0, [ %fp + 0x44 ]
+    5010:	f2 27 a0 48 	st  %i1, [ %fp + 0x48 ]
+    5014:	c2 07 a0 44 	ld  [ %fp + 0x44 ], %g1
+    5018:	c4 07 a0 48 	ld  [ %fp + 0x48 ], %g2
+    501c:	c2 a0 84 00 	sta  %g1, [ %g2 ] #ASI_SCRATCHPAD
+    5020:	81 e8 00 00 	restore 
+    5024:	81 c3 e0 08 	retl 
+    5028:	01 00 00 00 	nop 
+
+0000502c <__ajit_load_word_mmu_reg__>:
+    502c:	9d e3 bf 98 	save  %sp, -104, %sp
+    5030:	f0 27 a0 44 	st  %i0, [ %fp + 0x44 ]
+    5034:	c2 07 a0 44 	ld  [ %fp + 0x44 ], %g1
+    5038:	fa 80 40 80 	lda  [ %g1 ] #ASI_N, %i5
+    503c:	fa 27 bf fc 	st  %i5, [ %fp + -4 ]
+    5040:	c2 07 bf fc 	ld  [ %fp + -4 ], %g1
+    5044:	b0 10 00 01 	mov  %g1, %i0
+    5048:	81 e8 00 00 	restore 
+    504c:	81 c3 e0 08 	retl 
+    5050:	01 00 00 00 	nop 
+
+00005054 <__ajit_load_word_mmu_bypass__>:
+    5054:	9d e3 bf 98 	save  %sp, -104, %sp
+    5058:	f0 27 a0 44 	st  %i0, [ %fp + 0x44 ]
+    505c:	c2 07 a0 44 	ld  [ %fp + 0x44 ], %g1
+    5060:	fa 80 44 00 	lda  [ %g1 ] #ASI_SCRATCHPAD, %i5
+    5064:	fa 27 bf fc 	st  %i5, [ %fp + -4 ]
+    5068:	c2 07 bf fc 	ld  [ %fp + -4 ], %g1
+    506c:	b0 10 00 01 	mov  %g1, %i0
+    5070:	81 e8 00 00 	restore 
+    5074:	81 c3 e0 08 	retl 
+    5078:	01 00 00 00 	nop 
+
+0000507c <__ajit_enable_mmu__>:
+    507c:	9d e3 bf 98 	save  %sp, -104, %sp
+    5080:	c0 27 bf fc 	clr  [ %fp + -4 ]
+    5084:	d0 07 bf fc 	ld  [ %fp + -4 ], %o0
+    5088:	7f ff ff e9 	call  502c <__ajit_load_word_mmu_reg__>
+    508c:	01 00 00 00 	nop 
+    5090:	d0 27 bf f8 	st  %o0, [ %fp + -8 ]
+    5094:	c2 07 bf f8 	ld  [ %fp + -8 ], %g1
+    5098:	82 10 60 01 	or  %g1, 1, %g1
+    509c:	c2 27 bf f8 	st  %g1, [ %fp + -8 ]
+    50a0:	d0 07 bf f8 	ld  [ %fp + -8 ], %o0
+    50a4:	d2 07 bf fc 	ld  [ %fp + -4 ], %o1
+    50a8:	7f ff ff cf 	call  4fe4 <__ajit_store_word_mmu_reg__>
+    50ac:	01 00 00 00 	nop 
+    50b0:	81 e8 00 00 	restore 
+    50b4:	81 c3 e0 08 	retl 
+    50b8:	01 00 00 00 	nop 
+
+000050bc <__ajit_disable_mmu__>:
+    50bc:	9d e3 bf 98 	save  %sp, -104, %sp
+    50c0:	c0 27 bf fc 	clr  [ %fp + -4 ]
+    50c4:	d0 07 bf fc 	ld  [ %fp + -4 ], %o0
+    50c8:	7f ff ff d9 	call  502c <__ajit_load_word_mmu_reg__>
+    50cc:	01 00 00 00 	nop 
+    50d0:	d0 27 bf f8 	st  %o0, [ %fp + -8 ]
+    50d4:	c2 07 bf f8 	ld  [ %fp + -8 ], %g1
+    50d8:	82 08 7f fe 	and  %g1, -2, %g1
+    50dc:	c2 27 bf f8 	st  %g1, [ %fp + -8 ]
+    50e0:	d0 07 bf f8 	ld  [ %fp + -8 ], %o0
+    50e4:	d2 07 bf fc 	ld  [ %fp + -4 ], %o1
+    50e8:	7f ff ff bf 	call  4fe4 <__ajit_store_word_mmu_reg__>
+    50ec:	01 00 00 00 	nop 
+    50f0:	81 e8 00 00 	restore 
+    50f4:	81 c3 e0 08 	retl 
+    50f8:	01 00 00 00 	nop 
+
+000050fc <__ajit_mmu_flush__>:
+    50fc:	9d e3 bf a0 	save  %sp, -96, %sp
+    5100:	f0 27 a0 44 	st  %i0, [ %fp + 0x44 ]
+    5104:	f2 27 a0 48 	st  %i1, [ %fp + 0x48 ]
+    5108:	c2 07 a0 44 	ld  [ %fp + 0x44 ], %g1
+    510c:	c4 07 a0 48 	ld  [ %fp + 0x48 ], %g2
+    5110:	c2 a0 80 60 	sta  %g1, [ %g2 ] (3)
+    5114:	81 e8 00 00 	restore 
+    5118:	81 c3 e0 08 	retl 
+    511c:	01 00 00 00 	nop 
+
+00005120 <__ajit_mmu_probe__>:
+    5120:	9d e3 bf 98 	save  %sp, -104, %sp
+    5124:	f0 27 a0 44 	st  %i0, [ %fp + 0x44 ]
+    5128:	c2 07 a0 44 	ld  [ %fp + 0x44 ], %g1
+    512c:	fa 80 40 60 	lda  [ %g1 ] (3), %i5
+    5130:	fa 27 bf fc 	st  %i5, [ %fp + -4 ]
+    5134:	c2 07 bf fc 	ld  [ %fp + -4 ], %g1
+    5138:	b0 10 00 01 	mov  %g1, %i0
+    513c:	81 e8 00 00 	restore 
+    5140:	81 c3 e0 08 	retl 
+    5144:	01 00 00 00 	nop 
+
+00005148 <__ajit_mmu_context_switch__>:
+    5148:	9d e3 bf a0 	save  %sp, -96, %sp
+    514c:	f0 27 a0 44 	st  %i0, [ %fp + 0x44 ]
+    5150:	c2 07 a0 44 	ld  [ %fp + 0x44 ], %g1
+    5154:	a0 10 00 01 	mov  %g1, %l0
+    5158:	c0 a0 02 60 	sta  %g0, [ %g0 ] (19)
+    515c:	81 d8 20 00 	flush  %g0
+    5160:	c0 a0 00 60 	sta  %g0, [ %g0 ] (3)
+    5164:	82 10 22 00 	mov  0x200, %g1
+    5168:	e0 a0 40 80 	sta  %l0, [ %g1 ] #ASI_N
+    516c:	c0 a0 02 60 	sta  %g0, [ %g0 ] (19)
+    5170:	81 d8 20 00 	flush  %g0
+    5174:	c0 a0 00 60 	sta  %g0, [ %g0 ] (3)
+    5178:	81 e8 00 00 	restore 
+    517c:	81 c3 e0 08 	retl 
+    5180:	01 00 00 00 	nop 
+
+00005184 <_ajit_va_l1_offset>:
+    5184:	9d e3 bf a0 	save  %sp, -96, %sp
+    5188:	f0 27 a0 44 	st  %i0, [ %fp + 0x44 ]
+    518c:	c2 07 a0 44 	ld  [ %fp + 0x44 ], %g1
+    5190:	83 30 60 18 	srl  %g1, 0x18, %g1
+    5194:	b0 10 00 01 	mov  %g1, %i0
+    5198:	81 e8 00 00 	restore 
+    519c:	81 c3 e0 08 	retl 
+    51a0:	01 00 00 00 	nop 
+
+000051a4 <_ajit_va_l2_offset>:
+    51a4:	9d e3 bf a0 	save  %sp, -96, %sp
+    51a8:	f0 27 a0 44 	st  %i0, [ %fp + 0x44 ]
+    51ac:	c2 07 a0 44 	ld  [ %fp + 0x44 ], %g1
+    51b0:	83 30 60 12 	srl  %g1, 0x12, %g1
+    51b4:	82 08 60 1f 	and  %g1, 0x1f, %g1
+    51b8:	b0 10 00 01 	mov  %g1, %i0
+    51bc:	81 e8 00 00 	restore 
+    51c0:	81 c3 e0 08 	retl 
+    51c4:	01 00 00 00 	nop 
+
+000051c8 <_ajit_va_l3_offset>:
+    51c8:	9d e3 bf a0 	save  %sp, -96, %sp
+    51cc:	f0 27 a0 44 	st  %i0, [ %fp + 0x44 ]
+    51d0:	c2 07 a0 44 	ld  [ %fp + 0x44 ], %g1
+    51d4:	83 30 60 0c 	srl  %g1, 0xc, %g1
+    51d8:	82 08 60 1f 	and  %g1, 0x1f, %g1
+    51dc:	b0 10 00 01 	mov  %g1, %i0
+    51e0:	81 e8 00 00 	restore 
+    51e4:	81 c3 e0 08 	retl 
+    51e8:	01 00 00 00 	nop 
+
+000051ec <__ajit_make_pte__>:
+    51ec:	9d e3 bf 98 	save  %sp, -104, %sp
+    51f0:	f0 27 a0 44 	st  %i0, [ %fp + 0x44 ]
+    51f4:	88 10 00 19 	mov  %i1, %g4
+    51f8:	86 10 00 1a 	mov  %i2, %g3
+    51fc:	84 10 00 1b 	mov  %i3, %g2
+    5200:	82 10 00 1c 	mov  %i4, %g1
+    5204:	c8 2f a0 48 	stb  %g4, [ %fp + 0x48 ]
+    5208:	c6 2f a0 4c 	stb  %g3, [ %fp + 0x4c ]
+    520c:	c4 2f a0 50 	stb  %g2, [ %fp + 0x50 ]
+    5210:	c2 2f a0 54 	stb  %g1, [ %fp + 0x54 ]
+    5214:	c2 0f a0 54 	ldub  [ %fp + 0x54 ], %g1
+    5218:	82 08 60 ff 	and  %g1, 0xff, %g1
+    521c:	83 28 60 02 	sll  %g1, 2, %g1
+    5220:	84 10 60 02 	or  %g1, 2, %g2
+    5224:	c2 0f a0 50 	ldub  [ %fp + 0x50 ], %g1
+    5228:	82 08 60 ff 	and  %g1, 0xff, %g1
+    522c:	83 28 60 05 	sll  %g1, 5, %g1
+    5230:	84 10 80 01 	or  %g2, %g1, %g2
+    5234:	c2 0f a0 4c 	ldub  [ %fp + 0x4c ], %g1
+    5238:	82 08 60 ff 	and  %g1, 0xff, %g1
+    523c:	83 28 60 06 	sll  %g1, 6, %g1
+    5240:	84 10 80 01 	or  %g2, %g1, %g2
+    5244:	c2 0f a0 48 	ldub  [ %fp + 0x48 ], %g1
+    5248:	82 08 60 ff 	and  %g1, 0xff, %g1
+    524c:	83 28 60 07 	sll  %g1, 7, %g1
+    5250:	82 10 80 01 	or  %g2, %g1, %g1
+    5254:	84 10 00 01 	mov  %g1, %g2
+    5258:	c2 07 a0 44 	ld  [ %fp + 0x44 ], %g1
+    525c:	83 28 60 08 	sll  %g1, 8, %g1
+    5260:	82 10 80 01 	or  %g2, %g1, %g1
+    5264:	c2 27 bf fc 	st  %g1, [ %fp + -4 ]
+    5268:	c2 07 bf fc 	ld  [ %fp + -4 ], %g1
+    526c:	b0 10 00 01 	mov  %g1, %i0
+    5270:	81 e8 00 00 	restore 
+    5274:	81 c3 e0 08 	retl 
+    5278:	01 00 00 00 	nop 
+
+0000527c <__ajit_make_ptd__>:
+    527c:	9d e3 bf 98 	save  %sp, -104, %sp
+    5280:	f0 27 a0 44 	st  %i0, [ %fp + 0x44 ]
+    5284:	c2 07 a0 44 	ld  [ %fp + 0x44 ], %g1
+    5288:	83 28 60 02 	sll  %g1, 2, %g1
+    528c:	82 10 60 01 	or  %g1, 1, %g1
+    5290:	c2 27 bf fc 	st  %g1, [ %fp + -4 ]
+    5294:	c2 07 bf fc 	ld  [ %fp + -4 ], %g1
+    5298:	b0 10 00 01 	mov  %g1, %i0
+    529c:	81 e8 00 00 	restore 
+    52a0:	81 c3 e0 08 	retl 
+    52a4:	01 00 00 00 	nop 
+
+000052a8 <__ajit_flush_icache__>:
+    52a8:	9d e3 bf a0 	save  %sp, -96, %sp
+    52ac:	81 d8 20 00 	flush  %g0
+    52b0:	81 e8 00 00 	restore 
+    52b4:	81 c3 e0 08 	retl 
+    52b8:	01 00 00 00 	nop 
+
+000052bc <__ajit_flush_dcache__>:
+    52bc:	9d e3 bf a0 	save  %sp, -96, %sp
+    52c0:	c0 a0 02 60 	sta  %g0, [ %g0 ] (19)
+    52c4:	81 e8 00 00 	restore 
+    52c8:	81 c3 e0 08 	retl 
+    52cc:	01 00 00 00 	nop 
+
+000052d0 <__ajit_write_timer_control_register__>:
+    52d0:	9d e3 bf 98 	save  %sp, -104, %sp
+    52d4:	f0 27 a0 44 	st  %i0, [ %fp + 0x44 ]
+    52d8:	03 3f ff cc 	sethi  %hi(0xffff3000), %g1
+    52dc:	82 10 61 00 	or  %g1, 0x100, %g1	! ffff3100 <CVTBUF+0xfffe30f8>
+    52e0:	c2 27 bf fc 	st  %g1, [ %fp + -4 ]
+    52e4:	d0 07 a0 44 	ld  [ %fp + 0x44 ], %o0
+    52e8:	d2 07 bf fc 	ld  [ %fp + -4 ], %o1
+    52ec:	7f ff ff 47 	call  5008 <__ajit_store_word_mmu_bypass__>
+    52f0:	01 00 00 00 	nop 
+    52f4:	81 e8 00 00 	restore 
+    52f8:	81 c3 e0 08 	retl 
+    52fc:	01 00 00 00 	nop 
+
+00005300 <__ajit_read_timer_control_register__>:
+    5300:	9d e3 bf 98 	save  %sp, -104, %sp
+    5304:	03 3f ff cc 	sethi  %hi(0xffff3000), %g1
+    5308:	90 10 61 00 	or  %g1, 0x100, %o0	! ffff3100 <CVTBUF+0xfffe30f8>
+    530c:	7f ff ff 52 	call  5054 <__ajit_load_word_mmu_bypass__>
+    5310:	01 00 00 00 	nop 
+    5314:	d0 27 bf fc 	st  %o0, [ %fp + -4 ]
+    5318:	c2 07 bf fc 	ld  [ %fp + -4 ], %g1
+    531c:	b0 10 00 01 	mov  %g1, %i0
+    5320:	81 e8 00 00 	restore 
+    5324:	81 c3 e0 08 	retl 
+    5328:	01 00 00 00 	nop 
+
+0000532c <__ajit_write_serial_control_register__>:
+    532c:	9d e3 bf 98 	save  %sp, -104, %sp
+    5330:	f0 27 a0 44 	st  %i0, [ %fp + 0x44 ]
+    5334:	03 3f ff cc 	sethi  %hi(0xffff3000), %g1
+    5338:	82 10 62 00 	or  %g1, 0x200, %g1	! ffff3200 <CVTBUF+0xfffe31f8>
+    533c:	c2 27 bf fc 	st  %g1, [ %fp + -4 ]
+    5340:	c2 07 a0 44 	ld  [ %fp + 0x44 ], %g1
+    5344:	c4 07 bf fc 	ld  [ %fp + -4 ], %g2
+    5348:	c2 a0 84 00 	sta  %g1, [ %g2 ] #ASI_SCRATCHPAD
+    534c:	81 e8 00 00 	restore 
+    5350:	81 c3 e0 08 	retl 
+    5354:	01 00 00 00 	nop 
+
+00005358 <__ajit_serial_configure__>:
+    5358:	9d e3 bf 98 	save  %sp, -104, %sp
+    535c:	86 10 00 18 	mov  %i0, %g3
+    5360:	84 10 00 19 	mov  %i1, %g2
+    5364:	82 10 00 1a 	mov  %i2, %g1
+    5368:	c6 2f a0 44 	stb  %g3, [ %fp + 0x44 ]
+    536c:	c4 2f a0 48 	stb  %g2, [ %fp + 0x48 ]
+    5370:	c2 2f a0 4c 	stb  %g1, [ %fp + 0x4c ]
+    5374:	c0 27 bf fc 	clr  [ %fp + -4 ]
+    5378:	03 3f ff cc 	sethi  %hi(0xffff3000), %g1
+    537c:	82 10 62 00 	or  %g1, 0x200, %g1	! ffff3200 <CVTBUF+0xfffe31f8>
+    5380:	fa 80 44 00 	lda  [ %g1 ] #ASI_SCRATCHPAD, %i5
+    5384:	fa 27 bf fc 	st  %i5, [ %fp + -4 ]
+    5388:	c2 0f a0 44 	ldub  [ %fp + 0x44 ], %g1
+    538c:	82 08 60 ff 	and  %g1, 0xff, %g1
+    5390:	80 a0 60 00 	cmp  %g1, 0
+    5394:	02 80 00 07 	be  53b0 <__ajit_serial_configure__+0x58>
+    5398:	01 00 00 00 	nop 
+    539c:	c2 07 bf fc 	ld  [ %fp + -4 ], %g1
+    53a0:	82 10 60 01 	or  %g1, 1, %g1
+    53a4:	c2 27 bf fc 	st  %g1, [ %fp + -4 ]
+    53a8:	10 80 00 05 	b  53bc <__ajit_serial_configure__+0x64>
+    53ac:	01 00 00 00 	nop 
+    53b0:	c2 07 bf fc 	ld  [ %fp + -4 ], %g1
+    53b4:	82 08 7f fe 	and  %g1, -2, %g1
+    53b8:	c2 27 bf fc 	st  %g1, [ %fp + -4 ]
+    53bc:	c2 0f a0 48 	ldub  [ %fp + 0x48 ], %g1
+    53c0:	82 08 60 ff 	and  %g1, 0xff, %g1
+    53c4:	80 a0 60 00 	cmp  %g1, 0
+    53c8:	02 80 00 07 	be  53e4 <__ajit_serial_configure__+0x8c>
+    53cc:	01 00 00 00 	nop 
+    53d0:	c2 07 bf fc 	ld  [ %fp + -4 ], %g1
+    53d4:	82 10 60 02 	or  %g1, 2, %g1
+    53d8:	c2 27 bf fc 	st  %g1, [ %fp + -4 ]
+    53dc:	10 80 00 05 	b  53f0 <__ajit_serial_configure__+0x98>
+    53e0:	01 00 00 00 	nop 
+    53e4:	c2 07 bf fc 	ld  [ %fp + -4 ], %g1
+    53e8:	82 08 7f fd 	and  %g1, -3, %g1
+    53ec:	c2 27 bf fc 	st  %g1, [ %fp + -4 ]
+    53f0:	c2 0f a0 4c 	ldub  [ %fp + 0x4c ], %g1
+    53f4:	82 08 60 ff 	and  %g1, 0xff, %g1
+    53f8:	80 a0 60 00 	cmp  %g1, 0
+    53fc:	02 80 00 07 	be  5418 <__ajit_serial_configure__+0xc0>
+    5400:	01 00 00 00 	nop 
+    5404:	c2 07 bf fc 	ld  [ %fp + -4 ], %g1
+    5408:	82 10 60 04 	or  %g1, 4, %g1
+    540c:	c2 27 bf fc 	st  %g1, [ %fp + -4 ]
+    5410:	10 80 00 05 	b  5424 <__ajit_serial_configure__+0xcc>
+    5414:	01 00 00 00 	nop 
+    5418:	c2 07 bf fc 	ld  [ %fp + -4 ], %g1
+    541c:	82 08 7f fb 	and  %g1, -5, %g1
+    5420:	c2 27 bf fc 	st  %g1, [ %fp + -4 ]
+    5424:	c2 07 bf fc 	ld  [ %fp + -4 ], %g1
+    5428:	05 3f ff cc 	sethi  %hi(0xffff3000), %g2
+    542c:	84 10 a2 00 	or  %g2, 0x200, %g2	! ffff3200 <CVTBUF+0xfffe31f8>
+    5430:	c2 a0 84 00 	sta  %g1, [ %g2 ] #ASI_SCRATCHPAD
+    5434:	81 e8 00 00 	restore 
+    5438:	81 c3 e0 08 	retl 
+    543c:	01 00 00 00 	nop 
+
+00005440 <__ajit_read_serial_control_register__>:
+    5440:	9d e3 bf 98 	save  %sp, -104, %sp
+    5444:	03 3f ff cc 	sethi  %hi(0xffff3000), %g1
+    5448:	82 10 62 00 	or  %g1, 0x200, %g1	! ffff3200 <CVTBUF+0xfffe31f8>
+    544c:	c2 27 bf fc 	st  %g1, [ %fp + -4 ]
+    5450:	c0 27 bf f8 	clr  [ %fp + -8 ]
+    5454:	c2 07 bf fc 	ld  [ %fp + -4 ], %g1
+    5458:	fa 80 44 00 	lda  [ %g1 ] #ASI_SCRATCHPAD, %i5
+    545c:	fa 27 bf f8 	st  %i5, [ %fp + -8 ]
+    5460:	c2 07 bf f8 	ld  [ %fp + -8 ], %g1
+    5464:	b0 10 00 01 	mov  %g1, %i0
+    5468:	81 e8 00 00 	restore 
+    546c:	81 c3 e0 08 	retl 
+    5470:	01 00 00 00 	nop 
+
+00005474 <__ajit_write_serial_tx_register__>:
+    5474:	9d e3 bf 98 	save  %sp, -104, %sp
+    5478:	f0 27 a0 44 	st  %i0, [ %fp + 0x44 ]
+    547c:	03 3f ff cc 	sethi  %hi(0xffff3000), %g1
+    5480:	82 10 62 10 	or  %g1, 0x210, %g1	! ffff3210 <CVTBUF+0xfffe3208>
+    5484:	c2 27 bf fc 	st  %g1, [ %fp + -4 ]
+    5488:	c2 07 a0 44 	ld  [ %fp + 0x44 ], %g1
+    548c:	c4 07 bf fc 	ld  [ %fp + -4 ], %g2
+    5490:	c2 a0 84 00 	sta  %g1, [ %g2 ] #ASI_SCRATCHPAD
+    5494:	81 e8 00 00 	restore 
+    5498:	81 c3 e0 08 	retl 
+    549c:	01 00 00 00 	nop 
+
+000054a0 <__ajit_read_serial_tx_register__>:
+    54a0:	9d e3 bf 98 	save  %sp, -104, %sp
+    54a4:	03 3f ff cc 	sethi  %hi(0xffff3000), %g1
+    54a8:	82 10 62 10 	or  %g1, 0x210, %g1	! ffff3210 <CVTBUF+0xfffe3208>
+    54ac:	c2 27 bf fc 	st  %g1, [ %fp + -4 ]
+    54b0:	c0 27 bf f8 	clr  [ %fp + -8 ]
+    54b4:	c2 07 bf fc 	ld  [ %fp + -4 ], %g1
+    54b8:	fa 80 44 00 	lda  [ %g1 ] #ASI_SCRATCHPAD, %i5
+    54bc:	fa 27 bf f8 	st  %i5, [ %fp + -8 ]
+    54c0:	c2 07 bf f8 	ld  [ %fp + -8 ], %g1
+    54c4:	b0 10 00 01 	mov  %g1, %i0
+    54c8:	81 e8 00 00 	restore 
+    54cc:	81 c3 e0 08 	retl 
+    54d0:	01 00 00 00 	nop 
+
+000054d4 <__ajit_read_serial_rx_register__>:
+    54d4:	9d e3 bf 98 	save  %sp, -104, %sp
+    54d8:	03 3f ff cc 	sethi  %hi(0xffff3000), %g1
+    54dc:	82 10 62 20 	or  %g1, 0x220, %g1	! ffff3220 <CVTBUF+0xfffe3218>
+    54e0:	c2 27 bf fc 	st  %g1, [ %fp + -4 ]
+    54e4:	c0 27 bf f8 	clr  [ %fp + -8 ]
+    54e8:	c2 07 bf fc 	ld  [ %fp + -4 ], %g1
+    54ec:	fa 88 44 00 	lduba  [ %g1 ] #ASI_SCRATCHPAD, %i5
+    54f0:	fa 27 bf f8 	st  %i5, [ %fp + -8 ]
+    54f4:	c2 07 bf f8 	ld  [ %fp + -8 ], %g1
+    54f8:	b0 10 00 01 	mov  %g1, %i0
+    54fc:	81 e8 00 00 	restore 
+    5500:	81 c3 e0 08 	retl 
+    5504:	01 00 00 00 	nop 
+
+00005508 <__ajit_serial_putchar__>:
+    5508:	9d e3 bf 98 	save  %sp, -104, %sp
+    550c:	82 10 00 18 	mov  %i0, %g1
+    5510:	c2 2f a0 44 	stb  %g1, [ %fp + 0x44 ]
+    5514:	c0 27 bf f8 	clr  [ %fp + -8 ]
+    5518:	03 3f ff cc 	sethi  %hi(0xffff3000), %g1
+    551c:	82 10 62 00 	or  %g1, 0x200, %g1	! ffff3200 <CVTBUF+0xfffe31f8>
+    5520:	fa 80 44 00 	lda  [ %g1 ] #ASI_SCRATCHPAD, %i5
+    5524:	fa 27 bf f8 	st  %i5, [ %fp + -8 ]
+    5528:	c0 27 bf fc 	clr  [ %fp + -4 ]
+    552c:	c2 07 bf f8 	ld  [ %fp + -8 ], %g1
+    5530:	82 08 60 01 	and  %g1, 1, %g1
+    5534:	80 a0 60 00 	cmp  %g1, 0
+    5538:	02 80 00 0f 	be  5574 <__ajit_serial_putchar__+0x6c>
+    553c:	01 00 00 00 	nop 
+    5540:	c2 07 bf f8 	ld  [ %fp + -8 ], %g1
+    5544:	82 08 60 08 	and  %g1, 8, %g1
+    5548:	80 a0 60 00 	cmp  %g1, 0
+    554c:	12 80 00 0a 	bne  5574 <__ajit_serial_putchar__+0x6c>
+    5550:	01 00 00 00 	nop 
+    5554:	c2 0f a0 44 	ldub  [ %fp + 0x44 ], %g1
+    5558:	05 3f ff cc 	sethi  %hi(0xffff3000), %g2
+    555c:	84 10 a2 10 	or  %g2, 0x210, %g2	! ffff3210 <CVTBUF+0xfffe3208>
+    5560:	c2 a8 84 00 	stba  %g1, [ %g2 ] #ASI_SCRATCHPAD
+    5564:	c2 0f a0 44 	ldub  [ %fp + 0x44 ], %g1
+    5568:	83 28 60 18 	sll  %g1, 0x18, %g1
+    556c:	83 38 60 18 	sra  %g1, 0x18, %g1
+    5570:	c2 27 bf fc 	st  %g1, [ %fp + -4 ]
+    5574:	c2 07 bf fc 	ld  [ %fp + -4 ], %g1
+    5578:	b0 10 00 01 	mov  %g1, %i0
+    557c:	81 e8 00 00 	restore 
+    5580:	81 c3 e0 08 	retl 
+    5584:	01 00 00 00 	nop 
+
+00005588 <__ajit_serial_getchar__>:
+    5588:	9d e3 bf 90 	save  %sp, -112, %sp
+    558c:	c0 27 bf fc 	clr  [ %fp + -4 ]
+    5590:	7f ff ff ac 	call  5440 <__ajit_read_serial_control_register__>
+    5594:	01 00 00 00 	nop 
+    5598:	d0 27 bf f8 	st  %o0, [ %fp + -8 ]
+    559c:	c2 07 bf f8 	ld  [ %fp + -8 ], %g1
+    55a0:	82 08 60 02 	and  %g1, 2, %g1
+    55a4:	80 a0 60 00 	cmp  %g1, 0
+    55a8:	02 80 00 0e 	be  55e0 <__ajit_serial_getchar__+0x58>
+    55ac:	01 00 00 00 	nop 
+    55b0:	c2 07 bf f8 	ld  [ %fp + -8 ], %g1
+    55b4:	82 08 60 10 	and  %g1, 0x10, %g1
+    55b8:	80 a0 60 00 	cmp  %g1, 0
+    55bc:	02 80 00 09 	be  55e0 <__ajit_serial_getchar__+0x58>
+    55c0:	01 00 00 00 	nop 
+    55c4:	c0 27 bf f4 	clr  [ %fp + -12 ]
+    55c8:	03 3f ff cc 	sethi  %hi(0xffff3000), %g1
+    55cc:	82 10 62 20 	or  %g1, 0x220, %g1	! ffff3220 <CVTBUF+0xfffe3218>
+    55d0:	fa 88 44 00 	lduba  [ %g1 ] #ASI_SCRATCHPAD, %i5
+    55d4:	fa 27 bf f4 	st  %i5, [ %fp + -12 ]
+    55d8:	c2 07 bf f4 	ld  [ %fp + -12 ], %g1
+    55dc:	c2 27 bf fc 	st  %g1, [ %fp + -4 ]
+    55e0:	c2 07 bf fc 	ld  [ %fp + -4 ], %g1
+    55e4:	b0 10 00 01 	mov  %g1, %i0
+    55e8:	81 e8 00 00 	restore 
+    55ec:	81 c3 e0 08 	retl 
+    55f0:	01 00 00 00 	nop 
+
+000055f4 <__ajit_serial_puts__>:
+    55f4:	9d e3 bf 98 	save  %sp, -104, %sp
+    55f8:	f0 27 a0 44 	st  %i0, [ %fp + 0x44 ]
+    55fc:	f2 27 a0 48 	st  %i1, [ %fp + 0x48 ]
+    5600:	c0 27 bf fc 	clr  [ %fp + -4 ]
+    5604:	10 80 00 16 	b  565c <__ajit_serial_puts__+0x68>
+    5608:	01 00 00 00 	nop 
+    560c:	c0 27 bf f8 	clr  [ %fp + -8 ]
+    5610:	10 80 00 0c 	b  5640 <__ajit_serial_puts__+0x4c>
+    5614:	01 00 00 00 	nop 
+    5618:	c2 07 bf fc 	ld  [ %fp + -4 ], %g1
+    561c:	c4 07 a0 44 	ld  [ %fp + 0x44 ], %g2
+    5620:	82 00 80 01 	add  %g2, %g1, %g1
+    5624:	c2 08 40 00 	ldub  [ %g1 ], %g1
+    5628:	83 28 60 18 	sll  %g1, 0x18, %g1
+    562c:	83 38 60 18 	sra  %g1, 0x18, %g1
+    5630:	90 10 00 01 	mov  %g1, %o0
+    5634:	7f ff ff b5 	call  5508 <__ajit_serial_putchar__>
+    5638:	01 00 00 00 	nop 
+    563c:	d0 27 bf f8 	st  %o0, [ %fp + -8 ]
+    5640:	c2 07 bf f8 	ld  [ %fp + -8 ], %g1
+    5644:	80 a0 60 00 	cmp  %g1, 0
+    5648:	02 bf ff f4 	be  5618 <__ajit_serial_puts__+0x24>
+    564c:	01 00 00 00 	nop 
+    5650:	c2 07 bf fc 	ld  [ %fp + -4 ], %g1
+    5654:	82 00 60 01 	inc  %g1
+    5658:	c2 27 bf fc 	st  %g1, [ %fp + -4 ]
+    565c:	c4 07 bf fc 	ld  [ %fp + -4 ], %g2
+    5660:	c2 07 a0 48 	ld  [ %fp + 0x48 ], %g1
+    5664:	80 a0 80 01 	cmp  %g2, %g1
+    5668:	0a bf ff e9 	bcs  560c <__ajit_serial_puts__+0x18>
+    566c:	01 00 00 00 	nop 
+    5670:	81 e8 00 00 	restore 
+    5674:	81 c3 e0 08 	retl 
+    5678:	01 00 00 00 	nop 
+
+0000567c <__ajit_serial_gets__>:
+    567c:	9d e3 bf 98 	save  %sp, -104, %sp
+    5680:	f0 27 a0 44 	st  %i0, [ %fp + 0x44 ]
+    5684:	f2 27 a0 48 	st  %i1, [ %fp + 0x48 ]
+    5688:	c0 27 bf fc 	clr  [ %fp + -4 ]
+    568c:	10 80 00 14 	b  56dc <__ajit_serial_gets__+0x60>
+    5690:	01 00 00 00 	nop 
+    5694:	c0 27 bf f8 	clr  [ %fp + -8 ]
+    5698:	10 80 00 05 	b  56ac <__ajit_serial_gets__+0x30>
+    569c:	01 00 00 00 	nop 
+    56a0:	7f ff ff ba 	call  5588 <__ajit_serial_getchar__>
+    56a4:	01 00 00 00 	nop 
+    56a8:	d0 27 bf f8 	st  %o0, [ %fp + -8 ]
+    56ac:	c2 07 bf f8 	ld  [ %fp + -8 ], %g1
+    56b0:	80 a0 60 00 	cmp  %g1, 0
+    56b4:	02 bf ff fb 	be  56a0 <__ajit_serial_gets__+0x24>
+    56b8:	01 00 00 00 	nop 
+    56bc:	c2 07 bf fc 	ld  [ %fp + -4 ], %g1
+    56c0:	c4 07 a0 44 	ld  [ %fp + 0x44 ], %g2
+    56c4:	82 00 80 01 	add  %g2, %g1, %g1
+    56c8:	c4 07 bf f8 	ld  [ %fp + -8 ], %g2
+    56cc:	c4 28 40 00 	stb  %g2, [ %g1 ]
+    56d0:	c2 07 bf fc 	ld  [ %fp + -4 ], %g1
+    56d4:	82 00 60 01 	inc  %g1
+    56d8:	c2 27 bf fc 	st  %g1, [ %fp + -4 ]
+    56dc:	c4 07 bf fc 	ld  [ %fp + -4 ], %g2
+    56e0:	c2 07 a0 48 	ld  [ %fp + 0x48 ], %g1
+    56e4:	80 a0 80 01 	cmp  %g2, %g1
+    56e8:	0a bf ff eb 	bcs  5694 <__ajit_serial_gets__+0x18>
+    56ec:	01 00 00 00 	nop 
+    56f0:	81 e8 00 00 	restore 
+    56f4:	81 c3 e0 08 	retl 
+    56f8:	01 00 00 00 	nop 
+
+000056fc <__ajit_write_irc_control_register__>:
+    56fc:	9d e3 bf 98 	save  %sp, -104, %sp
+    5700:	f0 27 a0 44 	st  %i0, [ %fp + 0x44 ]
+    5704:	03 3f ff cc 	sethi  %hi(0xffff3000), %g1
+    5708:	c2 27 bf fc 	st  %g1, [ %fp + -4 ]
+    570c:	d0 07 a0 44 	ld  [ %fp + 0x44 ], %o0
+    5710:	d2 07 bf fc 	ld  [ %fp + -4 ], %o1
+    5714:	7f ff fe 3d 	call  5008 <__ajit_store_word_mmu_bypass__>
+    5718:	01 00 00 00 	nop 
+    571c:	81 e8 00 00 	restore 
+    5720:	81 c3 e0 08 	retl 
+    5724:	01 00 00 00 	nop 
+
+00005728 <__ajit_read_irc_control_register__>:
+    5728:	9d e3 bf 98 	save  %sp, -104, %sp
+    572c:	03 3f ff cc 	sethi  %hi(0xffff3000), %g1
+    5730:	c2 27 bf fc 	st  %g1, [ %fp + -4 ]
+    5734:	d0 07 bf fc 	ld  [ %fp + -4 ], %o0
+    5738:	7f ff fe 47 	call  5054 <__ajit_load_word_mmu_bypass__>
+    573c:	01 00 00 00 	nop 
+    5740:	d0 27 bf f8 	st  %o0, [ %fp + -8 ]
+    5744:	c2 07 bf f8 	ld  [ %fp + -8 ], %g1
+    5748:	b0 10 00 01 	mov  %g1, %i0
+    574c:	81 e8 00 00 	restore 
+    5750:	81 c3 e0 08 	retl 
+    5754:	01 00 00 00 	nop 
+
+00005758 <__ajit_write_spi_master_register__>:
+    5758:	9d e3 bf 98 	save  %sp, -104, %sp
+    575c:	84 10 00 18 	mov  %i0, %g2
+    5760:	82 10 00 19 	mov  %i1, %g1
+    5764:	c4 2f a0 44 	stb  %g2, [ %fp + 0x44 ]
+    5768:	c2 2f a0 48 	stb  %g1, [ %fp + 0x48 ]
+    576c:	c2 0f a0 44 	ldub  [ %fp + 0x44 ], %g1
+    5770:	82 08 60 ff 	and  %g1, 0xff, %g1
+    5774:	83 28 60 02 	sll  %g1, 2, %g1
+    5778:	84 10 00 01 	mov  %g1, %g2
+    577c:	03 3f ff cc 	sethi  %hi(0xffff3000), %g1
+    5780:	82 10 63 00 	or  %g1, 0x300, %g1	! ffff3300 <CVTBUF+0xfffe32f8>
+    5784:	82 00 80 01 	add  %g2, %g1, %g1
+    5788:	c2 27 bf fc 	st  %g1, [ %fp + -4 ]
+    578c:	c2 0f a0 48 	ldub  [ %fp + 0x48 ], %g1
+    5790:	82 08 60 ff 	and  %g1, 0xff, %g1
+    5794:	90 10 00 01 	mov  %g1, %o0
+    5798:	d2 07 bf fc 	ld  [ %fp + -4 ], %o1
+    579c:	7f ff fe 1b 	call  5008 <__ajit_store_word_mmu_bypass__>
+    57a0:	01 00 00 00 	nop 
+    57a4:	81 e8 00 00 	restore 
+    57a8:	81 c3 e0 08 	retl 
+    57ac:	01 00 00 00 	nop 
+
+000057b0 <__ajit_read_spi_master_register__>:
+    57b0:	9d e3 bf 98 	save  %sp, -104, %sp
+    57b4:	82 10 00 18 	mov  %i0, %g1
+    57b8:	c2 2f a0 44 	stb  %g1, [ %fp + 0x44 ]
+    57bc:	c2 0f a0 44 	ldub  [ %fp + 0x44 ], %g1
+    57c0:	82 08 60 ff 	and  %g1, 0xff, %g1
+    57c4:	83 28 60 02 	sll  %g1, 2, %g1
+    57c8:	84 10 00 01 	mov  %g1, %g2
+    57cc:	03 3f ff cc 	sethi  %hi(0xffff3000), %g1
+    57d0:	82 10 63 00 	or  %g1, 0x300, %g1	! ffff3300 <CVTBUF+0xfffe32f8>
+    57d4:	82 00 80 01 	add  %g2, %g1, %g1
+    57d8:	c2 27 bf fc 	st  %g1, [ %fp + -4 ]
+    57dc:	d0 07 bf fc 	ld  [ %fp + -4 ], %o0
+    57e0:	7f ff fe 1d 	call  5054 <__ajit_load_word_mmu_bypass__>
+    57e4:	01 00 00 00 	nop 
+    57e8:	d0 27 bf f8 	st  %o0, [ %fp + -8 ]
+    57ec:	c2 07 bf f8 	ld  [ %fp + -8 ], %g1
+    57f0:	b0 10 00 01 	mov  %g1, %i0
+    57f4:	81 e8 00 00 	restore 
+    57f8:	81 c3 e0 08 	retl 
+    57fc:	01 00 00 00 	nop 
+
+00005800 <__ajit_gpio_xfer__>:
+    5800:	9d e3 bf 90 	save  %sp, -112, %sp
+    5804:	82 10 00 18 	mov  %i0, %g1
+    5808:	c2 2f a0 44 	stb  %g1, [ %fp + 0x44 ]
+    580c:	c0 27 bf f4 	clr  [ %fp + -12 ]
+    5810:	82 10 20 01 	mov  1, %g1
+    5814:	c2 27 bf f8 	st  %g1, [ %fp + -8 ]
+    5818:	c2 0f a0 44 	ldub  [ %fp + 0x44 ], %g1
+    581c:	82 08 60 ff 	and  %g1, 0xff, %g1
+    5820:	90 10 20 00 	clr  %o0
+    5824:	92 10 00 01 	mov  %g1, %o1
+    5828:	7f ff ff cc 	call  5758 <__ajit_write_spi_master_register__>
+    582c:	01 00 00 00 	nop 
+    5830:	82 10 20 13 	mov  0x13, %g1	! 13 <start+0x13>
+    5834:	c2 2f bf f3 	stb  %g1, [ %fp + -13 ]
+    5838:	c2 0f bf f3 	ldub  [ %fp + -13 ], %g1
+    583c:	82 08 60 ff 	and  %g1, 0xff, %g1
+    5840:	90 10 20 02 	mov  2, %o0
+    5844:	92 10 00 01 	mov  %g1, %o1
+    5848:	7f ff ff c4 	call  5758 <__ajit_write_spi_master_register__>
+    584c:	01 00 00 00 	nop 
+    5850:	82 10 21 00 	mov  0x100, %g1	! 100 <start+0x100>
+    5854:	c2 27 bf fc 	st  %g1, [ %fp + -4 ]
+    5858:	10 80 00 09 	b  587c <__ajit_gpio_xfer__+0x7c>
+    585c:	01 00 00 00 	nop 
+    5860:	90 10 20 02 	mov  2, %o0	! 2 <start+0x2>
+    5864:	7f ff ff d3 	call  57b0 <__ajit_read_spi_master_register__>
+    5868:	01 00 00 00 	nop 
+    586c:	d0 27 bf f8 	st  %o0, [ %fp + -8 ]
+    5870:	c2 07 bf fc 	ld  [ %fp + -4 ], %g1
+    5874:	82 00 7f ff 	add  %g1, -1, %g1
+    5878:	c2 27 bf fc 	st  %g1, [ %fp + -4 ]
+    587c:	c2 07 bf fc 	ld  [ %fp + -4 ], %g1
+    5880:	85 38 60 1f 	sra  %g1, 0x1f, %g2
+    5884:	c2 07 bf fc 	ld  [ %fp + -4 ], %g1
+    5888:	82 20 80 01 	sub  %g2, %g1, %g1
+    588c:	83 30 60 1f 	srl  %g1, 0x1f, %g1
+    5890:	84 08 60 ff 	and  %g1, 0xff, %g2
+    5894:	c2 07 bf f8 	ld  [ %fp + -8 ], %g1
+    5898:	82 08 80 01 	and  %g2, %g1, %g1
+    589c:	80 a0 60 00 	cmp  %g1, 0
+    58a0:	12 bf ff f0 	bne  5860 <__ajit_gpio_xfer__+0x60>
+    58a4:	01 00 00 00 	nop 
+    58a8:	90 10 20 00 	clr  %o0	! 0 <start>
+    58ac:	7f ff ff c1 	call  57b0 <__ajit_read_spi_master_register__>
+    58b0:	01 00 00 00 	nop 
+    58b4:	d0 27 bf f4 	st  %o0, [ %fp + -12 ]
+    58b8:	c2 07 bf f4 	ld  [ %fp + -12 ], %g1
+    58bc:	b0 10 00 01 	mov  %g1, %i0
+    58c0:	81 e8 00 00 	restore 
+    58c4:	81 c3 e0 08 	retl 
+    58c8:	01 00 00 00 	nop 
+
+000058cc <__ajit_ta_0__>:
+    58cc:	9d e3 bf a0 	save  %sp, -96, %sp
+    58d0:	91 d0 20 00 	ta  0
+    58d4:	01 00 00 00 	nop 
+    58d8:	01 00 00 00 	nop 
+    58dc:	81 e8 00 00 	restore 
+    58e0:	81 c3 e0 08 	retl 
+    58e4:	01 00 00 00 	nop 
+
+000058e8 <__ajit_fsqrtd__>:
+    58e8:	9d e3 bf a0 	save  %sp, -96, %sp
+    58ec:	f0 27 a0 44 	st  %i0, [ %fp + 0x44 ]
+    58f0:	f2 27 a0 48 	st  %i1, [ %fp + 0x48 ]
+    58f4:	c2 07 a0 44 	ld  [ %fp + 0x44 ], %g1
+    58f8:	c4 07 a0 48 	ld  [ %fp + 0x48 ], %g2
+    58fc:	c1 18 40 00 	ldd  [ %g1 ], %f0
+    5900:	85 a0 05 40 	fsqrtd  %f0, %f2
+    5904:	c5 38 80 00 	std  %f2, [ %g2 ]
+    5908:	81 e8 00 00 	restore 
+    590c:	81 c3 e0 08 	retl 
+    5910:	01 00 00 00 	nop 
+
+00005914 <__ajit_fsqrts__>:
+    5914:	9d e3 bf a0 	save  %sp, -96, %sp
+    5918:	f0 27 a0 44 	st  %i0, [ %fp + 0x44 ]
+    591c:	f2 27 a0 48 	st  %i1, [ %fp + 0x48 ]
+    5920:	c2 07 a0 44 	ld  [ %fp + 0x44 ], %g1
+    5924:	c4 07 a0 48 	ld  [ %fp + 0x48 ], %g2
+    5928:	c1 00 40 00 	ld  [ %g1 ], %f0
+    592c:	83 a0 05 20 	fsqrts  %f0, %f1
+    5930:	c3 20 80 00 	st  %f1, [ %g2 ]
+    5934:	81 e8 00 00 	restore 
+    5938:	81 c3 e0 08 	retl 
+    593c:	01 00 00 00 	nop 
+
+00005940 <__ajit_fitod__>:
+    5940:	9d e3 bf a0 	save  %sp, -96, %sp
+    5944:	f0 27 a0 44 	st  %i0, [ %fp + 0x44 ]
+    5948:	f2 27 a0 48 	st  %i1, [ %fp + 0x48 ]
+    594c:	c2 07 a0 44 	ld  [ %fp + 0x44 ], %g1
+    5950:	c4 07 a0 48 	ld  [ %fp + 0x48 ], %g2
+    5954:	c1 00 40 00 	ld  [ %g1 ], %f0
+    5958:	85 a0 19 00 	fitod  %f0, %f2
+    595c:	c5 38 80 00 	std  %f2, [ %g2 ]
+    5960:	81 e8 00 00 	restore 
+    5964:	81 c3 e0 08 	retl 
+    5968:	01 00 00 00 	nop 
+
+0000596c <__ajit_fitos__>:
+    596c:	9d e3 bf a0 	save  %sp, -96, %sp
+    5970:	f0 27 a0 44 	st  %i0, [ %fp + 0x44 ]
+    5974:	f2 27 a0 48 	st  %i1, [ %fp + 0x48 ]
+    5978:	c2 07 a0 44 	ld  [ %fp + 0x44 ], %g1
+    597c:	c4 07 a0 48 	ld  [ %fp + 0x48 ], %g2
+    5980:	c1 00 40 00 	ld  [ %g1 ], %f0
+    5984:	83 a0 18 80 	fitos  %f0, %f1
+    5988:	c3 20 80 00 	st  %f1, [ %g2 ]
+    598c:	81 e8 00 00 	restore 
+    5990:	81 c3 e0 08 	retl 
+    5994:	01 00 00 00 	nop 
+
+00005998 <__ajit_fdtoi__>:
+    5998:	9d e3 bf a0 	save  %sp, -96, %sp
+    599c:	f0 27 a0 44 	st  %i0, [ %fp + 0x44 ]
+    59a0:	f2 27 a0 48 	st  %i1, [ %fp + 0x48 ]
+    59a4:	c2 07 a0 44 	ld  [ %fp + 0x44 ], %g1
+    59a8:	c4 07 a0 48 	ld  [ %fp + 0x48 ], %g2
+    59ac:	c1 18 40 00 	ldd  [ %g1 ], %f0
+    59b0:	85 a0 1a 40 	fdtoi  %f0, %f2
+    59b4:	c5 20 80 00 	st  %f2, [ %g2 ]
+    59b8:	81 e8 00 00 	restore 
+    59bc:	81 c3 e0 08 	retl 
+    59c0:	01 00 00 00 	nop 
+
+000059c4 <__ajit_fstoi__>:
+    59c4:	9d e3 bf a0 	save  %sp, -96, %sp
+    59c8:	f0 27 a0 44 	st  %i0, [ %fp + 0x44 ]
+    59cc:	f2 27 a0 48 	st  %i1, [ %fp + 0x48 ]
+    59d0:	c2 07 a0 44 	ld  [ %fp + 0x44 ], %g1
+    59d4:	c4 07 a0 48 	ld  [ %fp + 0x48 ], %g2
+    59d8:	c1 00 40 00 	ld  [ %g1 ], %f0
+    59dc:	83 a0 1a 20 	fstoi  %f0, %f1
+    59e0:	c3 20 80 00 	st  %f1, [ %g2 ]
+    59e4:	81 e8 00 00 	restore 
+    59e8:	81 c3 e0 08 	retl 
+    59ec:	01 00 00 00 	nop 
+
+000059f0 <ajit_serial_init>:
+    59f0:	9d e3 bf a0 	save  %sp, -96, %sp
+    59f4:	90 10 20 01 	mov  1, %o0
+    59f8:	92 10 20 00 	clr  %o1
+    59fc:	94 10 20 00 	clr  %o2
+    5a00:	7f ff fe 56 	call  5358 <__ajit_serial_configure__>
+    5a04:	01 00 00 00 	nop 
+    5a08:	81 e8 00 00 	restore 
+    5a0c:	81 c3 e0 08 	retl 
+    5a10:	01 00 00 00 	nop 
+
+00005a14 <ajit_barebones_clock>:
+    5a14:	9d e3 bf 90 	save  %sp, -112, %sp
+    5a18:	7f ff fd 33 	call  4ee4 <__ajit_read_cycle_count_register_high__>
+    5a1c:	01 00 00 00 	nop 
+    5a20:	d0 27 bf fc 	st  %o0, [ %fp + -4 ]
+    5a24:	7f ff fd 38 	call  4f04 <__ajit_read_cycle_count_register_low__>
+    5a28:	01 00 00 00 	nop 
+    5a2c:	d0 27 bf f8 	st  %o0, [ %fp + -8 ]
+    5a30:	c2 07 bf fc 	ld  [ %fp + -4 ], %g1
+    5a34:	85 28 60 18 	sll  %g1, 0x18, %g2
+    5a38:	c2 07 bf f8 	ld  [ %fp + -8 ], %g1
+    5a3c:	83 30 60 08 	srl  %g1, 8, %g1
+    5a40:	82 10 80 01 	or  %g2, %g1, %g1
+    5a44:	c2 27 bf f4 	st  %g1, [ %fp + -12 ]
+    5a48:	c2 07 bf f4 	ld  [ %fp + -12 ], %g1
+    5a4c:	b0 10 00 01 	mov  %g1, %i0
+    5a50:	81 e8 00 00 	restore 
+    5a54:	81 c3 e0 08 	retl 
+    5a58:	01 00 00 00 	nop 

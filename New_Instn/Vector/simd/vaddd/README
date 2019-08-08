@@ -1,0 +1,7 @@
+Here we are testing the vector add instructions. They work on 64 bit data (we take input and ouput as a register pair).
+
+vaddd8  - Both inputs are divided into 8bytes and then each added. Output will be 8 one byte values.
+vaddd16 - Both inputs are divided into 4 parts of 2 bytes each.Output is will 4 two byte values.
+vaddd32 - Both inputs are divide into two words, ouput will be two 32 bit numbers.
+
+

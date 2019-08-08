@@ -3,7 +3,7 @@
 main:
 start:
 
-
+	
 
 	! Set values for a register pair.
 	set 0xf008c6f8, %g3  
@@ -18,9 +18,8 @@ start:
 	!l0 ans l1 = e00899f2
 	!l2 and l3 = e00999f2 
 
-	vaddd8 %g2,%g4,%g6
-        vaddd16 %g2,%g4,%l0
-        vaddd32 %g2,%g4,%l2
+	vaddd8 %g2,%g4,%l0
+        vaddd16 %g2,%g4,%l2
+        vaddd32 %g2,%g4,%g6
 
-
-end:	ta 0
+	ta 0

@@ -9,8 +9,8 @@ start:
 	set 0x03030303, %g3  
 	set 0x00000003, %g2
 
-	set -2, %g5
-	set -2, %g4
+	set 0xfffffffe, %g5
+	set 0xfffffffe, %g4
 
 
 	! after this
