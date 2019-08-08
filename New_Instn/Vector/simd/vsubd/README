@@ -1,6 +1,0 @@
-Here we are testing the vector subtraction instructions. They work on 64 bit data (we take input and ouput as a register pair).
-
-vsubd8  - Both inputs are divided into 8 one byte values and then each subtracted, giving output as 8 one byte values.
-vsubd16 - Both inputs are divided into 4 parts of 2 bytes each Output is will 4 two byte numbers.
-vsubd32 - Both inputs are divide into two words, ouput will be two 32 bit numbers.
-
