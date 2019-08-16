@@ -22,4 +22,4 @@ start:
         vaddd16 %l2,%l4,%g4
         vaddd32 %l2,%l4,%g6
 
-	ta 0
+end:	ta 0
