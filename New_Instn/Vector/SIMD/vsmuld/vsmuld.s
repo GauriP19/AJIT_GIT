@@ -6,20 +6,20 @@ start:
 
 
 	! Input to registers
-	set 0x03030303, %g3  
-	set 0x00000003, %g2
+	set 0x03030303, %l3  
+	set 0x00000003, %l2
 
-	set 0xfffffffe, %g5
-	set 0xfffffffe, %g4
+	set 0xfffffffe, %l5
+	set 0xfffffffe, %l4
 
 
 	! after this
-	!g6 = -6, g7 = -6
-	!l0 = -0x606    l1 = -6
-	!l2 = -0x06060606 l3 = -6
-	vsmuld8 %g2,%g4,%g6
-        vsmuld16 %g2,%g4,%l0
-        vsmuld32 %g2,%g4,%l2
+	!g2=fa g3=fdfdfdfa
+	!g4=fa g5=fcfdf9fa
+	!g6=fa g7=f9f9f9fa
+	vsmuld8 %l2,%l4,%g2
+        vsmuld16 %l2,%l4,%g4
+        vsmuld32 %l2,%l4,%g6
 
 
 end:	ta 0

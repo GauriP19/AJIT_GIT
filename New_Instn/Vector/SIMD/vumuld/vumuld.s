@@ -6,21 +6,21 @@ start:
 
 
 	! This is a comment.
-	set 0x02020202, %g3  
-	set 0x02020202, %g2
+	set 0x02020202, %l3  
+	set 0x02020202, %l2
 
-	set 0x01010101, %g5
-	set 0x01010101, %g4
+	set 0x01010101, %l5
+	set 0x01010101, %l4
 
 
 	! after multiplication
-        ! g6 and g7 = 02020202
-        ! l0 and l1 = 04020402
-        ! l2 and l3 = 08060402
+        ! g2 and g3 = 02020202
+        ! g4 and g5 = 04020402
+        ! g6 and g7 = 08060402
 
-	vumuld8 %g2,%g4,%l0
-        vumuld16 %g2,%g4,%g6
-        vumuld32 %g2,%g4,%l2
+	vumuld8 %l2,%l4,%g2
+        vumuld16 %l2,%l4,%g4
+        vumuld32 %l2,%l4,%g6
 
 
 end:	ta 0

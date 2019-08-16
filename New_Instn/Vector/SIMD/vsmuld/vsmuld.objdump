@@ -2583,14 +2583,14 @@ Disassembly of section .text:
     2ffc:	01 00 00 00 	nop 
 
 00003000 <main>:
-    3000:	07 00 c0 c0 	sethi  %hi(0x3030000), %g3
-    3004:	86 10 e3 03 	or  %g3, 0x303, %g3	! 3030303 <CVTBUF+0x30202fb>
-    3008:	84 10 20 03 	mov  3, %g2
-    300c:	8a 10 3f fe 	mov  -2, %g5
-    3010:	88 10 3f fe 	mov  -2, %g4
-    3014:	8c d0 82 44 	vsmuld8  %g2, %g4, %g6
-    3018:	a0 d0 84 44 	vsmuld16  %g2, %g4, %l0
-    301c:	a4 d0 80 44 	vsmuld32  %g2, %g4, %l2
+    3000:	27 00 c0 c0 	sethi  %hi(0x3030000), %l3
+    3004:	a6 14 e3 03 	or  %l3, 0x303, %l3	! 3030303 <CVTBUF+0x30202fb>
+    3008:	a4 10 20 03 	mov  3, %l2
+    300c:	aa 10 3f fe 	mov  -2, %l5
+    3010:	a8 10 3f fe 	mov  -2, %l4
+    3014:	84 d4 82 54 	vsmuld8  %l2, %l4, %g2
+    3018:	88 d4 84 54 	vsmuld16  %l2, %l4, %g4
+    301c:	8c d4 80 54 	vsmuld32  %l2, %l4, %g6
 
 00003020 <end>:
     3020:	91 d0 20 00 	ta  0

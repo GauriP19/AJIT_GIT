@@ -11,7 +11,7 @@ start:
 	wr	%l0, 0x0, %tbr
 
 	! enable traps.
-	set 0x10E0, %l0	
+	set 0x10E7, %l0	
 	wr %l0, %psr
 
 	call main
