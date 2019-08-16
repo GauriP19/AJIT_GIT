@@ -6,7 +6,7 @@ main:
 start: 
 	save %sp,-80,%sp
 
-	set 0x3f8cccd, %l0     ! input value = 1.1
+	set 0x3f8ccccd, %l0     ! input value = 1.1
 	st %l0, [%fp +-4]
 	ld [%fp + -4],%f0
 	fmovs %f0,%f1

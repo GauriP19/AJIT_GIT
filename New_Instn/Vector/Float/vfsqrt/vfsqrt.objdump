@@ -2584,8 +2584,8 @@ Disassembly of section .text:
 
 00003000 <main>:
     3000:	9d e3 bf b0 	save  %sp, -80, %sp
-    3004:	21 00 fe 33 	sethi  %hi(0x3f8cc00), %l0
-    3008:	a0 14 20 cd 	or  %l0, 0xcd, %l0	! 3f8cccd <ajit_barebones_clock+0x3f872b1>
+    3004:	21 0f e3 33 	sethi  %hi(0x3f8ccc00), %l0
+    3008:	a0 14 20 cd 	or  %l0, 0xcd, %l0	! 3f8ccccd <ajit_barebones_clock+0x3f8c72b1>
     300c:	e0 27 bf fc 	st  %l0, [ %fp + -4 ]
     3010:	c1 07 bf fc 	ld  [ %fp + -4 ], %f0
     3014:	83 a0 00 20 	fmovs  %f0, %f1

@@ -9,11 +9,11 @@ start:
         st %l0, [%fp + -4]
         ld [%fp + -4],%f0
         fmovs %f0,%f1         !value is in f0 and f1 
-        set 0x400ccccd, %l1   !second value = 1.1
+        set 0x400ccccd, %l1   !second value = 2.2
         st %l1, [%fp + -4]
         ld [%fp + -4],%f2
         fmovs %f2,%f3         !value is in f2 and f3  
-        vfmul %f0,%f2,%f4     !final answer = 2.2
+        vfmul %f0,%f2,%f4     !final answer = 4.4
 	restore
 
 	
