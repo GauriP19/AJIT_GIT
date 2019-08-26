@@ -2583,12 +2583,14 @@ Disassembly of section .text:
     2ffc:	01 00 00 00 	nop 
 
 00003000 <main>:
-    3000:	84 10 20 03 	mov  3, %g2	! 3 <start+0x3>
-    3004:	86 10 20 04 	mov  4, %g3
+    3000:	84 10 20 00 	clr  %g2	! 0 <start>
+    3004:	86 10 20 03 	mov  3, %g3
     3008:	c4 3f bf f8 	std  %g2, [ %fp + -8 ]
-    300c:	88 10 20 05 	mov  5, %g4
-    3010:	8a 10 20 06 	mov  6, %g5
-    3014:	c9 7f bf f8 	cswapd  [ %fp + -8 ], %g4
+    300c:	84 10 00 1e 	mov  %fp, %g2
+    3010:	84 00 bf f8 	add  %g2, -8, %g2
+    3014:	88 10 20 05 	mov  5, %g4
+    3018:	8a 10 20 06 	mov  6, %g5
+    301c:	c9 7f bf f8 	cswapd  [ %fp + -8 ], %g4
 
-00003018 <end>:
-    3018:	91 d0 20 00 	ta  0
+00003020 <end>:
+    3020:	91 d0 20 00 	ta  0
