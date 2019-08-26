@@ -1,0 +1,114 @@
+readelf: Warning: Section '.bss' was not dumped because it does not exist!
+readelf: Warning: Section '.rodata.cst8' was not dumped because it does not exist!
+readelf: Warning: Section '.data' was not dumped because it does not exist!
+readelf: Warning: Section '.rodata.str1.8' was not dumped because it does not exist!
+readelf: Warning: Section '.rodata' was not dumped because it does not exist!
+Info: branch-predictor table size=16.
+Info: starting environment threads
+Info:pThreadUtils: started thread rlutDaemon_0
+Info:pThreadUtils: started thread icacheInvalidateDaemon_0
+Info:pThreadUtils: started thread dcacheInvalidateDaemon_0
+
+Info: registering hw-server pipes for cpu-id 0
+Info:pThreadUtils: started thread hwServer_0
+
+Info: starting hw-server for cpu-id 0
+Info:pThreadUtils: started thread cpu_0
+Info:pThreadUtils: started thread IRC_Control
+Info:pThreadUtils: started thread IRC_Output
+Info:pThreadUtils: started thread Timer_Control
+Info:pThreadUtils: started thread Timer_Output
+Info:pThreadUtils: started thread Serial_Control
+Info:pThreadUtils: started thread Serial_Rx
+Info:pThreadUtils: started thread Serial_Tx
+Info: starting console threads.
+Info:pThreadUtils: started thread consoleOutput
+Info:pThreadUtils: started thread consoleInput
+Info:pThreadUtils: started thread bridge_cpu_0
+Entering ERROR mode
+encountered instruction with UNASSIGNED opcode 
+at PC = 0x10
+ instruction word = 0x8c808024
+Info:ProcessorCore  : Processor entered ERROR MODE at PC=0x14 (cpu-id=0)
+ 
+Info: doval connected to CPU 0
+
+
+Validating : Result file = /home/gaurip/verification/example_3/compiled/addd/addd.results, Log file = /home/gaurip/verification/example_3/log/addd.log
+
+
+ERROR: Tests Failed.
+Info:pThreadUtils: started thread checkErrorStateAndExit_0
+Processor 0 entered ERROR MODE at PC=0x14
+ Program exited with a trap type = 0x0
+Statistics for CPU 0:
+    number-of-instructions-executed = 5
+    number-of-traps  = 1
+    number-of-cti  = 0, mispredicts=0
+    cycle-count estimate = 371
+Info: for CPU 0: 4kB pages accessed are (starting virtual-address of the page is shown):
+     0x00000000
+Total time taken by testbench: 0 secs
+Statistics of RLUT for cpuid=0:
+Statistics for ICACHE cpuid=0
+    number-of-accesses=5
+    number-of-misses=5
+Statistics for DCACHE cpuid=0
+Info: elf-file to be produced  = addd.elf.
+Info: var-dump-file to be produced  = addd.vars.
+Info: hex-dump-file to be produced  = addd.hex.
+Info: memory-map-file to be produced  = addd.mmap.
+Info: object-dump-file to be produced  = addd.objdump.
+Info: added assembly-file = /home/gaurip/verification/example_3/addd.s.
+Info: Executing:
+	rm -rf .//sparc-assembly
+Info: Executing:
+	mkdir .//sparc-assembly
+Info: Executing:
+	rm -rf .//sparc-obj
+Info: Executing:
+	mkdir .//sparc-obj
+Info: Executing:
+	sparc-linux-as   -Av8  /home/gaurip/verification/example_3/addd.s -o .//sparc-obj/addd.o
+Info: Executing:
+	sparc-linux-ld  -nostdlib -L/home/gaurip/ajit_release/tools/cross-compiler/buildroot_cross_compiler/usr/sparc-buildroot-linux-uclibc/lib/ -e main -T /home/gaurip/ajit_release/tools/scripts/LinkerScript.lnk .//sparc-obj/addd.o   -o .//addd.elf
+Info: Executing:
+	sparc-linux-readelf  --hex-dump=.text --hex-dump=.rodata --hex-dump=.rodata.str1.8 --hex-dump=.data --hex-dump=.rodata.cst8 --hex-dump=.bss  .//addd.elf | tr -cd '\11\12\15\40-\176' | grep 0x > .//addd.hex
+Info: Executing:
+	sparc-linux-readelf  --symbols .//addd.elf  > .//addd.vars
+Info: Executing:
+	Info: Generating memory map .//addd.mmap
+Info: Executing:
+	sparc-linux-objdump -d  .//addd.elf > .//addd.objdump
+Connection established with HW Server !
+
+Reached HwServer - TA 0 (cpu-id=0)
+
+Mmu statistics for cpuid=0: MMU ENABLED = 0
+	TLB size (number of entries) = 64
+	Accesses with Mmu bypassed or disabled 	= 5
+	Mmu_probe_requests  	= 0
+	Mmu_flush_requests  	= 0
+	Mmu_register_reads   	= 0
+	Mmu_register_writes 	= 0
+	Mmu_translated_accesses = 0
+	Mmu_TLB_hits            = 0
+
+Mmu Register values :
+	Control register 	= 0x0
+	Context table ptr 	= 0x0
+	Context register   	= 0x0
+	FSR		   	= 0x0
+	FAR		 	= 0x0
+Warning : 'INCLUDES' list empty/not present/incorrect in /home/gaurip/verification/example_3/addd.vprj
+Warning : 'DEFINES' list empty/not present in /home/gaurip/verification/example_3/addd.vprj
+Note: vprj /home/gaurip/verification/example_3/addd.vprj has test files : ['addd.s']
+Note: executing command: compileToSparc.py  -E addd.elf -V addd.vars -H addd.hex -M addd.mmap -O addd.objdump -s /home/gaurip/verification/example_3/addd.s 
+Note: executing /home/gaurip/C/testbench/bin/ajit_C_system_model -d -m /home/gaurip/verification/example_3/compiled/addd/addd.mmap -r /home/gaurip/verification/example_3/compiled/addd/addd.results -l /home/gaurip/verification/example_3/log/addd.log 
+ERROR : validation of /home/gaurip/verification/example_3/addd.vprj is unsuccessful
+Command exited with non-zero status 1
+0.16user 0.06system 0:00.19elapsed 119%CPU (0avgtext+0avgdata 44656maxresident)k
+0inputs+104outputs (0major+27699minor)pagefaults 0swaps
+Note : total failed cases = 1
+Note : total time taken by all jobs = 0.081 s
+Note : total vprj = 1

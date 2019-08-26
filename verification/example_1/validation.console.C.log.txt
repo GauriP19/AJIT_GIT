@@ -1,0 +1,7 @@
+ERROR : 'SOURCES' list empty/not present in /home/gaurip/verification/example_1/ADD.vprj
+Command exited with non-zero status 1
+0.10user 0.03system 0:00.12elapsed 106%CPU (0avgtext+0avgdata 44656maxresident)k
+0inputs+16outputs (0major+16860minor)pagefaults 0swaps
+Note : total failed cases = 1
+Note : total time taken by all jobs = 0.019 s
+Note : total vprj = 1

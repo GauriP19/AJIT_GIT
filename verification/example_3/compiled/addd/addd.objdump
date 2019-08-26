@@ -1,0 +1,28 @@
+
+.//addd.elf:     file format elf32-sparc
+
+
+Disassembly of section .text:
+
+00000000 <main>:
+   0:	84 10 20 03 	mov  3, %g2
+   4:	86 10 20 03 	mov  3, %g3
+   8:	88 10 20 05 	mov  5, %g4
+   c:	8a 10 20 05 	mov  5, %g5
+  10:	8c 80 80 24 	adddcc  %g2, %g4, %g6
+  14:	12 80 00 04 	bne  24 <next>
+  18:	01 00 00 00 	nop 
+  1c:	10 80 00 07 	b  38 <end>
+  20:	01 00 00 00 	nop 
+
+00000024 <next>:
+  24:	8a 80 c0 27 	adddcc  %g3, %g7, %g5
+  28:	02 80 00 03 	be  34 <next1>
+  2c:	01 00 00 00 	nop 
+  30:	10 80 00 02 	b  38 <end>
+
+00000034 <next1>:
+  34:	86 00 c0 23 	addd  %g3, %g3, %g3
+
+00000038 <end>:
+  38:	91 d0 20 00 	ta  0

@@ -2063,8 +2063,8 @@ ee_printf:
 .LFE8:
 	.size	ee_printf, .-ee_printf
 .Letext0:
-	.file 2 "/home/sanjose/builds/buildroot-2014.08/output/host/usr/lib/gcc/sparc-buildroot-linux-uclibc/4.7.4/include/stdarg.h"
-	.file 3 "/home/sanjose/builds/buildroot-2014.08/output/host/usr/lib/gcc/sparc-buildroot-linux-uclibc/4.7.4/include/stddef.h"
+	.file 2 "/home/gaurip/builds/buildroot-2014.08/output/host/usr/lib/gcc/sparc-buildroot-linux-uclibc/4.7.4/include/stdarg.h"
+	.file 3 "/home/gaurip/builds/buildroot-2014.08/output/host/usr/lib/gcc/sparc-buildroot-linux-uclibc/4.7.4/include/stddef.h"
 	.file 4 "/usr/include/stdint.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
