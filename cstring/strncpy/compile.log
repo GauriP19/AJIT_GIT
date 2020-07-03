@@ -1,0 +1,87 @@
+Info: compile with -g.
+Info: added include-directory = /usr/include.
+Info: added include-directory = ./.
+Info: added assembly-file = init.s.
+Info: added assembly-file = /home/gauri/gauri/ajit_release/tools/ajit_access_routines/asm/trap_handlers.s.
+Info: added assembly-file = acall.s.
+Info: added assembly-file = astrncpy.s.
+Info: elf-file to be produced  = fact.elf.
+Info: var-dump-file to be produced  = fact.vars.
+Info: hex-dump-file to be produced  = fact.hex.
+Info: memory-map-file to be produced  = fact.mmap.
+Info: object-dump-file to be produced  = fact.objdump.
+Info: linker_script_file  = LinkerScript.lnk.
+Info: added define_string = AJIT.
+Info: Executing:
+	rm -rf .//sparc-assembly
+Info: Executing:
+	mkdir .//sparc-assembly
+Info: Executing:
+	rm -rf .//sparc-obj
+Info: Executing:
+	mkdir .//sparc-obj
+Info: Executing:
+	sparc-linux-as   -Av8  init.s -o .//sparc-obj/init.o
+Info: Executing:
+	sparc-linux-as   -Av8  /home/gauri/gauri/ajit_release/tools/ajit_access_routines/asm/trap_handlers.s -o .//sparc-obj/trap_handlers.o
+Info: Executing:
+	sparc-linux-as   -Av8  acall.s -o .//sparc-obj/acall.o
+Info: Executing:
+	sparc-linux-as   -Av8  astrncpy.s -o .//sparc-obj/astrncpy.o
+Info: Executing:
+	sparc-linux-ld  --verbose=5 -e main -T LinkerScript.lnk .//sparc-obj/init.o  .//sparc-obj/trap_handlers.o  .//sparc-obj/acall.o  .//sparc-obj/astrncpy.o   -o .//fact.elf -L /home/gauri/gauri/buildroot-combined-2020/buildroot-2014.08/output/host/usr/sparc-buildroot-linux-uclibc/sysroot/usr/lib/ -lc 
+GNU ld (GNU Binutils) 2.22
+  Supported emulations:
+   elf32_sparc
+   sparclinux
+   elf64_sparc
+   sun4
+opened script file LinkerScript.lnk
+using external linker script:
+==================================================
+
+/*========================================================*/
+/*                                                        */
+/* Linker script for Sparc simulator 	                  */
+/*                                                        */
+/*========================================================*/
+
+ENTRY(_start)
+__DYNAMIC = 0;
+SECTIONS
+{
+	. = 0x00000000;
+	.text ALIGN(4) : {  *  (.text) * (.text.*) }
+	. = 0x40000000;
+	.rodata ALIGN(4) : { * (.rodata) * (.rodata.*)  }
+	.data   ALIGN(4) : { * (.data) * (.data.*) *(.bss) }
+}
+
+==================================================
+attempt to open .//sparc-obj/init.o succeeded
+.//sparc-obj/init.o
+attempt to open .//sparc-obj/trap_handlers.o succeeded
+.//sparc-obj/trap_handlers.o
+attempt to open .//sparc-obj/acall.o succeeded
+.//sparc-obj/acall.o
+attempt to open .//sparc-obj/astrncpy.o succeeded
+.//sparc-obj/astrncpy.o
+attempt to open /home/gauri/gauri/buildroot-combined-2020/buildroot-2014.08/output/host/usr/sparc-buildroot-linux-uclibc/sysroot/usr/lib//libc.so succeeded
+opened script file /home/gauri/gauri/buildroot-combined-2020/buildroot-2014.08/output/host/usr/sparc-buildroot-linux-uclibc/sysroot/usr/lib//libc.so
+opened script file /home/gauri/gauri/buildroot-combined-2020/buildroot-2014.08/output/host/usr/sparc-buildroot-linux-uclibc/sysroot/usr/lib//libc.so
+attempt to open /home/gauri/gauri/buildroot-combined-2020/buildroot-2014.08/output/host/usr/bin/../sparc-buildroot-linux-uclibc/sysroot/lib/libc.so.0 succeeded
+/lib/libc.so.0 (/home/gauri/gauri/buildroot-combined-2020/buildroot-2014.08/output/host/usr/bin/../sparc-buildroot-linux-uclibc/sysroot/lib/libc.so.0)
+attempt to open /home/gauri/gauri/buildroot-combined-2020/buildroot-2014.08/output/host/usr/bin/../sparc-buildroot-linux-uclibc/sysroot/usr/lib/uclibc_nonshared.a succeeded
+attempt to open /home/gauri/gauri/buildroot-combined-2020/buildroot-2014.08/output/host/usr/bin/../sparc-buildroot-linux-uclibc/sysroot/lib/ld-uClibc.so.0 succeeded
+/lib/ld-uClibc.so.0 (/home/gauri/gauri/buildroot-combined-2020/buildroot-2014.08/output/host/usr/bin/../sparc-buildroot-linux-uclibc/sysroot/lib/ld-uClibc.so.0)
+ld-uClibc.so.0 needed by /home/gauri/gauri/buildroot-combined-2020/buildroot-2014.08/output/host/usr/bin/../sparc-buildroot-linux-uclibc/sysroot/lib/libc.so.0
+found ld-uClibc.so.0 at /home/gauri/gauri/buildroot-combined-2020/buildroot-2014.08/output/host/usr/bin/../sparc-buildroot-linux-uclibc/sysroot/lib/ld-uClibc.so.0
+Info: Executing:
+	sparc-linux-readelf  --hex-dump=.text --hex-dump=.rodata --hex-dump=.rodata.str1.8 --hex-dump=.data --hex-dump=.rodata.cst8 --hex-dump=.bss  .//fact.elf | tr -cd '\11\12\15\40-\176' | grep 0x > .//fact.hex
+Info: Executing:
+	sparc-linux-readelf  --symbols .//fact.elf  > .//fact.vars
+Info: Executing:
+	Info: Generating memory map .//fact.mmap
+Info: Executing:
+	sparc-linux-objdump -d  .//fact.elf > .//fact.objdump
+\nREADELF\n
